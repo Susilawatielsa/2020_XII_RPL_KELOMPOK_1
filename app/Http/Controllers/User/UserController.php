@@ -26,4 +26,7 @@ class UserController extends Controller
     {
         return view('users.dashboard');
     }
+    public function create(){
+        return view('users.create');
+    }
 }
