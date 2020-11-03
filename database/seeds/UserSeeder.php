@@ -28,10 +28,10 @@ class UserSeeder extends Seeder
         $admin->assignRole('admin');
 
         $siswa = User::create([
-            'usr_name' => 'Student',
-            'usr_email' => 'student@example.com',
+            'usr_name' => 'Ahmad Suherman',
+            'usr_email' => 'ahmad@gmail.com',
             'usr_phone' => '08213456789',
-            'usr_password' => Hash::make('student123'),
+            'usr_password' => Hash::make('ahmad123'),
             'usr_email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'usr_verification_token' => str_replace('/', '', Hash::make(Str::random(12))),
             'usr_is_active' => true,
@@ -40,10 +40,10 @@ class UserSeeder extends Seeder
         $siswa->assignRole('student');
 
         $guru = User::create([
-            'usr_name' => 'Teacher',
-            'usr_email' => 'teacher@example.com',
+            'usr_name' => 'Agus Sofian',
+            'usr_email' => 'agus@gmail.com',
             'usr_phone' => '08213456789',
-            'usr_password' => Hash::make('teacher123'),
+            'usr_password' => Hash::make('agus1234'),
             'usr_email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'usr_verification_token' => str_replace('/', '', Hash::make(Str::random(12))),
             'usr_is_active' => true,
@@ -52,10 +52,10 @@ class UserSeeder extends Seeder
         $guru->assignRole('teacher');
 
         $staff_TU = User::create([
-            'usr_name' => 'Staff TU',
-            'usr_email' => 'staff@example.com',
+            'usr_name' => 'Enjang',
+            'usr_email' => 'enjang@gmail.com',
             'usr_phone' => '08213456789',
-            'usr_password' => Hash::make('staff123'),
+            'usr_password' => Hash::make('enjang123'),
             'usr_email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'usr_verification_token' => str_replace('/', '', Hash::make(Str::random(12))),
             'usr_is_active' => true,
