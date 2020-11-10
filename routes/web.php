@@ -39,6 +39,11 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/dashboard', 'User\UserController@index')->name('dashboard.users');
     Route::get('/create', 'User\UserController@create');
 
-    Route::get('/staffs', 'StaffsController@index');
+    Route::get('/staffs', 'StaffController@index');
+
+    Route::get('/page/list', 'PageController@index');
+    Route::get('/page/detail', 'PageController@show');
+     Route::get('/page/add', 'PageController@create');
+     Route::get('/page/edit', 'PageController@edit');
 });
 

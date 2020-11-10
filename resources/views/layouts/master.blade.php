@@ -13,40 +13,41 @@
   @stack('styles')
 </head>
 <body>
+  <div id="wrapper">
+    @if(Auth()->user()->hasRole('admin'))
+      @include ('includes.sidebar-admin')
+    @elseif(Auth()->user()->hasRole('staff'))
+      @include ('includes.sidebar-staff')
+    @elseif(Auth()->user()->hasRole('teacher'))
+      @include ('includes.sidebar-teacher')
+    @else
+      @include ('includes.sidebar-student')
+    @endif
 
-<!-- Start wrapper-->
-@include ('includes.sidebar')
+    @include ('includes.header')
 
-<!--Start topbar header-->
-@include ('includes.header')
-<!--End topbar header-->
 
-<div class="clearfix"></div>
-	@include ('includes.sidebar')
-  <div class="content-wrapper">
-    <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="clearfix"></div>
+	
+      <div class="content-wrapper">
+        <div class="container-fluid">
 		      @yield('content')
+        </div> 
+      </div>
+    <!--Start Back To Top Button-->
+      <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->	
+	  
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2018 Rocker Admin
         </div>
       </div>
+    </footer>
 
-    </div>
-    <!-- End container-fluid-->
-    
-   </div><!--End content-wrapper-->
-   <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-    <!--End Back To Top Button-->
-	
-	<!--Start footer-->
+  </div>
 
-	<!--End footer-->
-   
-  </div><!--End wrapper-->
-
-  <!-- Bootstrap core JavaScript-->
  @stack('scripts')
 </body>
  

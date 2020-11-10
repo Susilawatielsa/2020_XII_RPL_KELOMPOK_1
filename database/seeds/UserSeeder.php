@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
 
         $admin->assignRole('admin');
 
-        $siswa = User::create([
+        $siswa1 = User::create([
             'usr_name' => 'Ahmad Suherman',
             'usr_email' => 'ahmad@gmail.com',
             'usr_phone' => '08213456789',
@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $siswa = User::create([
+        $siswa2 = User::create([
             'usr_name' => 'Rendy Josua Hutagaol',
             'usr_email' => 'rendy@gmail.com',
             'usr_phone' => '08213456789',
@@ -47,7 +47,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $siswa = User::create([
+        $siswa3 = User::create([
             'usr_name' => 'Dede Suminar',
             'usr_email' => 'dede@gmail.com',
             'usr_phone' => '08213456789',
@@ -57,7 +57,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $siswa = User::create([
+        $siswa4 = User::create([
             'usr_name' => 'Elsa Susilawati',
             'usr_email' => 'elsa@gmail.com',
             'usr_phone' => '08213456789',
@@ -67,7 +67,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $siswa = User::create([
+        $siswa5 = User::create([
             'usr_name' => 'Sumiartini Sri Rahayu',
             'usr_email' => 'Sumi@gmail.com',
             'usr_phone' => '08213456789',
@@ -77,9 +77,13 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $siswa->assignRole('student');
+        $siswa1->assignRole('student');
+        $siswa2->assignRole('student');
+        $siswa3->assignRole('student');
+        $siswa4->assignRole('student');
+        $siswa5->assignRole('student');
 
-        $guru = User::create([
+        $guru1 = User::create([
             'usr_name' => 'Siti Robiah',
             'usr_email' => 'siti@gmail.com',
             'usr_phone' => '08213456789',
@@ -89,7 +93,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $guru = User::create([
+        $guru2 = User::create([
             'usr_name' => 'Agus Sofian',
             'usr_email' => 'agus@gmail.com',
             'usr_phone' => '08213456789',
@@ -99,7 +103,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $guru = User::create([
+        $guru3 = User::create([
             'usr_name' => 'Dewi Astri Indriani',
             'usr_email' => 'dewi@gmail.com',
             'usr_phone' => '08213456789',
@@ -109,11 +113,13 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $guru->assignRole('teacher');
+        $guru1->assignRole('teacher');
+        $guru2->assignRole('teacher');
+        $guru3->assignRole('teacher');
 
         
 
-        $staff_TU = User::create([
+        $staff_TU1 = User::create([
             'usr_name' => 'Hamdan Firmansyah,S.Pd',
             'usr_email' => 'hamdan@gmail.com',
             'usr_phone' => '08213456789',
@@ -123,7 +129,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $staff_TU = User::create([
+        $staff_TU2 = User::create([
             'usr_name' => 'Enjang Suryana',
             'usr_email' => 'Enjang@gmail.com',
             'usr_phone' => '08213456789',
@@ -133,7 +139,7 @@ class UserSeeder extends Seeder
             'usr_is_active' => true,
         ]);
 
-        $staff_TU = User::create([
+        $staff_TU3 = User::create([
             'usr_name' => 'Rifka Nur F',
             'usr_email' => 'rifka@gmail.com',
             'usr_phone' => '08213456789',
@@ -144,6 +150,8 @@ class UserSeeder extends Seeder
         ]);
 
 
-        $staff_TU->assignRole('staff');
+        $staff_TU1->assignRole('staff');
+        $staff_TU2->assignRole('staff');
+        $staff_TU3->assignRole('staff');
     }
 }

@@ -24,7 +24,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('users.dashboard');
+        return view('dashboard');
     }
     public function create(){
         return view('users.create');

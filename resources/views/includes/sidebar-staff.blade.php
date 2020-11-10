@@ -4,12 +4,11 @@
     height: 40px;
     border-radius: 50%;
   }
-    .btn-circle {
-      border-radius: 100%;
+   h5{
+    cursor: default;
   }
 </style>
-<div id="wrapper">
- 
+
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
@@ -21,22 +20,16 @@
 
    <ul class="sidebar-menu do-nicescrol">
       <li class="sidebar-header"></li>
-
-      <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="icon-home"></i> <span>Kelola Petugas TU</span> <i class="fa fa-angle-left pull-right"></i>
+     <li>
+        <a href="/dashboard" class="waves-effect">
+          <i class="icon-home"></i> <span>Dashboard</span> 
         </a>
-        <ul class="sidebar-submenu">
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Petugas TU</a></li>
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Petugas TU</a></li>
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Calon TU</a></li>
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar TU Ditolak</a></li>
-        </ul>
       </li>
 
+
       <li>
         <a href="javaScript:void();" class="waves-effect">
-          <i class="icon-home"></i> <span>Kelola Guru</span> <i class="fa fa-angle-left pull-right"></i>
+          <i class="icon-home"></i> <span>Daftar Guru</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Guru</a></li>
@@ -60,6 +53,8 @@
       </li>
 
      
+
+
     </ul>
    
    </div>
