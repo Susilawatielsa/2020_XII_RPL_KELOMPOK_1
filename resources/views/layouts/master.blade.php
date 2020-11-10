@@ -2,18 +2,27 @@
 <html lang="en">
 
 <!-- Mirrored from codervent.com/rocker/color-version/pages-blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 12:20:59 GMT -->
-@include ('layouts.admin.head')
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Smk Mahaputra @stack('title')</title>
+
+  @stack('styles')
+</head>
 <body>
 
 <!-- Start wrapper-->
-@include ('layouts.admin.sidebar')
+@include ('includes.sidebar')
 
 <!--Start topbar header-->
-@include ('layouts.admin.header')
+@include ('includes.header')
 <!--End topbar header-->
 
 <div class="clearfix"></div>
-	@include ('layouts.admin.sidebar')
+	@include ('includes.sidebar')
   <div class="content-wrapper">
     <div class="container-fluid">
 
@@ -38,7 +47,8 @@
   </div><!--End wrapper-->
 
   <!-- Bootstrap core JavaScript-->
- @include ('layouts.admin.js')</body>
+ @stack('scripts')
+</body>
  
 <!-- Mirrored from codervent.com/rocker/color-version/pages-blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 12:20:59 GMT -->
 </html>

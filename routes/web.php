@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('welcome');
 });
 
 Auth::routes();
@@ -38,6 +38,7 @@ Route::get('/register-staff', 'Auth\RegisterController@registerStaff');
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/dashboard', 'User\UserController@index')->name('dashboard.users');
     Route::get('/create', 'User\UserController@create');
-}); 
 
+    Route::get('/staffs', 'StaffsController@index');
+});
 
