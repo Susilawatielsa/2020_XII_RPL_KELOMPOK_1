@@ -32,7 +32,7 @@
           <i class="icon-home"></i> <span>Kelola Petugas TU</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Petugas TU</a></li>
+          <li><a href="{{URL::to('/staffs/list-staff')}}"><i class="fa fa-circle-o"></i> Daftar Petugas TU</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Petugas TU</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Calon TU</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar TU Ditolak</a></li>
@@ -44,7 +44,7 @@
           <i class="icon-home"></i> <span>Kelola Guru</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Guru</a></li>
+          <li><a href="{{URL::to('/teachers/list-teacher')}}"><i class="fa fa-circle-o"></i> Daftar Guru</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Guru</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Calon Guru</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Guru Ditolak</a></li>
@@ -57,7 +57,7 @@
           <i class="icon-home"></i> <span>Kelola Siswa </span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Siswa</a></li>
+          <li><a href="{{URL::to('/students/list-student')}}"><i class="fa fa-circle-o"></i> Daftar Siswa</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Siswa</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Calon Siswa</a></li>
           <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Daftar Siswa Ditolak</a></li>
