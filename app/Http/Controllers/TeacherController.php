@@ -17,6 +17,15 @@ class TeacherController extends Controller
         return view('teachers.list-teacher');
     }
 
+    public function list_prospective(){
+        return view('teachers.list-teacher-prospective');
+    }
+
+    public function list_rejected()
+    {
+        return view('teachers.list-teacher-rejected');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

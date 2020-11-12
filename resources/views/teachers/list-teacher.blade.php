@@ -61,38 +61,46 @@
               <table id="example" class="table table-bordered">
                 <thead>
                     <tr>
+                        <th>NO</th>
                         <th>NO GTK</th>
                         <th>NAMA</th>
-                        <th>NUPTK</th> 
-                        <th>NIK</th>
-                        <th>ALAMAT</th>
-                        <th>NO TELEPON</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                   <tr>
+                        <td>1</td>
                         <td>16.17.003</td>
                         <td>Siti Robiah Adawiyah, S.Pd</td>
-                        <td>1144748649300010</td>
-                        <td>3204115208700009</td>
-                        <td>Kp Bojong</td>
-                        <td>089527103940</td>
+                        <td>PAB</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
+                        <td>2</td>
                         <td>16.17.004</td>
                         <td>Agus Sofian, SE</td>
-                        <td>-</td>
-                        <td>3204115208700009</td>
-                        <td>Kp Bojong</td>
-                        <td>089601603565</td>
+                        <td>SI</td>
+                        <td>
+                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
+                        <td>3</td>
                         <td>16.17.005</td>
                         <td>Essa Amalia, S.Pd</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Kp Paledang</td>
-                        <td>089656411765</td>
+                        <td>Inggris</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>                        
+                        </td>
                     </tr>
                     
                 </tbody>

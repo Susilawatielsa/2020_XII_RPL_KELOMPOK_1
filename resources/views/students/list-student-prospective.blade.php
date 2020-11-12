@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Staffs
+- List Prospective Studends
 @endpush
 
 @push('styles')
@@ -28,27 +28,15 @@
 @section('content')
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
-        <h4 class="page-title">Data Siswa</h4>
+        <h4 class="page-title">Data Tables</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javaScript:void();">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Siswa</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Daftar Siswa</li>
+            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Daftar Calon Petugas TU</li>
          </ol>
      </div>
      <div class="col-sm-3">
-       <div class="btn-group float-sm-right">
-        <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i class="fa fa-cog mr-1"></i> Setting</button>
-        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown">
-        <span class="caret"></span>
-        </button>
-        <div class="dropdown-menu">
-          <a href="javaScript:void();" class="dropdown-item">Action</a>
-          <a href="javaScript:void();" class="dropdown-item">Another action</a>
-          <a href="javaScript:void();" class="dropdown-item">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a href="javaScript:void();" class="dropdown-item">Separated link</a>
-        </div>
-      </div>
+      
      </div>
      </div>
 
@@ -60,40 +48,46 @@
               <div class="table-responsive">
               <table id="example" class="table table-bordered">
                 <thead>
+                  
                     <tr>
-                        <th>NIK</th>
+                       
+                        <th>NO</th>
                         <th>NAMA</th>
-                        <th>EMAIL</th>
-                        <th>NO TELEPON</th>
-                        <th>ALAMAT</th> 
-                        <th>DESA</th>
+                        <th>Asal Sekolah</th>
+                        <th>Aksi</th>
                         
                     </tr>
+
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>3204370204100002</td>
-                        <td>Saripah Nur Aulia</td>
-                        <td>saripah@gmail.com</td>
-                        <td>089613272211</td>
-                        <td>Kp Junti</td>
-                        <td>Sangkanhurip</td> 
+                   <tr>
+                        <td>1</td>
+                        <td>meli</td>
+                        <td>Smp 89</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>3204370201000003</td>
-                        <td>Amanda Novianti</td>
-                        <td>amanda@gmail.com</td>
-                        <td>089610892481</td>
-                        <td>Kp Cikambuy</td>
-                        <td>Sangkanhurip</td>
+                        <td>2</td>
+                        <td>yanti</td>
+                        <td>Smp 89</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>3204370201000004</td>
-                        <td>David Hermawan</td>
-                        <td>david@gmail.com</td>
-                        <td>089125572481</td>
-                        <td>Kp Cibolerang</td>
-                        <td>Sangkanhurip</td>
+                        <td>3</td>
+                        <td>danang</td>
+                        <td>Smp 89</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>                        </td>
                     </tr>
                     
                 </tbody>

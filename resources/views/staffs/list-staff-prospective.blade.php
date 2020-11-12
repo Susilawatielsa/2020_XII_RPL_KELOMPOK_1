@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Staffs
+- List Prospective Staffs
 @endpush
 
 @push('styles')
@@ -32,23 +32,11 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javaScript:void();">SMK Mahaputra</a></li>
             <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Daftar Petugas TU</li>
+            <li class="breadcrumb-item active" aria-current="page">Daftar Calon Petugas TU</li>
          </ol>
      </div>
      <div class="col-sm-3">
-       <div class="btn-group float-sm-right">
-        <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i class="fa fa-cog mr-1"></i> Setting</button>
-        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown">
-        <span class="caret"></span>
-        </button>
-        <div class="dropdown-menu">
-          <a href="javaScript:void();" class="dropdown-item">Action</a>
-          <a href="javaScript:void();" class="dropdown-item">Another action</a>
-          <a href="javaScript:void();" class="dropdown-item">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a href="javaScript:void();" class="dropdown-item">Separated link</a>
-        </div>
-      </div>
+      
      </div>
      </div>
 
@@ -60,39 +48,46 @@
               <div class="table-responsive">
               <table id="example" class="table table-bordered">
                 <thead>
+                  
                     <tr>
-                        <th>NO GTK</th>
+                       
+                        <th>NO</th>
                         <th>NAMA</th>
-                        <th>NUPTK</th> 
-                        <th>NIK</th>
-                        <th>ALAMAT</th>
-                        <th>NO TELEPON</th>
+                        <th>PENDIDIKAN</th>
+                        <th>Aksi</th>
+                        
                     </tr>
+
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>16.17.006</td>
-                        <td>Hamdan Firmansyah, S.Pd</td>
-                        <td>-</td>
-                        <td>3204370204900002</td>
-                        <td>Kp Citereup</td>
-                        <td>089613272481</td>
+                   <tr>
+                        <td>1</td>
+                        <td>Udin</td>
+                        <td>S1 Universias Gajah Munding</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>16.17.007</td>
-                        <td>Enjang</td>
-                        <td>-</td>
-                        <td>3204360004900010</td>
-                        <td>Kp Junti</td>
-                        <td>085224456644</td>
+                        <td>2</td>
+                        <td>usep</td>
+                        <td>S1 Universias Gajah Munding</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>16.17.008</td>
-                        <td>Rifka Nur F</td>
-                        <td>-</td>
-                        <td>3204360003900003</td>
-                        <td>Kp Pasantrent</td>
-                        <td>085659711213</td>
+                        <td>3</td>
+                        <td>surti</td>
+                        <td>S1 Universias Gajah Munding</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>                        </td>
                     </tr>
                     
                 </tbody>

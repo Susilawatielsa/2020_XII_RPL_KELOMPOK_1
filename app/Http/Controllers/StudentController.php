@@ -17,6 +17,16 @@ class StudentController extends Controller
         return view('students.list-student');
     }
 
+    public function list_prospective(){
+        return view('students.list-student-prospective');
+    }
+
+    public function list_rejected()
+    {
+        return view('students.list-student-rejected');
+    }
+    
+
     /**
      * Show the form for creating a new resource.
      *

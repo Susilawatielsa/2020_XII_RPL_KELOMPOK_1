@@ -40,11 +40,18 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/create', 'User\UserController@create');
 
 
-    Route::get('/staffs/list-staff', 'StaffController@index');
+    Route::get('/staffs', 'StaffController@index');
+    Route::get('/staffs/prospective', 'StaffController@list_prospective');
+    Route::get('/staffs/rejected','StaffController@list_rejected');
+  
 
-    Route::get('teachers/list-teacher', 'TeacherController@index' );
+    Route::get('/teachers', 'TeacherController@index');
+    Route::get('/teachers/prospective', 'TeacherController@list_prospective');
+    Route::get('/teachers/rejected','TeacherController@list_rejected');
 
-    Route::get('/students/list-student', 'StudentController@index');
+    Route::get('/students', 'StudentController@index');
+    Route::get('/students/prospective', 'StudentController@list_prospective');
+    Route::get('/students/rejected','StudentController@list_rejected');
 
     Route::get('/page/list', 'PageController@index');
     Route::get('/page/detail', 'PageController@show');

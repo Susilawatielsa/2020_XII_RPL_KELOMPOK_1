@@ -61,42 +61,50 @@
               <table id="example" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>NIK</th>
+                        <th>NO</th>
+                        <th>NIS</th>
                         <th>NAMA</th>
-                        <th>EMAIL</th>
-                        <th>NO TELEPON</th>
-                        <th>ALAMAT</th> 
-                        <th>DESA</th>
-                        
+                        <th>KELAS</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>3204370204900002</td>
-                        <td>Ahmad Suherman</td>
-                        <td>ahmadsuherman@gmail.com</td>
-                        <td>089613272481</td>
-                        <td>Kp Cicangkudu</td>
-                        <td>Sukamukti</td> 
+                   <tr>
+                        <td>1</td>
+                        <td>1819.08.086</td>
+                        <td>Zanisa</td>
+                        <td>X RPL3</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>3204370204900002</td>
-                        <td>Dede Suminar</td>
-                        <td>dedesuminar@gmail.com</td>
-                        <td>089613272481</td>
-                        <td>Kp Bojong Kunci</td>
-                        <td>Bojong Kunci</td>
+                        <td>2</td>
+                        <td>1819.08.086</td>
+                        <td>Nanda</td>
+                        <td>X RPL1</td>
+                        <td>
+                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>3204370204900002</td>
-                        <td>Dede Suminar</td>
-                        <td>dedesuminar@gmail.com</td>
-                        <td>089613272481</td>
-                        <td>Kp Bojong Kunci</td>
-                        <td>Sukamukti</td>
+                        <td>3</td>
+                        <td>1819.08.086</td>
+                        <td>Zulfa</td>
+                        <td>X RPL2</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>                        
+                        </td>
                     </tr>
                     
                 </tbody>
+        
         
             </table>
             </div>

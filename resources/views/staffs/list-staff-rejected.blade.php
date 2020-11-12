@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Staffs
+- List Rejected Staffs
 @endpush
 
 @push('styles')
@@ -32,7 +32,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javaScript:void();">SMK Mahaputra</a></li>
             <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Daftar Petugas TU</li>
+            <li class="breadcrumb-item active" aria-current="page">Daftar Calon Petugas TU</li>
          </ol>
      </div>
      <div class="col-sm-3">
@@ -52,9 +52,9 @@
                     <tr>
                        
                         <th>NO</th>
-                        <th>NO GTK</th>
                         <th>NAMA</th>
-                        <th>JABATAN</th>
+                        <th>PENDIDIKAN</th>
+                        <th>Alasan</th>
                         <th>Aksi</th>
                         
                     </tr>
@@ -63,34 +63,31 @@
                 <tbody>
                    <tr>
                         <td>1</td>
-                        <td>16.17.003</td>
-                        <td>Enjang Suryana</td>
-                        <td>SAPRAS</td>
+                        <td>acong</td>
+                        <td>SMA 23</td>
+                        <td>tidak memenuhi syarat</td>
                         <td>
                           <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                           <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                         </td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>16.17.004</td>
-                        <td>Hamdan Firmansyah</td>
-                        <td>SAPRAS</td>
+                        <td>acong</td>
+                        <td>SMA 23</td>
+                        <td>tidak memenuhi syarat</td>
                         <td>
-                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                           <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                         </td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>16.17.005</td>
-                        <td>Rifka Nur</td>
-                        <td>SAPRAS</td>
+                        <td>acong</td>
+                        <td>SMA 23</td>
+                        <td>tidak memenuhi syarat</td>
                         <td>
                           <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                           <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>                        
                         </td>
                     </tr>

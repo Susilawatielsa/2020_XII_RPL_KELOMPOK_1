@@ -17,6 +17,16 @@ class StaffController extends Controller
         return view('staffs.list-staff');
     }
 
+    public function list_prospective(){
+        return view('staffs.list-staff-prospective');
+    }
+
+    public function list_rejected()
+    {
+        return view('staffs.list-staff-rejected');
+    }
+    
+
     /**
      * Show the form for creating a new resource.
      *
