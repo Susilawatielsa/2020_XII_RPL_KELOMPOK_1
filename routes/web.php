@@ -52,6 +52,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
     Route::get('/students/rejected','StudentController@list_rejected');
+    Route::get('/students/create', 'StudentController@create');
+
 
     Route::get('/page/list', 'PageController@index');
     Route::get('/page/detail', 'PageController@show');
