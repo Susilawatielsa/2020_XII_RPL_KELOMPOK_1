@@ -30,6 +30,7 @@ Route::post('/account/reset-password', 'Auth\AccountController@updatePassword')-
 
 //Route untuk register teacher dan staff
 
+Route::get('/select-registration','Auth\RegisterController@register');
 Route::get('/register-student', 'Auth\RegisterController@registerStudent');
 Route::get('/register-teacher', 'Auth\RegisterController@registerTeacher');
 Route::get('/register-staff', 'Auth\RegisterController@registerStaff');

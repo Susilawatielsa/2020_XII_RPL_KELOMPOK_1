@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Prospective Studends
+- List Add Studends
 @endpush
 
 @push('styles')
@@ -56,52 +56,60 @@
 
                     <div class="form-group row">
 
-                        <div class="col-sm-4">
+                         <div class="col-sm-4">
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
-                        </div>
+                        </div> 
                         <div class="col-sm-4">
-                            <label>Email<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Email">
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Nomor Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor Telepon">
-                        </div>
-
-                    </div>
-                    <div class="form-group row">
-
-                        <div class="col-sm-6">
-                            <label>Password <span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Password">
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Ulangi Password <span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Ulangi Password">
-                        </div>
-
-                    </div>
-
-                    <div class="form-group row">
-
-                        <div class="col-sm-4">
-                            <label>Nomor Identitas (NIK)</label>
+                            <label>NIK / No. KITAS (untuk WNA)</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor NIK">
                         </div>
-
                         <div class="col-sm-4">
-                            <label>NIS</label>
-                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor NIS">
-                        </div>
+                            <label>No Registrasi Akta Lahir</label>
+                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="No Registrasi Akta Lahir">
+                        </div> 
+                       
 
+                    </div>
+
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>NISN</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor NISN">
                         </div>
+
+                        <div class="col-sm-2">
+                            <label>Kewarganegaraan</label>
+                            <select class="form-control" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option>WNI</option>
+                                <option>WNA</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <label>Nama Negara</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama Negara">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>Agama</label>
+                            <select class="form-control" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Khonghucu">Khonghucu</option>
+                            </select>
+                        </div>            
                     </div>
 
                     <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Tempat Lahir<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Tempat Lahir">
+                        </div> 
 
                         <div class="col-sm-4">
                             <label>Tanggal Lahir</label>
@@ -117,20 +125,6 @@
                             </select>
 
                         </div>
-
-                        <div class="col-sm-4">
-                            <label>Agama</label>
-                            <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Hindu">Hindu</option>
-                                <option value="Budha">Budha</option>
-                                <option value="Khonghucu">Khonghucu</option>
-                            </select>
-                        </div>
-
                     </div>
 
                     <div class="form-group row">
@@ -193,7 +187,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Nama Lengkap</label>
+                            <label>Nama Ayah Kandung</label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
                         </div>
 
@@ -219,6 +213,8 @@
                                 <option disabled="" selected="">Pilih</option>
                                 <option>SD - Sederajat</option>
                                 <option>SMP - Sederajat</option>
+                                <option>SMA - Sederajat</option>
+                                <option>KULIAH - Sederajat</option>
 
                             </select>
                         </div>
@@ -244,18 +240,16 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disablity</label>
+                            <label>Disability</label> <br>
 
-                            <div class="radio icheck-info">
+                            <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="info1" name="info">
                                 <label for="info1">Ya</label>
                             </div>
-                            <div class="radio icheck-info">
+                            <div class="radio icheck-info icheck-inline">
                                 <input type="radio" checked="" id="info2" name="info">
                                 <label for="info2">Tidak</label>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -267,7 +261,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Nama Lengkap</label>
+                            <label>Nama Ibu Kandung</label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
                         </div>
 
@@ -293,7 +287,8 @@
                                 <option disabled="" selected="">Pilih</option>
                                 <option>SD - Sederajat</option>
                                 <option>SMP - Sederajat</option>
-
+                                <option>SMA - Sederajat</option>
+                                <option>KULIAH - Sederajat</option>
                             </select>
                         </div>
                         <div class="col-sm-3">
@@ -303,6 +298,7 @@
                                 <option disabled="" selected="">Pilih</option>
                                 <option>Buruh</option>
                                 <option>Wirausaha</option>
+                                <option>Ibu Rumah Tangga</option>
                             </select>
 
                         </div>
@@ -318,17 +314,16 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disablity</label>
+                            <label>Disability</label> <br>
 
-                            <div class="radio icheck-info">
-                                <input type="radio" id="info3" name="warning">
-                                <label for="info3">Ya</label>
+                            <div class="radio icheck-info icheck-inline">
+                                <input type="radio" id="info1" name="info">
+                                <label for="info1">Ya</label>
                             </div>
-                            <div class="radio icheck-info">
-                                <input type="radio" checked="" id="info4" name="warning">
-                                <label for="info4">Tidak</label>
+                            <div class="radio icheck-info icheck-inline">
+                                <input type="radio" checked="" id="info2" name="info">
+                                <label for="info2">Tidak</label>
                             </div>
-
                         </div>
                     </div>
 
@@ -366,6 +361,8 @@
                                 <option disabled="" selected="">Pilih</option>
                                 <option>SD - Sederajat</option>
                                 <option>SMP - Sederajat</option>
+                                <option>SMA - Sederajat</option>
+                                <option>KULIAH - Sederajat</option>
 
                             </select>
                         </div>
@@ -391,17 +388,16 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disablity</label>
+                            <label>Disability</label> <br>
 
-                            <div class="radio icheck-info">
-                                <input type="radio" id="info5" name="warning2">
-                                <label for="info5">Ya</label>
+                            <div class="radio icheck-info icheck-inline">
+                                <input type="radio" id="info1" name="info">
+                                <label for="info1">Ya</label>
                             </div>
-                            <div class="radio icheck-info">
-                                <input type="radio" checked="" id="info6" name="warning2">
-                                <label for="info6">Tidak</label>
+                            <div class="radio icheck-info icheck-inline">
+                                <input type="radio" checked="" id="info2" name="info">
+                                <label for="info2">Tidak</label>
                             </div>
-
                         </div>
                     </div>
 
@@ -412,12 +408,17 @@
 
                     <div class="form-group row">
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <label>Telepon Rumah</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon Rmah">
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
+                            <label>Nomor Telepon HP</label>
+                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor Telepon">
+                        </div>
+
+                        <div class="col-sm-4">
                             <label>Email Rumah</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon">
                         </div>
@@ -432,24 +433,106 @@
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <label>Pilih Program Study 1:</label>
-                            <select class="form-control" id="basic-select">
-                                <option>D3 - Teknik Kompoter</option>
-                                <option>WNI</option>
-                                <option>WNA</option>
-                            </select>
+                            <label>Tinggi Badan</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Tinggi Badan">
                         </div>
+
                         <div class="col-sm-4">
-                            <label>Pilih Program Study 2:</label>
-                            <select class="form-control" id="basic-select">
-                                <option>D3 - Teknik Kompoter</option>
-                                <option>WNI</option>
-                                <option>WNA</option>
-                            </select>
+                            <label>Berat Badan</label>
+                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Berat Badan">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>Jarak Ke Sekolah</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Jarak Dalam Kilometer">
                         </div>
 
                     </div>
 
+                    <div class="form-group row">
+
+                        <div class="col-sm-4">
+                            <label>Waktu Tempuh</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Dalam Satuan Jam/Menit">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Jumlah Saudara Kandung</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Jumlah Saudara Kandung">
+                        </div>
+
+                    </div>
+
+                    <h4 class="form-header text-uppercase">
+                        <i class="fa fa-laptop"></i>
+                        Prestasi
+                    </h4>
+                    <div class="form-group row">
+
+                    <div class="col-sm-3">
+                            <label>Jenis</label> <br>
+
+                            <div class="col-md-2 col-sm-4 col-xs-6 demo-col">
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary1" name="primary" />
+                                    <label for="primary1">Sains</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary2" name="primary" />
+                                    <label for="primary2">Seni</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary3" name="primary" />
+                                    <label for="primary3">Olahraga</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                    <label>Dan lain-lain</label>
+                                    <input type="text" class="form-control" id="input-10" placeholder="Masukkan jenis prestasi">
+                            </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                            <label>Tingkat</label> <br>
+
+                            <div class="col-md-2 col-sm-4 col-xs-6 demo-col">
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary1" name="primary" />
+                                    <label for="primary1">Sekolah</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary2" name="primary" />
+                                    <label for="primary2">Kecamatan</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary3" name="primary" />
+                                    <label for="primary3">Kabupaten</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary3" name="primary" />
+                                    <label for="primary3">Provinsi</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary3" name="primary" />
+                                    <label for="primary3">Nasional</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="primary3" name="primary" />
+                                    <label for="primary3">Internasional</label>
+                                </div>
+                            </div>                            
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label>Nama Prestasi</label>
+                        <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Prestasi">
+    
+                        <label>Tahun</label>
+                        <input type="text" class="form-control col-sm-3" id="input-10" placeholder="Tahun">
+    
+                        <label>Penyelenggara</label>
+                        <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Penyelenggara Kegiatan">
+                    </div>
+                </div>
 
                     <div class="form-footer">
                         <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>

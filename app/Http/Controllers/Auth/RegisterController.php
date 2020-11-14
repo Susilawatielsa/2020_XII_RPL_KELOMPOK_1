@@ -24,6 +24,11 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
+    public function selectRegistration()
+    {
+        return view('auth.register');
+    }
+    
     public function registerStudent()
     {
         return view('auth.register-student');
