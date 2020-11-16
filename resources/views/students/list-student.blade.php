@@ -58,6 +58,52 @@
             <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
             <div class="card-body">
               <div class="table-responsive">
+              @if(Auth()->user()->hasRole('teacher'))
+              <table id="example" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>NIS</th>
+                        <th>NAMA</th>
+                        <th>KELAS</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <td>1</td>
+                        <td>1819.08.086</td>
+                        <td>Zanisa</td>
+                        <td>X RPL3</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1819.08.086</td>
+                        <td>Nanda</td>
+                        <td>X RPL1</td>
+                        <td>
+                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1819.08.086</td>
+                        <td>Zulfa</td>
+                        <td>X RPL2</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>                        
+                        </td>
+                    </tr>
+                    
+                </tbody>
+        
+        
+            </table>
+
+            @else
               <table id="example" class="table table-bordered">
                 <thead>
                     <tr>
@@ -107,6 +153,8 @@
         
         
             </table>
+            @endif
+              
             </div>
             </div>
           </div>

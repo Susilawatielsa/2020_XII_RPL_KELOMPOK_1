@@ -26,6 +26,7 @@
 @endpush
 
 @section('content')
+
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
         <h4 class="page-title">Data Tables</h4>
@@ -58,7 +59,96 @@
             <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
             <div class="card-body">
               <div class="table-responsive">
-              <table id="example" class="table table-bordered">
+               @if(Auth()->user()->hasRole('student'))
+                <table id="example" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>NO GTK</th>
+                        <th>NAMA</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <td>1</td>
+                        <td>16.17.003</td>
+                        <td>Siti Robiah Adawiyah, S.Pd</td>
+                        <td>PAB</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>16.17.004</td>
+                        <td>Agus Sofian, SE</td>
+                        <td>SI</td>
+                        <td>
+                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>16.17.005</td>
+                        <td>Essa Amalia, S.Pd</td>
+                        <td>Inggris</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>                       
+                        </td>
+                    </tr>
+                    
+                </tbody>
+        
+            </table>
+
+            @elseif(Auth()->user()->hasRole('teacher'))
+            <table id="example" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>NO GTK</th>
+                        <th>NAMA</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <td>1</td>
+                        <td>16.17.003</td>
+                        <td>Siti Robiah Adawiyah, S.Pd</td>
+                        <td>PAB</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>16.17.004</td>
+                        <td>Agus Sofian, SE</td>
+                        <td>SI</td>
+                        <td>
+                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>16.17.005</td>
+                        <td>Essa Amalia, S.Pd</td>
+                        <td>Inggris</td>
+                        <td>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>                       
+                        </td>
+                    </tr>
+                    
+                </tbody>
+        
+            </table>
+
+            @else
+             <table id="example" class="table table-bordered">
                 <thead>
                     <tr>
                         <th>NO</th>
@@ -106,19 +196,17 @@
                 </tbody>
         
             </table>
+            @endif
+             
             </div>
             </div>
           </div>
         </div>
       </div><!-- End Row-->
-    </div>
-    <!-- End container-fluid-->
-    
-    </div><!--End content-wrapper-->
-   <!--Start Back To Top Button-->
+   
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->   
-  </div><!--End wrapper-->
+
 @push('scripts')
   <!-- Bootstrap core JavaScript-->
   <script src="{{ asset('assets/js/jquery.min.js') }}"></script>

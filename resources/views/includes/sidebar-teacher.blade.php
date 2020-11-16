@@ -30,14 +30,14 @@
       </li>
 
       <li>
-        <a href="javaScript:void();" class="waves-effect">
+        <a href="{{URL::to('/teachers')}}" class="waves-effect">
           <i class="icon-home"></i> <span>Daftar Guru</span>
         </a>
       </li>
      
 
       <li>
-        <a href="javaScript:void();" class="waves-effect">
+        <a href="{{URL::to('/students')}}" class="waves-effect">
           <i class="icon-home"></i> <span>Daftar Siswa</span>
         </a>
       </li>

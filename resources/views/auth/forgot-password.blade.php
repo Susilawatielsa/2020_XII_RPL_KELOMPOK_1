@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>SMK Mahaputra-Reset Password</title>
+  <title>SMK Mahaputra-Forgot Password</title>
   <!--favicon-->
   <link rel="icon" href="{{asset('assets/images/favicon.ico')}}" type="image/x-icon">
   <!-- Bootstrap core CSS-->
@@ -30,7 +30,7 @@
             <div class="text-center">
                 <img src="{{asset('assets/images/mahaputra.JFIF')}}">
             </div>
-            <div class="card-title text-uppercase text-center py-3">Reset Password</div>
+            <div class="card-title text-uppercase text-center py-3">Forgot Password</div>
             <form method="POST" action="{{ route('forgot.password') }}" id="submitForm">
                 @csrf 
 

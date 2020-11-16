@@ -71,7 +71,7 @@
               </div>
              </div>
              <div class="form-group col-6 text-right">
-              <a class="btn btn-link" href="{{ route('forgot.password') }}">Reset Password</a>
+              <a class="btn btn-link" href="{{ route('forgot.password') }}">Forgot Password</a>
              </div>
             </div>
              <button id="btnSubmit" type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Sign In</button>
