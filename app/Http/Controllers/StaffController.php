@@ -34,7 +34,7 @@ class StaffController extends Controller
      */
     public function create()
     {
-        //
+        return view('staffs.add-staff');
     }
 
     /**

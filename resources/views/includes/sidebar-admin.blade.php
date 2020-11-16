@@ -33,7 +33,7 @@
         </a>
         <ul class="sidebar-submenu">
           <li><a href="{{URL::to('/staffs')}}"><i class="fa fa-circle-o"></i> Daftar Petugas TU</a></li>
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Petugas TU</a></li>
+          <li><a href="{{URL::to('/staffs/create')}}"><i class="fa fa-circle-o"></i> Tambah Petugas TU</a></li>
           <li><a href="{{URL::to('/staffs/prospective')}}"><i class="fa fa-circle-o"></i> Daftar Calon TU</a></li>
           <li><a href="{{URL::to('/staffs/rejected')}}"><i class="fa fa-circle-o"></i> Daftar TU Ditolak</a></li>
         </ul>
