@@ -45,7 +45,7 @@
         </a>
         <ul class="sidebar-submenu">
           <li><a href="{{URL::to('/teachers')}}"><i class="fa fa-circle-o"></i> Daftar Guru</a></li>
-          <li><a href="{{URL::to('#')}}"><i class="fa fa-circle-o"></i> Tambah Guru</a></li>
+          <li><a href="{{URL::to('/teachers/create')}}"><i class="fa fa-circle-o"></i> Tambah Guru</a></li>
           <li><a href="{{URL::to('/teachers/prospective')}}"><i class="fa fa-circle-o"></i> Daftar Calon Guru</a></li>
           <li><a href="{{URL::to('/teachers/rejected')}}"><i class="fa fa-circle-o"></i> Daftar Guru Ditolak</a></li>
         </ul>
