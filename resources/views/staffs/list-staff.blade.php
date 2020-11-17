@@ -67,9 +67,10 @@
                         <td>Enjang Suryana</td>
                         <td>SAPRAS</td>
                         <td>
-                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                          <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                          <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                          <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"  data-toggle="tooltip" data-placement="top" titl> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                          <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                          <button type="button" data-toggle="tooltip" data-placement="top" class="btn btn-outline-danger waves-effect waves-light m-1" title="HAPUS"> <i class="fa fa-trash fa-lg"></i> </button>
+                          
                         </td>
                     </tr>
                     <tr>
@@ -78,7 +79,7 @@
                         <td>Hamdan Firmansyah</td>
                         <td>SAPRAS</td>
                         <td>
-                         <a href="#" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                         <a href="/page/detail" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                           <a href="#" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                           <button type="button" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                         </td>
@@ -154,6 +155,11 @@
         .appendTo( '#example_wrapper .col-md-6:eq(0)' );
       
       } );
+
+     $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+  
 
     </script>
   
