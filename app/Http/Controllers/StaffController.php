@@ -17,7 +17,8 @@ class StaffController extends Controller
         return view('staffs.list-staff');
     }
 
-    public function list_prospective(){
+    public function list_prospective()
+    {
         return view('staffs.list-staff-prospective');
     }
 
@@ -25,7 +26,7 @@ class StaffController extends Controller
     {
         return view('staffs.list-staff-rejected');
     }
-    
+
 
     /**
      * Show the form for creating a new resource.
@@ -54,9 +55,9 @@ class StaffController extends Controller
      * @param  \App\Staffs  $staffs
      * @return \Illuminate\Http\Response
      */
-    public function show(Staffs $staffs)
+    public function show()
     {
-        //
+        return view('staffs.detail-staff');
     }
 
     /**

@@ -17,7 +17,8 @@ class TeacherController extends Controller
         return view('teachers.list-teacher');
     }
 
-    public function list_prospective(){
+    public function list_prospective()
+    {
         return view('teachers.list-teacher-prospective');
     }
 
@@ -53,9 +54,9 @@ class TeacherController extends Controller
      * @param  \App\Teachers  $teachers
      * @return \Illuminate\Http\Response
      */
-    public function show(Teachers $teachers)
+    public function show()
     {
-        //
+        return view('teachers.detail-teacher');
     }
 
     /**

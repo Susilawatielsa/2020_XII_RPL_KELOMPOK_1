@@ -17,7 +17,8 @@ class StudentController extends Controller
         return view('students.list-student');
     }
 
-    public function list_prospective(){
+    public function list_prospective()
+    {
         return view('students.list-student-prospective');
     }
 
@@ -25,7 +26,7 @@ class StudentController extends Controller
     {
         return view('students.list-student-rejected');
     }
-    
+
 
     /**
      * Show the form for creating a new resource.
@@ -54,9 +55,9 @@ class StudentController extends Controller
      * @param  \App\Students  $students
      * @return \Illuminate\Http\Response
      */
-    public function show(Students $students)
+    public function show()
     {
-        //
+        return view('students.detail-student');
     }
 
     /**

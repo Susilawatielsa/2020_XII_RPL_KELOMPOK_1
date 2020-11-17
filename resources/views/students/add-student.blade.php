@@ -37,7 +37,7 @@
         <h4 class="page-title">Tambah Siswa</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('students') }}">Kelola Siswa</a></li>
+            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Siswa</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tambah SIswa</li>
         </ol>
     </div>
@@ -56,10 +56,10 @@
 
                     <div class="form-group row">
 
-                         <div class="col-sm-4">
+                        <div class="col-sm-4">
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
-                        </div> 
+                        </div>
                         <div class="col-sm-4">
                             <label>NIK / No. KITAS (untuk WNA)</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor NIK">
@@ -67,8 +67,8 @@
                         <div class="col-sm-4">
                             <label>No Registrasi Akta Lahir</label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="No Registrasi Akta Lahir">
-                        </div> 
-                       
+                        </div>
+
 
                     </div>
 
@@ -102,14 +102,14 @@
                                 <option value="Budha">Budha</option>
                                 <option value="Khonghucu">Khonghucu</option>
                             </select>
-                        </div>            
+                        </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tempat Lahir<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Tempat Lahir">
-                        </div> 
+                        </div>
 
                         <div class="col-sm-4">
                             <label>Tanggal Lahir</label>
@@ -468,7 +468,7 @@
                     </h4>
                     <div class="form-group row">
 
-                    <div class="col-sm-3">
+                        <div class="col-sm-3">
                             <label>Jenis</label> <br>
 
                             <div class="col-md-2 col-sm-4 col-xs-6 demo-col">
@@ -486,12 +486,12 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                    <label>Dan lain-lain</label>
-                                    <input type="text" class="form-control" id="input-10" placeholder="Masukkan jenis prestasi">
+                                <label>Dan lain-lain</label>
+                                <input type="text" class="form-control" id="input-10" placeholder="Masukkan jenis prestasi">
                             </div>
-                    </div>
+                        </div>
 
-                    <div class="col-sm-2">
+                        <div class="col-sm-2">
                             <label>Tingkat</label> <br>
 
                             <div class="col-md-2 col-sm-4 col-xs-6 demo-col">
@@ -519,20 +519,20 @@
                                     <input type="checkbox" id="primary3" name="primary" />
                                     <label for="primary3">Internasional</label>
                                 </div>
-                            </div>                            
-                    </div>
+                            </div>
+                        </div>
 
-                    <div class="col-sm-4">
-                        <label>Nama Prestasi</label>
-                        <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Prestasi">
-    
-                        <label>Tahun</label>
-                        <input type="text" class="form-control col-sm-3" id="input-10" placeholder="Tahun">
-    
-                        <label>Penyelenggara</label>
-                        <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Penyelenggara Kegiatan">
+                        <div class="col-sm-4">
+                            <label>Nama Prestasi</label>
+                            <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Prestasi">
+
+                            <label>Tahun</label>
+                            <input type="text" class="form-control col-sm-3" id="input-10" placeholder="Tahun">
+
+                            <label>Penyelenggara</label>
+                            <input type="text" class="form-control col-sm-12" id="input-10" placeholder="Nama Penyelenggara Kegiatan">
+                        </div>
                     </div>
-                </div>
 
                     <div class="form-footer">
                         <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
@@ -544,6 +544,9 @@
     </div>
 </div>
 
+<!--Start Back To Top Button-->
+<a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+<!--End Back To Top Button-->
 
 @push('scripts')
 <!-- Bootstrap core JavaScript-->

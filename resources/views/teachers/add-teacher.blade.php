@@ -34,10 +34,10 @@
 
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Tambah Siswa</h4>
+        <h4 class="page-title">Tambah Guru</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('students') }}">Kelola Guru</a></li>
+            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tambah Guru</li>
         </ol>
     </div>
@@ -56,10 +56,10 @@
 
                     <div class="form-group row">
 
-                         <div class="col-sm-4">
+                        <div class="col-sm-4">
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
-                        </div> 
+                        </div>
                         <div class="col-sm-4">
                             <label>NIK</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor NIK">
@@ -67,8 +67,8 @@
                         <div class="col-sm-4">
                             <label>NUPTK</label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NUPTK">
-                        </div> 
-                       
+                        </div>
+
 
                     </div>
 
@@ -91,14 +91,14 @@
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama Negara">
                         </div>
 
-                                    
+
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tempat Lahir<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Tempat Lahir">
-                        </div> 
+                        </div>
 
                         <div class="col-sm-4">
                             <label>Tanggal Lahir</label>
@@ -117,7 +117,7 @@
                     </div>
 
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Agama</label>
                             <select class="form-control" id="basic-select">
@@ -142,13 +142,13 @@
                                 <label for="info2">Belum</label>
                             </div>
                         </div>
-                     </div>
+                    </div>
 
-                 <h4 class="form-header text-uppercase">
+                    <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
                         INFORMASI KONTAK
-                 </h4>
-       
+                    </h4>
+
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Provinsi</label>
@@ -177,7 +177,7 @@
                                 <option>Arjasari</option>
                             </select>
                         </div>
-                        
+
                     </div>
 
                     <div class="form-group row">
@@ -195,7 +195,7 @@
                             <label>RT</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
-                        
+
                     </div>
 
 
@@ -212,7 +212,7 @@
                         <div class="col-sm-4">
                             <label>Email</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Email">
-                        </div>          
+                        </div>
                     </div>
 
                     <h4 class="form-header text-uppercase">
@@ -224,11 +224,11 @@
                         <div class="col-sm-4">
                             <label>Nama Suami/Isteri</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama Suami/Isteri">
-                        </div> 
-                         <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-4">
                             <label>NIK</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan NIK">
-                        </div> 
+                        </div>
                         <div class="col-sm-4">
                             <label>NIP</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan NIP">
@@ -269,7 +269,7 @@
                             </select>
                         </div>
 
-                        
+
                         <div class="col-sm-4">
                             <label>Durasi Mengajar</label>
                             <select class="form-control" id="basic-select">
@@ -279,9 +279,9 @@
                                 <option>3 Tahun</option>
                                 <option>4 Tahun</option>
                                 <option>5 Tahun</option>
-                                
+
                             </select>
-                            
+
                         </div>
                     </div>
 
@@ -293,7 +293,7 @@
                                 <option>Guru Tetap</option>
                                 <option>Guru Tidak Tetap</option>
                             </select>
-                    </div>
+                        </div>
 
                         <div class="col-sm-4">
                             <label>Jabatan</label>
@@ -309,14 +309,14 @@
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                       INFORMASI MENGAJAR DI SMK MAHAPUTRA 
+                        INFORMASI MENGAJAR DI SMK MAHAPUTRA
                     </h4>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Mata Pelajaran</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Mata Pelajaran">
-                    </div>
+                        </div>
 
                         <div class="col-sm-4">
                             <label>Kelas</label>
@@ -329,7 +329,7 @@
                         </div>
                     </div>
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tahun Pelajaran</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Tahun Pelajaran">
@@ -343,10 +343,10 @@
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                       RIWAYAT MENGAJAR 
+                        RIWAYAT MENGAJAR
                     </h4>
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Mata Pelajaran</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Mata Pelajaran">
@@ -362,7 +362,7 @@
                     </div>
 
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Jumlah Jam/Minggu</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Mata Pelajaran">
@@ -382,12 +382,12 @@
                     </div>
 
 
-                     <h4 class="form-header text-uppercase">
+                    <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                       RIWAYAT PENDIDIKAN 
+                        RIWAYAT PENDIDIKAN
                     </h4>
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tahun SD/Sederajat</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Tahun SD/Sederajat">
@@ -400,17 +400,17 @@
                             <label>Tahun SMP/Sederajat</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Tahun SMP/Sederajat">
                         </div>
-                        
+
                     </div>
 
 
-                     <div class="form-group row">
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Nama SMP/Sederajat</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama SMP/Sederajat">
                         </div>
-                        
-                       <div class="col-sm-4">
+
+                        <div class="col-sm-4">
                             <label>Tahun SMA/Sederajat</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Tahun SMA/Sederajat">
                         </div>
@@ -418,12 +418,12 @@
                             <label>Nama SMA/Sederajat</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama SMA/Sederajat">
                         </div>
-                        
+
                     </div>
 
                     <div class="form-group row">
-                        
-                       <div class="col-sm-4">
+
+                        <div class="col-sm-4">
                             <label>Tahun Perguruan Tinggi</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Tahun Perguruan Tinggi">
                         </div>
@@ -439,8 +439,8 @@
                     </div>
 
                     <div class="form-group row">
-                        
-                       <div class="col-sm-4">
+
+                        <div class="col-sm-4">
                             <label>Nama Jurusan</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama Jurusan">
                         </div>
@@ -456,9 +456,9 @@
                     </div>
 
 
-                     <h4 class="form-header text-uppercase">
+                    <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                       SERTIFIKASI 
+                        SERTIFIKASI
                     </h4>
 
                     <div class="form-group row">
@@ -506,6 +506,9 @@
     </div>
 </div>
 
+<!--Start Back To Top Button-->
+<a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+<!--End Back To Top Button-->
 
 @push('scripts')
 <!-- Bootstrap core JavaScript-->
