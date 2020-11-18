@@ -43,6 +43,9 @@
       <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
       <div class="card-body">
         <div class="table-responsive">
+         <div class="container">
+          <a href="{{URL::to('/students/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="fa fa-plus fa-lg"></i> </a>
+          </div>
           @if(Auth()->user()->hasRole('teacher'))
           <table id="example" class="table table-bordered">
             <thead>

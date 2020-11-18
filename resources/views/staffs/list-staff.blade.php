@@ -32,7 +32,6 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
       <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
-
       <li class="breadcrumb-item active" aria-current="page">Daftar Petugas TU</li>
     </ol>
   </div>
@@ -44,6 +43,9 @@
       <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
       <div class="card-body">
         <div class="table-responsive">
+        <div class="container">
+          <a href="{{URL::to('/staffs/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="fa fa-plus fa-lg"></i> </a>
+          </div>
           <table id="example" class="table table-bordered">
             <thead>
               <tr>
