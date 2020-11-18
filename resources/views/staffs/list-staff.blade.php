@@ -57,8 +57,8 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>16.17.003</td>
-                <td>Enjang Suryana</td>
+                <td>16.17.006</td>
+                <td>Hamdan Firmansyah</td>
                 <td>SAPRAS</td>
                 <td>
                   <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
@@ -68,8 +68,8 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td>16.17.004</td>
-                <td>Hamdan Firmansyah</td>
+                <td>16.17.003</td>
+                <td>Enjang Suryana</td>
                 <td>SAPRAS</td>
                 <td>
                   <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>

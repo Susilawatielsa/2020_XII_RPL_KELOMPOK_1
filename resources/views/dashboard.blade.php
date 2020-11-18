@@ -87,44 +87,6 @@
 
 </div>
 <!--End Row-->
-<div class="row">
-  <div class="col-12 col-lg-8 col-xl-12">
-    <div class="card bg-pattern-primary">
-      <div class="card-header bg-transparent text-white border-light icon-user text-white">
-        DATA PROFIL
-      </div>
-      <div class="card-body text-white border-light">
-        <h3 class="text-white">SELAMAT DATANG</h3>
-        SMKS Mahaputra Cerdas Utama didirikan pada 22 Agustus tahun 2016,
-        adalah salah satu SMK swasta yang ada di Kabupaten Bandung yang memiliki program study Multimedia (MM) dan Rekyasa Perangkat Lunak (RPL),
-        menjadi sekolah pertama di Kabupaten Bandung dengan Konsep Green School
-        atau Sekolah Hijau yang ramah lingkungan SMKS Mahaputra Cerdas Utama berkomitmen untuk mencetak Sumber Daya Manusia (SDM) yang unggul di era 4.0.
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-lg-8 col-xl-12">
-    <div class="card bg-pattern-white">
-      <div class="card-header bg-transparent text-black border-light icon-user text-black">
-        VISI DAN MISI SMK MAHAPUTRA
-      </div>
-      <div class="card-body text-black border-light">
-        <h3>Visi</h3>
-        Menjadi penyelenggara pendidikan kejuruan yang melahirkan tenaga ahli, terampil, kreatif, inovatif, dan berpengetahuan yang ramah lingkungan di tahun 2025.
-        <h3>Misi</h3>
-        1) Menyelenggarakan pendidikan kejuruan
-        2) Melahirkan tenaga ahli tingkat menengah
-        3) Mewujudkan tenaga terampil, kreatif, inovatif, dan berpengalaman.
-        4) Menyediakan sarana prasarana pendukung kegiatan pembelajaran yang berwawasan lingkungan.
-        5) Mewujudkan lingkungan sekolah yang bersih, hijau, indah, dan sehat.
-        6) Menerapkan kesadaran warga sekolah berprilaku hidup yang berbudaya lingkungan.
-        7) Menjalin kemitraan dan kerjasama yang harmonis dengan masyarakat dan instansi instansi terkain.
-        encetak Sumber Daya Manusia (SDM) yang unggul di era 4.0.
-      </div>
-    </div>
-  </div>
-
-</div>
-<!--End Row-->
 
 <!--End Dashboard Content-->
 

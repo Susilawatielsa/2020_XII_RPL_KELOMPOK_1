@@ -55,22 +55,22 @@
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Enjang Suryana</td>
+                            <td>Hamdan Firmansyah</td>
 
 
                             <th>Email</th>
                             <td>:</td>
-                            <td>suhermana274@gmail.com</td>
+                            <td>hamdan@gmail.com</td>
 
                         </tr>
                         <tr>
                             <th>No Telepon</th>
                             <td>:</td>
-                            <td>082118342147</td>
+                            <td>089613272481</td>
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>321044070027770007</td>
+                            <td>3204370204900002</td>
 
                         </tr>
 
@@ -89,21 +89,21 @@
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
-                            <td>05 Mei</td>
+                            <td>02 April</td>
 
                             <th>Alamat</th>
                             <td>:</td>
-                            <td>Kp. Cicangkudu</td>
+                            <td>Kp. Citereup</td>
 
                         </tr>
                         <tr>
                             <th>RT</th>
                             <td>:</td>
-                            <td>01</td>
+                            <td>02</td>
 
                             <th>RW</th>
                             <td>:</td>
-                            <td>012</td>
+                            <td>07</td>
 
                         </tr>
 
@@ -120,7 +120,7 @@
                         <tr>
                             <th>Desa</th>
                             <td>:</td>
-                            <td>Sangkanhurip</td>
+                            <td>Sukamukti</td>
 
 
                             <th>Agama</th>
@@ -132,7 +132,7 @@
                         <tr>
                             <th>GTK</th>
                             <td>:</td>
-                            <td>908230989324234</td>
+                            <td>16.17.006</td>
 
 
                             <th>NUPTK</th>
@@ -152,18 +152,18 @@
                         <tr>
                             <th>Nama Suami/Istri</th>
                             <td>:</td>
-                            <td>Rendy Josua</td>
+                            <td>Hani Nuraeni</td>
 
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>32472374928374929</td>
+                            <td>3204370204900002</td>
 
                         </tr>
                         <tr>
                             <th>Pekerjaan</th>
                             <td>:</td>
-                            <td>Pengusaha</td>
+                            <td>Ibu Rumah Tangga</td>
 
                             <th>NIP</th>
                             <td>:</td>
@@ -202,7 +202,7 @@
                         <tr>
                             <th>Status Guru</th>
                             <td>:</td>
-                            <td>Guru Sementara</td>
+                            <td>Guru Tidak Tetap</td>
 
                             <th>Posisi</th>
                             <td>:</td>
@@ -211,9 +211,9 @@
                         </tr>
 
                         <tr>
-                            <th>Sudah Masuk?</th>
+                            <th>Sudah Belum Inpassing?</th>
                             <td>:</td>
-                            <td>Tidak</td>
+                            <td>Belum</td>
 
                             <th></th>
                             <td></td>

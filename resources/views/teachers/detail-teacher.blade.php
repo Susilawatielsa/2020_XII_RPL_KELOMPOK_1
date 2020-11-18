@@ -24,11 +24,11 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Detail Staff</h4>
+        <h4 class="page-title">Detail Guru</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staff</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Staff</li>
+            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Guru</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Guru</li>
         </ol>
     </div>
 </div>
@@ -55,29 +55,29 @@
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Agus Sofian</td>
+                            <td>Siti Robiah Adawiyah, S.Pd</td>
 
 
                             <th>Email</th>
                             <td>:</td>
-                            <td>suhermana274@gmail.com</td>
+                            <td>sitirobiah@gmail.com</td>
 
                         </tr>
                         <tr>
                             <th>No Telepon</th>
                             <td>:</td>
-                            <td>082118342147</td>
+                            <td>089527103940</td>
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>321044070027770007</td>
+                            <td>3204115208700009</td>
 
                         </tr>
 
                         <tr>
                             <th>Jenis Kelamin</th>
                             <td>:</td>
-                            <td>Laki Laki</td>
+                            <td>Perempuan</td>
 
 
                             <th>Tempat Lahir</th>
@@ -89,21 +89,21 @@
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
-                            <td>05 Mei</td>
+                            <td>12 Agustus</td>
 
                             <th>Alamat</th>
                             <td>:</td>
-                            <td>Kp. Cicangkudu</td>
+                            <td>Kp. Pasantren</td>
 
                         </tr>
                         <tr>
                             <th>RT</th>
                             <td>:</td>
-                            <td>01</td>
+                            <td>02</td>
 
                             <th>RW</th>
                             <td>:</td>
-                            <td>012</td>
+                            <td>06</td>
 
                         </tr>
 
@@ -120,7 +120,7 @@
                         <tr>
                             <th>Desa</th>
                             <td>:</td>
-                            <td>Sangkanhurip</td>
+                            <td>Sukamukti</td>
 
 
                             <th>Agama</th>
@@ -132,12 +132,12 @@
                         <tr>
                             <th>GTK</th>
                             <td>:</td>
-                            <td>908230989324234</td>
+                            <td>16.17.003</td>
 
 
                             <th>NUPTK</th>
                             <td>:</td>
-                            <td>423908429938490</td>
+                            <td>1144748649300010</td>
 
                         </tr>
 
@@ -152,18 +152,18 @@
                         <tr>
                             <th>Nama Suami/Istri</th>
                             <td>:</td>
-                            <td>Rendy Josua</td>
+                            <td>Agus Sofian</td>
 
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>32472374928374929</td>
+                            <td>3204115208700009</td>
 
                         </tr>
                         <tr>
                             <th>Pekerjaan</th>
                             <td>:</td>
-                            <td>Pengusaha</td>
+                            <td>Bendahara TU</td>
 
                             <th>NIP</th>
                             <td>:</td>
@@ -202,7 +202,7 @@
                         <tr>
                             <th>Status Guru</th>
                             <td>:</td>
-                            <td>Guru Sementara</td>
+                            <td>Guru Tidak Tetap</td>
 
                             <th>Posisi</th>
                             <td>:</td>
@@ -236,7 +236,7 @@
 
                                 <th>Kelas</th>
                                 <td>:</td>
-                                <td>XI MM dan X RPL</td>
+                                <td>XII MM dan XII RPL</td>
 
                             </tr>
                             <tr>
@@ -256,7 +256,7 @@
 
                                 <th>Tugas Tambahan</th>
                                 <td>:</td>
-                                <td>Pembina Osis</td>
+                                <td>Wali Kelas XII RPL 2</td>
 
                             </tr>
                         </tbody>
@@ -270,28 +270,28 @@
                             <tr>
                                 <th>Subjek</th>
                                 <td>:</td>
-                                <td>PJOK</td>
+                                <td>PAI</td>
 
 
                                 <th>Nama Sekolah</th>
                                 <td>:</td>
-                                <td>SMP KP Margahayu</td>
+                                <td>SMP Matlahul Anwar</td>
 
                             </tr>
                             <tr>
                                 <th>Kelas</th>
                                 <td>:</td>
-                                <td>VII</td>
+                                <td>VII,VIII,IX</td>
 
                                 <th>Jumlah Jam</th>
                                 <td>:</td>
-                                <td>8 JP</td>
+                                <td>24 JP</td>
 
                             </tr>
                             <tr>
                                 <th>Dari tahun</th>
                                 <td>:</td>
-                                <td>2011-2013</td>
+                                <td>1993-2011</td>
 
                                 <th>Status</th>
                                 <td>:</td>
@@ -308,54 +308,54 @@
                             <tr>
                                 <th>Sekolah Dasar</th>
                                 <td>:</td>
-                                <td>SDN PArung Serab IV </td>
+                                <td>SDN Angkasa 2 </td>
 
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2011</td>
+                                <td>1983</td>
 
                             </tr>
                             <tr>
                                 <th>Sekolah Menengah Pertama</th>
                                 <td>:</td>
-                                <td>SMPN 1 Soreang</td>
+                                <td>MTs I'Anatut Thalibin</td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2018</td>
+                                <td>1987</td>
 
                             </tr>
                             <tr>
                                 <th>Sekolah Menengah Akhir</th>
                                 <td>:</td>
-                                <td>SMAN 1 Katapang </td>
+                                <td>MA I'Anatut Thalibin </td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>1990</td>
 
                             </tr>
 
                             <tr>
                                 <th>Perguruan Tinggi</th>
                                 <td>:</td>
-                                <td>UPI Bandung</td>
+                                <td>UNNUS</td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>FPOK</td>
+                                <td>1996</td>
 
                             </tr>
 
                             <tr>
                                 <th>Jurusan</th>
                                 <td>:</td>
-                                <td>S1 Pendidikan Jasmani </td>
+                                <td>S1 Bahasa Arab </td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>1996</td>
 
                             </tr>
                             <tr>
@@ -365,7 +365,7 @@
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>1996</td>
 
                             </tr>
 

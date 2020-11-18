@@ -103,8 +103,8 @@
               <tr>
                 <td>1</td>
                 <td>1819.08.086</td>
-                <td>Zanisa</td>
-                <td>X RPL3</td>
+                <td>Ahmad Suherman</td>
+                <td>X RPL 1</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
