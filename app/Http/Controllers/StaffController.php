@@ -60,6 +60,14 @@ class StaffController extends Controller
         return view('staffs.detail-staff');
     }
 
+    public function show_prospective()
+    {
+       return view('staffs.detail-staff-prospective'); 
+    }
+    public function show_rejected()
+    {
+        return view('staffs.detail-staff-rejected');
+    }
     /**
      * Show the form for editing the specified resource.
      *

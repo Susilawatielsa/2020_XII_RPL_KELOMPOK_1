@@ -58,7 +58,14 @@ class TeacherController extends Controller
     {
         return view('teachers.detail-teacher');
     }
-
+    public function show_prospective()
+    {
+     return view('teachers.detail-teacher-prospective');   
+    }
+    public function show_rejected()
+    {
+        return view('teachers.detail-teacher-rejected');
+    }
     /**
      * Show the form for editing the specified resource.
      *

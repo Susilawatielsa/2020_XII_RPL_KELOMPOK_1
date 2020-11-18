@@ -60,31 +60,31 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>acong</td>
-                <td>SMA 23</td>
+                <td>Rahmat Hidayat</td>
+                <td>MAN 1 Bandung</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('teachers/rejected/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>acong</td>
-                <td>SMA 23</td>
+                <td>Susan</td>
+                <td>MAN 2 Bandung</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('teachers/rejected/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>acong</td>
-                <td>SMA 23</td>
+                <td>Nabila</td>
+                <td>MAN 2 Bandung</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('teachers/rejected/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>

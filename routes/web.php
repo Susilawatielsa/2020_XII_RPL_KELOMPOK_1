@@ -46,18 +46,25 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/staffs/rejected', 'StaffController@list_rejected');
     Route::get('staffs/create', 'StaffController@create');
     Route::get('/staff/1', 'StaffController@show');
+    Route::get('/staffs/prospective/1', 'StaffController@show_prospective');
+    Route::get('/staffs/rejected/1', 'StaffController@show_rejected');
+
 
     Route::get('/teachers', 'TeacherController@index');
     Route::get('/teachers/prospective', 'TeacherController@list_prospective');
     Route::get('/teachers/rejected', 'TeacherController@list_rejected');
     Route::get('/teachers/create', 'TeacherController@create');
     Route::get('/teacher/1', 'TeacherController@show');
+    Route::get('/teachers/prospective/1', 'TeacherController@show_prospective');
+    Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');
 
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
     Route::get('/students/rejected', 'StudentController@list_rejected');
     Route::get('/students/create', 'StudentController@create');
     Route::get('/student/1', 'StudentController@show');
+    Route::get('/students/prospective/1', 'StudentController@show_prospective');
+    Route::get('/students/rejected/1', 'StudentController@show_rejected');
 
 
     Route::get('/page/list', 'PageController@index');

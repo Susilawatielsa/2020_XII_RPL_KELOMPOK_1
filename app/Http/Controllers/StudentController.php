@@ -59,7 +59,14 @@ class StudentController extends Controller
     {
         return view('students.detail-student');
     }
-
+    public function show_prospective()
+    {
+       return view('students.detail-student-prospective');
+    }
+    public function show_rejected()
+    {
+        return view('students.detail-student-rejected');
+    }
     /**
      * Show the form for editing the specified resource.
      *

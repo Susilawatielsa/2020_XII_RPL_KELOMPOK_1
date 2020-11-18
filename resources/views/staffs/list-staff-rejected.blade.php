@@ -63,31 +63,31 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>acong</td>
+                <td>Rizki Saputra</td>
                 <td>SMA 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>acong</td>
+                <td>Misella</td>
                 <td>SMA 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>acong</td>
+                <td>Ridwan</td>
                 <td>SMA 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                  <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
