@@ -1,7 +1,7 @@
 <!--Start sidebar-wrapper-->
 <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
   <div class="brand-logo">
-    <img src="{{ asset('assets/images/mahaputra.JFIF') }}" style="width: 40px; height: 40px; border-radius: 50%;" class="logo-icon" alt="logo icon">
+    <img src="{{ asset('assets/images/mahaputra.jfif') }}" style="width: 40px; height: 40px; border-radius: 50%;" class="logo-icon" alt="logo icon">
     <h5 class="logo-text" style="cursor: default;">SmkMahaputra</h5>
   </div>
 

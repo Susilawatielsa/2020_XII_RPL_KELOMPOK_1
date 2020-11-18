@@ -30,7 +30,7 @@
             <div class="card-body">
                 <div class="card-content p-2">
                     <div class="text-center">
-                        <img src="{{ asset('assets/images/mahaputra.JFIF') }}">
+                        <img src="{{ asset('assets/images/mahaputra.jfif') }}">
                     </div>
                     <div class="card-title text-uppercase text-center py-3">Sign Up</div>
                     <form method="POST" action="{{ route('register') }}" id="submitForm">
