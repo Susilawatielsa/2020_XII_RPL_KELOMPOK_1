@@ -68,7 +68,7 @@
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{'/staffs/delete'}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
@@ -78,7 +78,7 @@
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{'/staffs/delete'}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
               <tr>
@@ -88,7 +88,7 @@
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{'/staffs/delete'}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
 

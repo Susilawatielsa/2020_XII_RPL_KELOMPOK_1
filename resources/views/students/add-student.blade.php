@@ -536,7 +536,7 @@
 
                     <div class="form-footer">
                         <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</button>
+                        <a href="/students" type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
                     </div>
                 </form>
             </div>

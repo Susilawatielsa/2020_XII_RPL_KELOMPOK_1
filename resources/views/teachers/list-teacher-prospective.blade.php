@@ -63,8 +63,8 @@
                 <td>S1 Universias Gajah Munding</td>
                 <td>
                   <a href="{{ url('teachers/prospective/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                  <a href="{{ url('/teachers')}}" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/rejected')}}" type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -73,8 +73,8 @@
                 <td>S1 Universias Gajah Munding</td>
                 <td>
                   <a href="{{ url('teachers/prospective/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button>
+                  <a href="{{ url('/teachers')}}" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/rejected')}}" type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -83,8 +83,8 @@
                 <td>S1 Universias Gajah Munding</td>
                 <td>
                   <a href="{{ url('teachers/prospective/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </button> </td>
+                  <a href="{{ url('/teachers')}}" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/rejected')}}" type="button" data-toggle="tooltip" data-placement="top" title="TOLAK" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="zmdi zmdi-close fa-lg"></i> </a> </td>
               </tr>
 
             </tbody>

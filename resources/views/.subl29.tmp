@@ -138,11 +138,11 @@
       <div class="card-body">
         <div class="media">
           <div class="media-body text-left">
-            <h4 class="text-white">15 Staf</h4>
-            <span class="text-white">TOTAL STAF</span>
+            <h4 class="text-white">15 Staff</h4>
+            <span class="text-white">TOTAL STAFF</span>
           </div>
           <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
-            <a href""><i class="icon-user text-white"></i></a>
+            <a href"><i class="icon-user text-white"></i></a>
           </div>
         </div>
       </div>
@@ -201,8 +201,8 @@
       <div class="card-body">
         <div class="media">
           <div class="media-body text-left">
-            <h4 class="text-white">15 Staf</h4>
-            <span class="text-white">TOTAL STAF</span>
+            <h4 class="text-white">15 Staff</h4>
+            <span class="text-white">TOTAL STAFF</span>
           </div>
           <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
             <a href="{{URL::to('/staffs')}}"><i class="icon-user text-white"></i></a>

@@ -15,6 +15,12 @@
       </a>
     </li>
 
+    <li>
+      <a href="{{URL::to('/staffs')}}" class="waves-effect">
+        <i class="icon-list icons"></i> <span>Daftar Staf</span>
+      </a>
+    </li>
+
 
     <li>
       <a href="javaScript:void();" class="waves-effect">

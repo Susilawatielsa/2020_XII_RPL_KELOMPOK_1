@@ -98,6 +98,6 @@ class StudentController extends Controller
      */
     public function destroy(Students $students)
     {
-        //
+        return 'data terhapus';
     }
 }

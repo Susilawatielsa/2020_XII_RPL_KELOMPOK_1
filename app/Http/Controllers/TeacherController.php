@@ -97,6 +97,6 @@ class TeacherController extends Controller
      */
     public function destroy(Teachers $teachers)
     {
-        //
+        return 'data terhapus';
     }
 }

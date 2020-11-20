@@ -43,11 +43,9 @@
       <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
       <div class="card-body">
         <div class="table-responsive">
-         <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-          <a href="{{URL::to('/students/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH SISWA" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
-          </div>
+         
           @if(Auth()->user()->hasRole('teacher'))
-          <table id="example" class="table table-bordered">
+          <table id="" class="table table-bordered">
             <thead>
               <tr>
                 <th>NO</th>
@@ -110,8 +108,8 @@
                 <td>X RPL 1</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/students/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -121,8 +119,8 @@
                 <td>X RPL1</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/students/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -132,8 +130,8 @@
                 <td>X RPL2</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
+                  <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/students/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
 

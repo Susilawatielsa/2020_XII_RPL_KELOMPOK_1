@@ -99,6 +99,6 @@ class StaffController extends Controller
      */
     public function destroy(Staffs $staffs)
     {
-        //
+        return 'data terhapus';
     }
 }
