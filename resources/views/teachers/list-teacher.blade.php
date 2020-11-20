@@ -26,7 +26,7 @@
 @endpush
 
 @section('content')
-
+@if(Auth()->user()->hasRole('student'))
 <div class="row pt-2 pb-2">
   <div class="col-sm-9">
     <h4 class="page-title">Daftar Guru</h4>
@@ -44,11 +44,8 @@
       <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
       <div class="card-body">
         <div class="table-responsive">
-        <div class="container">
-          <a href="{{URL::to('/teachers/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="fa fa-plus fa-lg"></i> </a>
-          </div>
-          @if(Auth()->user()->hasRole('student'))
-          <table id="example" class="table table-bordered">
+          
+          <table id="" class="table table-bordered">
             <thead>
               <tr>
                 <th>NO</th>
@@ -90,8 +87,35 @@
             </tbody>
 
           </table>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           @elseif(Auth()->user()->hasRole('teacher'))
+          <div class="row pt-2 pb-2">
+            <div class="col-sm-9">
+              <h4 class="page-title">Daftar Guru</h4>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
+                <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Daftar Guru</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                  <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
+                    <a href="{{URL::to('/teachers/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH GURU" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+                    </div>
           <table id="example" class="table table-bordered">
             <thead>
               <tr>
@@ -135,7 +159,34 @@
 
           </table>
 
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           @else
+          <div class="row pt-2 pb-2">
+            <div class="col-sm-9">
+              <h4 class="page-title">Daftar Guru</h4>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
+                <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Daftar Guru</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                  <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
+                    <a href="{{URL::to('/teachers/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH GURU" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+                    </div>
           <table id="example" class="table table-bordered">
             <thead>
               <tr>
@@ -154,7 +205,7 @@
                 <td>PAB</td>
                 <td>
                   <a href="{{ url('teacher/1') }}" data-toggle="tooltip" data-placement="top" title="DETAIL" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
@@ -165,7 +216,7 @@
                 <td>SI</td>
                 <td>
                   <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
@@ -176,7 +227,7 @@
                 <td>Inggris</td>
                 <td>
                   <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="#" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
                   <button type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </button>
                 </td>
               </tr>
@@ -184,7 +235,7 @@
             </tbody>
 
           </table>
-          @endif
+          
 
         </div>
         </div>
@@ -192,6 +243,7 @@
     </div>
   </div>
 </div><!-- End Row-->
+@endif
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>

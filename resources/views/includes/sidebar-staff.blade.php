@@ -18,7 +18,7 @@
 
     <li>
       <a href="javaScript:void();" class="waves-effect">
-        <i class="icon-home"></i> <span>Kelola Guru</span> <i class="fa fa-angle-left pull-right"></i>
+        <i class=""></i> <span>Kelola Guru</span> <i class="fa fa-angle-left pull-right"></i>
       </a>
       <ul class="sidebar-submenu">
         <li><a href="{{URL::to('/teachers')}}"><i class="fa fa-circle-o"></i> Daftar Guru</a></li>
@@ -31,7 +31,7 @@
 
     <li>
       <a href="javaScript:void();" class="waves-effect">
-        <i class="icon-home"></i> <span>Kelola Siswa </span> <i class="fa fa-angle-left pull-right"></i>
+        <i class=""></i> <span>Kelola Siswa </span> <i class="fa fa-angle-left pull-right"></i>
       </a>
       <ul class="sidebar-submenu">
         <li><a href="{{URL::to('/students')}}"><i class="fa fa-circle-o"></i> Daftar Siswa</a></li>

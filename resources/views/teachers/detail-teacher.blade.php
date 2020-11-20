@@ -22,6 +22,199 @@
 @endpush
 
 @section('content')
+@if(Auth()->user()->hasRole('student'))
+<div class="row pt-2 pb-2">
+    <div class="col-sm-9">
+        <h4 class="page-title">Detail Guru</h4>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Guru</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Guru</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="col-lg-12">
+    <div class="profile-card-3 ">
+        <div class="text-center">
+            <img src="{{ url('assets/images/AULIA_RAHMA_NUR_SALAM.jpg')}}" alt="user avatar" class="card-img-top" style="width: 200px;
+                        height: auto;
+                        background: #dac52c;
+                        border-radius: 100%;">
+        </div>
+        <hr>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-success">Data Pribadi</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td>Siti Robiah Adawiyah, S.Pd</td>
+                        </tr>
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td>:</td>
+                            <td>Perempuan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal Lahir</th>
+                            <td>:</td>
+                            <td>12 Agustus 1970</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp.Pesantren</td>
+                        </tr>
+
+                        <tr>
+                            <th>RT</th>
+                            <td>:</td>
+                            <td>01</td>
+                        </tr>
+
+                        <tr>
+                            <th>RW</th>
+                            <td>:</td>
+                            <td>06</td>
+                        </tr>
+
+                        <tr>
+                            <th>Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+                        </tr>
+
+                        <tr>
+                            <th>Kecamatan</th>
+                            <td>:</td>
+                            <td>Katapang</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>:</td>
+                            <td>Aktif</td>
+                        </tr>
+                        
+
+
+                    </tbody>
+                </table><br>
+             </div>
+            </div>
+        </div>
+    </div>
+
+@elseif(Auth()->user()->hasRole('teacher'))
+<div class="row pt-2 pb-2">
+    <div class="col-sm-9">
+        <h4 class="page-title">Detail Guru</h4>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Guru</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Guru</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="col-lg-12">
+    <div class="profile-card-3 ">
+        <div class="text-center">
+            <img src="{{ url('assets/images/avatars/avatar-3.png')}}" alt="user avatar" class="card-img-top" style="width: 200px;
+                        height: auto;
+                        background: #dac52c;
+                        border-radius: 100%;">
+        </div>
+        <hr>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-success">Data Pribadi</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td>Siti Robiah Adawiyah, S.Pd</td>
+                        </tr>
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td>:</td>
+                            <td>Perempuan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal Lahir</th>
+                            <td>:</td>
+                            <td>12 Agustus 1970</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp.Pesantren</td>
+                        </tr>
+
+                        <tr>
+                            <th>RT</th>
+                            <td>:</td>
+                            <td>01</td>
+                        </tr>
+
+                        <tr>
+                            <th>RW</th>
+                            <td>:</td>
+                            <td>06</td>
+                        </tr>
+
+                        <tr>
+                            <th>Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+                        </tr>
+
+                        <tr>
+                            <th>Kecamatan</th>
+                            <td>:</td>
+                            <td>Katapang</td>
+                        </tr>
+
+                        <tr>
+                            <th>Detail</th>
+                            <td>:</td>
+                            <td>Aktif</td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table><br>
+             </div>
+            </div>
+        </div>
+    </div>
+@else
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
         <h4 class="page-title">Detail Guru</h4>
@@ -413,6 +606,8 @@
             </div>
         </div>
     </div>
+
+@endif
 
 
 

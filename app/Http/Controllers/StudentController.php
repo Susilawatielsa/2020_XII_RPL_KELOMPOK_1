@@ -75,7 +75,7 @@ class StudentController extends Controller
      */
     public function edit(Students $students)
     {
-        //
+        return view('students.edit-student');
     }
 
     /**

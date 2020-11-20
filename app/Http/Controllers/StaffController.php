@@ -76,7 +76,7 @@ class StaffController extends Controller
      */
     public function edit(Staffs $staffs)
     {
-        //
+        return view('staffs.edit-staff');
     }
 
     /**

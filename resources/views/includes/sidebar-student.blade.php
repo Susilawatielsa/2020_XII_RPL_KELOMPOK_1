@@ -19,7 +19,7 @@
 
     <li>
       <a href="{{URL::to('/teachers')}}" class="waves-effect">
-        <i class="icon-home"></i> <span>Daftar Guru</span>
+        <i class="icon-list icons"></i> <span>Daftar Guru</span>
       </a>
     </li>
 

@@ -48,6 +48,7 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/staff/1', 'StaffController@show');
     Route::get('/staffs/prospective/1', 'StaffController@show_prospective');
     Route::get('/staffs/rejected/1', 'StaffController@show_rejected');
+    Route::get('/staffs/edit/1', 'StaffController@edit');
 
 
     Route::get('/teachers', 'TeacherController@index');
@@ -57,6 +58,8 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/teacher/1', 'TeacherController@show');
     Route::get('/teachers/prospective/1', 'TeacherController@show_prospective');
     Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');
+    Route::get('/teachers/edit/1', 'TeacherController@edit');
+
 
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
@@ -65,6 +68,7 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/student/1', 'StudentController@show');
     Route::get('/students/prospective/1', 'StudentController@show_prospective');
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
+    Route::get('/students/edit/1', 'StudentController@edit');
 
 
     Route::get('/page/list', 'PageController@index');
