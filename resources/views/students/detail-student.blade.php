@@ -22,7 +22,6 @@
 @endpush
 
 @section('content')
-
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
         <h4 class="page-title">Detail Siswa</h4>
@@ -46,10 +45,67 @@
         <hr>
     </div>
 </div>
+
+@if(Auth()->user()->hasRole('teacher'))
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="text-success">Data Pribadi</h4>
+            <h4 class="text-primary">Data Pribadi</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td>Ahmad Suherman</td>
+                        </tr>
+                        <tr>
+                            <th>Tahun Masuk</th>
+                            <td>:</td>
+                            <td>2018</td>
+
+                        </tr>
+                         <tr>
+                            <th>Agama</th>
+                            <td>:</td>
+                            <td>islam</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+
+
+                        </tr>
+                        <tr>
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>05 Mei</td>
+
+                            
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp. Cicangkudu</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@else
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-primary">Data Pribadi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -152,7 +208,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Data Ayah</h4>
+            <h4 class="text-primary">Data Ayah</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -206,7 +262,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Data Ibu</h4>
+            <h4 class="text-primary">Data Ibu</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -255,7 +311,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Data Wali</h4>
+            <h4 class="text-primary">Data Wali</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -302,7 +358,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Kontak Rumah</h4>
+            <h4 class="text-primary">Kontak Rumah</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -328,7 +384,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Data Periodik</h4>
+            <h4 class="text-primary">Data Periodik</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -368,7 +424,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Prestasi</h4>
+            <h4 class="text-primary">Prestasi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -415,6 +471,8 @@
         </div>
     </div>
 </div>
+
+@endif
 
 
 

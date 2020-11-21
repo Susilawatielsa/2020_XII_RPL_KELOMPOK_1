@@ -26,7 +26,6 @@
 @endpush
 
 @section('content')
-@if(Auth()->user()->hasRole('student'))
 <div class="row pt-2 pb-2">
   <div class="col-sm-9">
     <h4 class="page-title">Daftar Guru</h4>
@@ -38,6 +37,7 @@
   </div>
 </div>
 
+@if(Auth()->user()->hasRole('student'))
 <div class="row">
   <div class="col-lg-12">
     <div class="card">
@@ -96,16 +96,6 @@
 </div>
 
           @elseif(Auth()->user()->hasRole('teacher'))
-          <div class="row pt-2 pb-2">
-            <div class="col-sm-9">
-              <h4 class="page-title">Daftar Guru</h4>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-                <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Daftar Guru</li>
-              </ol>
-            </div>
-          </div>
 
           <div class="row">
             <div class="col-lg-12">
@@ -165,17 +155,6 @@
 </div>
 
           @else
-          <div class="row pt-2 pb-2">
-            <div class="col-sm-9">
-              <h4 class="page-title">Daftar Guru</h4>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-                <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Daftar Guru</li>
-              </ol>
-            </div>
-          </div>
-
           <div class="row">
             <div class="col-lg-12">
               <div class="card">

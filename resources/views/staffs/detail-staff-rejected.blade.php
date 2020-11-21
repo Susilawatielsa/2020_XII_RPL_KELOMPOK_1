@@ -24,11 +24,11 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Detail Staff</h4>
+        <h4 class="page-title">Detail Staf Ditolak</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staf</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Staf</li>
+            <li class="breadcrumb-item"><a href="{{ url('/staffs/rejected')}}">Daftar Staf Ditolak</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Staf Ditolak</li>
         </ol>
     </div>
 </div>

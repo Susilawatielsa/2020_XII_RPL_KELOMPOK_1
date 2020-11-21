@@ -24,11 +24,11 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Detail Calon Petugas TU</h4>
+        <h4 class="page-title">Detail Guru Ditolak</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Petugas TU</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Petugas TU</li>
+            <li class="breadcrumb-item"><a href="{{ url('/teachers/rejected')}}">Daftar Guru Ditolak</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Guru Ditolak</li>
         </ol>
     </div>
 </div>
@@ -48,7 +48,7 @@
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="text-success">Data Pribadi</h4>
+            <h4 class="text-primary">Data Pribadi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -145,7 +145,7 @@
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-success">Data Suami/Istri</h4>
+            <h4 class="text-primary">Data Suami/Istri</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -174,7 +174,7 @@
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-success">Status Pekerjaan</h4>
+            <h4 class="text-primary">Status Pekerjaan</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -224,7 +224,7 @@
                     </tbody>
                 </table><br>
 
-                <h4 class="text-success">Mengajar Di SMK</h4>
+                <h4 class="text-primary">Mengajar Di SMK</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
@@ -263,7 +263,7 @@
                     </table><br>
                 </div>
 
-                <h4 class="text-success">Sejarah Mengajar</h4>
+                <h4 class="text-primary">Sejarah Mengajar</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
@@ -301,7 +301,7 @@
                         </tbody>
                     </table><br>
                 </div>
-                <h4 class="text-success">Latar Belakang Pendidikan</h4>
+                <h4 class="text-primary">Latar Belakang Pendidikan</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
@@ -372,7 +372,7 @@
                         </tbody>
                     </table><br>
                 </div>
-                <h4 class="text-success">Sertifikasi</h4>
+                <h4 class="text-primary">Sertifikasi</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>

@@ -26,13 +26,13 @@
 @endpush
 
 @section('content')
+@if(Auth()->user()->hasRole('staff'))
 <div class="row pt-2 pb-2">
   <div class="col-sm-9">
-    <h4 class="page-title">Daftar Petugas TU</h4>
+    <h4 class="page-title">Daftar Staf</h4>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Daftar Petugas TU</li>
+      <li class="breadcrumb-item active" aria-current="page">Daftar Staf</li>
     </ol>
   </div>
 </div>
@@ -44,7 +44,7 @@
       <div class="card-body">
         <div class="table-responsive" >
         
-          @if(Auth()->user()->hasRole('staff'))
+          
           <table id="" class="table table-bordered" >
             <thead>
               <tr>
@@ -62,7 +62,7 @@
                 <td>Hamdan Firmansyah</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button"  class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
               <tr>
@@ -71,7 +71,7 @@
                 <td>Enjang Suryana</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
               <tr>
@@ -80,89 +80,97 @@
                 <td>Rifka Nur</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button"  class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
 
             </tbody>
 
           </table>
-
-          @else
-          <div class="row pt-2 pb-2">
-  <div class="col-sm-9">
-    <h4 class="page-title">Daftar Petugas TU</h4>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Petugas TU</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Daftar Petugas TU</li>
-    </ol>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-lg-12">
-    <div class="card">
-      <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
-      <div class="card-body">
-        <div class="table-responsive" >
-        <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-          <a href="{{URL::to('/staffs/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH PETUGAS" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
           </div>
-          <table id="example" class="table table-bordered" >
-            <thead>
-              <tr>
-                <th>NO</th>
-                <th>NO GTK</th>
-                <th>NAMA</th>
-                <th>JABATAN</th>
-                <th>Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>16.17.006</td>
-                <td>Hamdan Firmansyah</td>
-                <td>SAPRAS</td>
-                <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>16.17.003</td>
-                <td>Enjang Suryana</td>
-                <td>SAPRAS</td>
-                <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>16.17.005</td>
-                <td>Rifka Nur</td>
-                <td>SAPRAS</td>
-                <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-          @endif
         </div>
       </div>
     </div>
-  </div>
-</div><!-- End Row-->
+  </div><!-- End Row-->
+
+
+  @else
+
+     <div class="row pt-2 pb-2">
+      <div class="col-sm-9">
+        <h4 class="page-title">Daftar Staf</h4>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
+          <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Staf</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Daftar Staf</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
+          <div class="card-body">
+            <div class="table-responsive" >
+            <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
+              <a href="{{URL::to('/staffs/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH PETUGAS" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+              </div>
+              <table id="example" class="table table-bordered" >
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>NO GTK</th>
+                    <th>NAMA</th>
+                    <th>JABATAN</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>16.17.006</td>
+                    <td>Hamdan Firmansyah</td>
+                    <td>SAPRAS</td>
+                    <td>
+                      <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                      <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                      <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>16.17.003</td>
+                    <td>Enjang Suryana</td>
+                    <td>SAPRAS</td>
+                    <td>
+                      <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                      <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                      <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>16.17.005</td>
+                    <td>Rifka Nur</td>
+                    <td>SAPRAS</td>
+                    <td>
+                      <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
+                      <a href="{{ url('staffs/edit/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
+                      <a href="{{ url('staffs/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                    </td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Row-->
+
+          @endif
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>

@@ -32,7 +32,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
       <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Siswa</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Daftar Calon Siswa Ditolak</li>
+      <li class="breadcrumb-item active" aria-current="page">Daftar Siswa Ditolak</li>
     </ol>
   </div>
 </div>

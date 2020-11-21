@@ -37,8 +37,8 @@
         <h4 class="page-title">Tambah Siswa</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Siswa</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tambah SIswa</li>
+            <li class="breadcrumb-item"><a href="{{ url('/students')}}">Daftar Siswa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Siswa</li>
         </ol>
     </div>
 </div>

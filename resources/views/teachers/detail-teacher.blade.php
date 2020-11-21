@@ -24,15 +24,14 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Detail Staff</h4>
+        <h4 class="page-title">Detail Guru</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staf</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Staf</li>
+            <li class="breadcrumb-item"><a href="{{ url('teachers')}}">Daftar Guru</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Guru</li>
         </ol>
     </div>
 </div>
-
 
 <div class="col-lg-12">
     <div class="profile-card-3 ">
@@ -46,6 +45,113 @@
     </div>
 </div>
 
+
+@if(Auth()->user()->hasRole('student'))
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-primary">PROFIL</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td>Siti Robiah Adawiyah S.Pd</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>12/10/1970</td>
+                        </tr>
+
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td>:</td>
+                            <td>Perempuan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td>sitirobiah1970@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <th>Status</th>
+                            <td>:</td>
+                            <td>Aktif</td>    
+                        </tr>
+                        
+                    </tbody>
+                </table><br>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+@elseif(Auth()->user()->hasRole('teacher'))
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-primary">PROFIL</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td>Siti Robiah Adawiyah S.Pd</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>12/10/1970</td>
+                        </tr>
+
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td>:</td>
+                            <td>Perempuan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td>sitirobiah1970@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <th>Status</th>
+                            <td>:</td>
+                            <td>Aktif</td>    
+                        </tr>
+                        
+                    </tbody>
+                </table><br>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+@else
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
@@ -402,6 +508,8 @@
         </div>
     </div>
 
+
+@endif
 
 
     @endsection

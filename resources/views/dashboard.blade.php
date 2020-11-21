@@ -25,7 +25,6 @@
 
 @section('content')
 <!--Start Dashboard Content-->
- @if(Auth()->user()->hasRole('student'))
 <div class="row pt-2 pb-2">
   <div class="col-sm-9">
     <h4 class="page-title">DASHBOARD</h4>
@@ -35,9 +34,10 @@
     </ol>
   </div>
   <div class="col-sm-3">
-
   </div>
 </div>
+
+ @if(Auth()->user()->hasRole('student'))
 <div class="row mt-4">
   <div class="col-12 col-lg-6 col-xl-4">
     <div class="card bg-pattern-primary">
@@ -89,19 +89,6 @@
 
 
  @elseif(Auth()->user()->hasRole('teacher'))
-
-<div class="row pt-2 pb-2">
-  <div class="col-sm-9">
-    <h4 class="page-title">DASHBOARD</h4>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="javaScript:void();">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-    </ol>
-  </div>
-  <div class="col-sm-3">
-
-  </div>
-</div>
 <div class="row mt-4">
   <div class="col-12 col-lg-6 col-xl-4">
     <div class="card bg-pattern-primary">
@@ -112,7 +99,7 @@
             <span class="text-white">TOTAL SISWA</span>
           </div>
           <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
-            <a href=""><i class="icon-user text-white"></i></a>
+            <i class="icon-user text-white"></i>
           </div>
         </div>
       </div>
@@ -127,7 +114,7 @@
             <span class="text-white">TOTAL GURU</span>
           </div>
           <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
-            <a href=""><i class="icon-user text-white"></i></a>
+            <i class="icon-user text-white"></i>
           </div>
         </div>
       </div>
@@ -142,7 +129,7 @@
             <span class="text-white">TOTAL STAF</span>
           </div>
           <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
-            <a href""><i class="icon-user text-white"></i></a>
+            <i class="icon-user text-white"></i>
           </div>
         </div>
       </div>
@@ -153,18 +140,6 @@
 
 
 @else
-<div class="row pt-2 pb-2">
-  <div class="col-sm-9">
-    <h4 class="page-title">DASHBOARD</h4>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="javaScript:void();">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-    </ol>
-  </div>
-  <div class="col-sm-3">
-
-  </div>
-</div>
 <div class="row mt-4">
   <div class="col-12 col-lg-6 col-xl-4">
     <div class="card bg-pattern-primary">

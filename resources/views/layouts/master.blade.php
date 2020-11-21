@@ -24,7 +24,16 @@
       @include ('includes.sidebar-student')
     @endif
 
-    @include ('includes.header')
+
+    @if(Auth()->user()->hasRole('admin'))
+      @include ('includes.header-admin')
+    @elseif(Auth()->user()->hasRole('staff'))
+      @include ('includes.header-staff')
+    @elseif(Auth()->user()->hasRole('teacher'))
+      @include ('includes.header-teacher')
+    @else
+      @include ('includes.header-student')
+    @endif
 
 
       <div class="clearfix"></div>

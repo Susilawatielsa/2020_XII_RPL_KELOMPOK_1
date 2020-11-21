@@ -37,7 +37,7 @@
         <h4 class="page-title">Edit Guru</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Guru</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('teachers')}}">Daftar Guru</a></li>
             <li class="breadcrumb-item active" aria-current="page">Edit Guru</li>
         </ol>
     </div>
@@ -469,7 +469,7 @@
 
                     <div class="form-footer">
                         <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <a href="/staffs" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
+                        <a href="/teacher/1" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
                     </div>
                 </form>
             </div>
