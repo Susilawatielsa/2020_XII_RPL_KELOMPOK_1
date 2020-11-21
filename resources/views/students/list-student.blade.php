@@ -103,9 +103,9 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>1819.08.086</td>
-                <td>Ahmad Suh erman</td>
-                <td>X RPL 1</td>
+                <td>1819.08.001</td>
+                <td>Ahmad Suherman</td>
+                <td>XII RPL 1</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -114,9 +114,9 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td>1819.08.086</td>
-                <td>Nanda</td>
-                <td>X RPL1</td>
+                <td>1819.08.002</td>
+                <td>Ahmad Saepudin</td>
+                <td>XII RPL 1</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -125,9 +125,9 @@
               </tr>
               <tr>
                 <td>3</td>
-                <td>1819.08.086</td>
-                <td>Zulfa</td>
-                <td>X RPL2</td>
+                <td>1819.08.003</td>
+                <td>Aidha Nurhaliza</td>
+                <td>XII MULTIMEDIA</td>
                 <td>
                   <a href="{{ url('student/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/students/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>

@@ -62,7 +62,7 @@
                 <td>Hamdan Firmansyah</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
               <tr>
@@ -71,7 +71,7 @@
                 <td>Enjang Suryana</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
               <tr>
@@ -80,7 +80,7 @@
                 <td>Rifka Nur</td>
                 <td>SAPRAS</td>
                 <td>
-                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
+                  <a href="{{ url('staff/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-info waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i>Detail </a>
                   </td>
               </tr>
 
@@ -169,7 +169,7 @@
 <!--End Back To Top Button-->
 
 @push('scripts')
-<<<<<<< HEAD <!-- Bootstrap core JavaScript-->
+ <!-- Bootstrap core JavaScript-->
   <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
   <script src="{{ asset('assets/js/popper.min.js') }}"></script>
   <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
