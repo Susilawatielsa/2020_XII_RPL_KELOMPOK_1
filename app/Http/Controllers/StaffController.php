@@ -74,11 +74,10 @@ class StaffController extends Controller
      * @param  \App\Staffs  $staffs
      * @return \Illuminate\Http\Response
      */
-    public function edit(Staffs $staffs)
+    public function edit()
     {
         return view('staffs.edit-staff');
     }
-
     /**
      * Update the specified resource in storage.
      *
