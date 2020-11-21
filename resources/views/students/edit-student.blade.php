@@ -62,11 +62,11 @@
                         </div>
                         <div class="col-sm-4">
                             <label>NIK / No. KITAS (untuk WNA)</label>
-                            <input type="text" class="form-control" id="input-10" value="">
+                            <input type="text" class="form-control" id="input-10" value="321044070027770007">
                         </div>
                         <div class="col-sm-4">
                             <label>No Registrasi Akta Lahir</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="12345678">
                         </div>
 
 
@@ -193,7 +193,7 @@
 
                         <div class="col-sm-4">
                             <label>Nomor Identitas (NIK)</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="32104407002777">
                         </div>
 
                         <div class="col-sm-2">
@@ -262,7 +262,7 @@
 
                         <div class="col-sm-6">
                             <label>Nama Ibu Kandung</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="Wiwi D">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="Wiwin">
                         </div>
 
                         <div class="col-sm-4">
@@ -336,18 +336,18 @@
 
                         <div class="col-sm-6">
                             <label>Nama Lengkap</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="-">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Nomor Identitas (NIK)</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NIK">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="-">
                         </div>
 
                         <div class="col-sm-2">
                             <label>Tahun Lahir</label>
                             <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
+                                <option disabled="" selected="">-</option>
                                 <option>2001</option>
                                 <option>2000</option>
                             </select>
@@ -358,7 +358,7 @@
                         <div class="col-sm-3">
                             <label>Pendidikan Terakhir</label>
                             <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
+                                <option disabled="" selected="">-</option>
                                 <option>SD - Sederajat</option>
                                 <option>SMP - Sederajat</option>
                                 <option>SMA - Sederajat</option>
@@ -370,7 +370,7 @@
                             <label>Pekerjaan</label>
 
                             <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
+                                <option disabled="" selected="">-</option>
                                 <option>Buruh</option>
                                 <option>Wirausaha</option>
                             </select>
@@ -379,7 +379,7 @@
                         <div class="col-sm-3">
                             <label>Pendapatan Perbulan</label>
                             <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
+                                <option disabled="" selected="">-</option>
                                 <option>
                                     < Rp. 500.000</option> <option> > Rp. 500.000
                                 </option>
@@ -410,7 +410,7 @@
 
                         <div class="col-sm-4">
                             <label>Telepon Rumah</label>
-                            <input type="text" class="form-control" id="input-10" value="12345678">
+                            <input type="text" class="form-control" id="input-10" value="022121213312">
                         </div>
 
                         <div class="col-sm-4">
@@ -420,7 +420,7 @@
 
                         <div class="col-sm-4">
                             <label>Email Rumah</label>
-                            <input type="text" class="form-control" id="input-10" value="rumahahmad@gmail.com">
+                            <input type="text" class="form-control" id="input-10" value="damili@gmail.com">
                         </div>
 
                     </div>
@@ -444,7 +444,7 @@
 
                         <div class="col-sm-4">
                             <label>Jarak Ke Sekolah</label>
-                            <input type="text" class="form-control" id="input-10" value="1 km">
+                            <input type="text" class="form-control" id="input-10" value=" 0,5 km ">
                         </div>
 
                     </div>

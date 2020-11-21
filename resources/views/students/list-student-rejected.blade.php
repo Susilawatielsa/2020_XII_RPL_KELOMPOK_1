@@ -60,7 +60,7 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>acong</td>
+                <td>Rara Lestari</td>
                 <td>SMP 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
@@ -70,7 +70,7 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td>acong</td>
+                <td>Andi Firmanyah</td>
                 <td>SMP 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
@@ -80,7 +80,7 @@
               </tr>
               <tr>
                 <td>3</td>
-                <td>acong</td>
+                <td>Rindi Amelia</td>
                 <td>SMP 23</td>
                 <td>tidak memenuhi syarat</td>
                 <td>

@@ -59,19 +59,29 @@
                             <td>Ahmad Suherman</td>
 
 
-                            <th>Email</th>
+                            <th>NIK / No. KITAS</th>
                             <td>:</td>
-                            <td>suhermana274@gmail.com</td>
+                            <td>3210440700277</td>
 
                         </tr>
                         <tr>
-                            <th>No Telepon</th>
+                            <th>No Registrasi Akta Lahir</th>
                             <td>:</td>
-                            <td>082118342147</td>
+                            <td>12345678</td>
 
-                            <th>NIK</th>
+                            <th>NISN</th>
                             <td>:</td>
-                            <td>321044070027770007</td>
+                            <td>0038614257</td>
+
+                        </tr>
+                         <tr>
+                            <th>Kewarganegaraan</th>
+                            <td>:</td>
+                            <td>INDONESIA</td>
+
+                            <th>Agama</th>
+                            <td>:</td>
+                            <td>islam</td>
 
                         </tr>
 
@@ -124,18 +134,6 @@
                             <td>Sangkanhurip</td>
 
 
-                            <th>Agama</th>
-                            <td>:</td>
-                            <td>Islam</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>NISN</th>
-                            <td>:</td>
-                            <td>11203321</td>
-
-
                             <th>Tinggal Bersama</th>
                             <td>:</td>
                             <td>Orang Tua</td>
@@ -146,13 +144,6 @@
                             <th>Anak Ke</th>
                             <td>:</td>
                             <td>2</td>
-
-
-                            <th>Menerima KIP</th>
-                            <td>:</td>
-                            <td>Tidak</td>
-
-
 
                         </tr>
 
@@ -168,7 +159,7 @@
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Ahmad Suherman</td>
+                            <td>Maman</td>
 
 
                             <th>NIK</th>
@@ -249,7 +240,7 @@
 
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
-                            <td>1.000.000</td>
+                            <td>-</td>
 
 
                         </tr>
@@ -258,11 +249,7 @@
                             <td>:</td>
                             <td>Tidak</td>
 
-                            <th></th>
-                            <td></td>
-                            <td></td>
-
-                        </tr>
+                            </tr>
 
                     </tbody>
                 </table><br>
@@ -310,12 +297,7 @@
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
                             <td>-</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
                         </tr>
-
                     </tbody>
                 </table><br>
             </div>
@@ -335,6 +317,11 @@
                             <td>damili@gmail.com</td>
 
                         </tr>
+                        <tr>
+                            <th>Nomor Telepon HP</th>
+                            <td>:</td>
+                            <td>0812345678</td>
+                        </tr>
 
 
                     </tbody>
@@ -348,32 +335,27 @@
                         <tr>
                             <th>Tinggi Badan</th>
                             <td>:</td>
-                            <td>022121213312</td>
+                            <td>140 cm</td>
 
 
                             <th>Berat Badan</th>
                             <td>:</td>
-                            <td>damili@gmail.com</td>
+                            <td>40 kg</td>
 
                         </tr>
 
                         <tr>
                             <th>Jarak Ke Sekolah</th>
                             <td>:</td>
-                            <td>Kurang dari 1 KM</td>
-
-
-                            <th>Berapa Hitungan KM</th>
-                            <td>:</td>
                             <td>0,5 KM</td>
+
+                            <th>Waktu tempuh</th>
+                            <td>:</td>
+                            <td>30 Menit</td>
 
                         </tr>
 
                         <tr>
-                            <th>Berapa Jam</th>
-                            <td>:</td>
-                            <td>30 Menit</td>
-
 
                             <th>Jumlah Saudara Kandung</th>
                             <td>:</td>
@@ -419,11 +401,6 @@
                             <td>:</td>
                             <td>-</td>
 
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
-
                         </tr>
 
 
@@ -431,50 +408,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Registraasi Peserta Didik</h4>
-            <div class="table-responsive">
-                <table class="table table-stripped">
-                    <tbody>
-                        <tr>
-                            <th>Jurusan</th>
-                            <td>:</td>
-                            <td>Multimedia</td>
-
-
-                            <th>Type Masuk</th>
-                            <td>:</td>
-                            <td>Siswa Baru</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>NIS</th>
-                            <td>:</td>
-                            <td>-</td>
-
-
-                            <th>229102910292</th>
-                            <td>:</td>
-                            <td>-</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>Tanggal Masuk Sekolah</th>
-                            <td>:</td>
-                            <td>9 Juli 2021</td>
-
-
-                            <th>Sekolah Asal</th>
-                            <td>:</td>
-                            <td>SMP Jarang Mandi</td>
-
-                        </tr>
-
-
-                    </tbody>
-                </table><br>
-            </div>
+            
 
 
 

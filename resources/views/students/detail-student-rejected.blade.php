@@ -56,12 +56,12 @@
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Acong</td>
+                            <td>Rara Lestari</td>
 
 
                             <th>Email</th>
                             <td>:</td>
-                            <td>acong@gmail.com</td>
+                            <td>rara@gmail.com</td>
 
                         </tr>
                         <tr>
@@ -78,7 +78,7 @@
                         <tr>
                             <th>Jenis Kelamin</th>
                             <td>:</td>
-                            <td>Laki Laki</td>
+                            <td>perempuan</td>
 
 
                             <th>Tempat Lahir</th>
@@ -90,11 +90,11 @@
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
-                            <td>05 Mei</td>
+                            <td>18 Mei</td>
 
                             <th>Alamat</th>
                             <td>:</td>
-                            <td>Kp. Cicangkudu</td>
+                            <td>Kp. Junti Hilir</td>
 
                         </tr>
                         <tr>
@@ -104,7 +104,7 @@
 
                             <th>RW</th>
                             <td>:</td>
-                            <td>012</td>
+                            <td>12</td>
 
                         </tr>
 
@@ -147,15 +147,7 @@
                             <td>:</td>
                             <td>2</td>
 
-
-                            <th>Menerima KIP</th>
-                            <td>:</td>
-                            <td>Tidak</td>
-
-
-
-                        </tr>
-
+                            </tr>
 
                     </tbody>
                 </table><br>
@@ -168,7 +160,7 @@
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Ahmad Suherman</td>
+                            <td>Sutisna</td>
 
 
                             <th>NIK</th>
@@ -249,7 +241,7 @@
 
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
-                            <td>1.000.000</td>
+                            <td>-</td>
 
 
                         </tr>
@@ -335,45 +327,44 @@
                             <td>damili@gmail.com</td>
 
                         </tr>
-
+                        <tr>
+                            <th>Nomor Telepon HP</th>
+                            <td>:</td>
+                            <td>0812345678</td>
+                        </tr>
 
                     </tbody>
                 </table><br>
             </div>
 
-            <h4 class="text-success">Data Periodik</h4>
+           <h4 class="text-success">Data Periodik</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
                             <th>Tinggi Badan</th>
                             <td>:</td>
-                            <td>022121213312</td>
+                            <td>140 cm</td>
 
 
                             <th>Berat Badan</th>
                             <td>:</td>
-                            <td>damili@gmail.com</td>
+                            <td>40 kg</td>
 
                         </tr>
 
                         <tr>
                             <th>Jarak Ke Sekolah</th>
                             <td>:</td>
-                            <td>Kurang dari 1 KM</td>
-
-
-                            <th>Berapa Hitungan KM</th>
-                            <td>:</td>
                             <td>0,5 KM</td>
+
+                            <th>Waktu tempuh</th>
+                            <td>:</td>
+                            <td>30 Menit</td>
 
                         </tr>
 
                         <tr>
-                            <th>Berapa Jam</th>
-                            <td>:</td>
-                            <td>30 Menit</td>
-
 
                             <th>Jumlah Saudara Kandung</th>
                             <td>:</td>
@@ -431,51 +422,7 @@
                 </table><br>
             </div>
 
-            <h4 class="text-success">Registraasi Peserta Didik</h4>
-            <div class="table-responsive">
-                <table class="table table-stripped">
-                    <tbody>
-                        <tr>
-                            <th>Jurusan</th>
-                            <td>:</td>
-                            <td>Multimedia</td>
-
-
-                            <th>Type Masuk</th>
-                            <td>:</td>
-                            <td>Siswa Baru</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>NIS</th>
-                            <td>:</td>
-                            <td>-</td>
-
-
-                            <th>229102910292</th>
-                            <td>:</td>
-                            <td>-</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>Tanggal Masuk Sekolah</th>
-                            <td>:</td>
-                            <td>9 Juli 2021</td>
-
-
-                            <th>Sekolah Asal</th>
-                            <td>:</td>
-                            <td>SMP Jarang Mandi</td>
-
-                        </tr>
-
-
-                    </tbody>
-                </table><br>
-            </div>
-
+            
 
 
         </div>
