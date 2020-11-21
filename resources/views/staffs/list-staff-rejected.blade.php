@@ -64,7 +64,7 @@
               <tr>
                 <td>1</td>
                 <td>Rizki Saputra</td>
-                <td>SMA 23</td>
+                <td>SMA 23 BANDUNG</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
@@ -74,7 +74,7 @@
               <tr>
                 <td>2</td>
                 <td>Misella</td>
-                <td>SMA 23</td>
+                <td>SMA 23 BANDUNG</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
@@ -84,7 +84,7 @@
               <tr>
                 <td>3</td>
                 <td>Ridwan</td>
-                <td>SMA 23</td>
+                <td>SMA 23 BANDUNG</td>
                 <td>tidak memenuhi syarat</td>
                 <td>
                   <a href="{{ url('staffs/rejected/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>

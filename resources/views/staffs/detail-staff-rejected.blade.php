@@ -24,11 +24,11 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Detail Calon Petugas TU</h4>
+        <h4 class="page-title">Detail Staff</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Petugas TU</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Petugas TU</li>
+            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staf</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Staf</li>
         </ol>
     </div>
 </div>
@@ -45,10 +45,11 @@
         <hr>
     </div>
 </div>
+
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="text-success">Data Pribadi</h4>
+            <h4 class="text-primary">DATA PRIBADI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -57,21 +58,40 @@
                             <td>:</td>
                             <td>Rizki Saputra</td>
 
-
-                            <th>Email</th>
-                            <td>:</td>
-                            <td>rizki@gmail.com</td>
-
-                        </tr>
-                        <tr>
-                            <th>No Telepon</th>
-                            <td>:</td>
-                            <td>089613272481</td>
-
                             <th>NIK</th>
                             <td>:</td>
-                            <td>3204370204900002</td>
+                            <td>3204130204900009</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>GTK</th>
+                            <td>:</td>
+                            <td>-</td>
 
+                            <th>NUPTK</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <th>Kewarganegaraan</th>
+                            <td>:</td>
+                            <td>WNI</td>
+
+                            <th>Nama Negara</th>
+                            <td>:</td>
+                            <td>Indonesia</td>
+                        </tr>
+
+                        <tr>
+                            
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>03/05/1998</td>
                         </tr>
 
                         <tr>
@@ -79,31 +99,35 @@
                             <td>:</td>
                             <td>Laki Laki</td>
 
+                            <th>Agama</th>
+                            <td>:</td>
+                            <td>Islam</td>
+                        </tr>
 
-                            <th>Tempat Lahir</th>
+                        <tr>
+                            <th>Status Nikah</th>
+                            <td>:</td>
+                            <td>Sudah</td>    
+                        </tr>
+                        
+                    </tbody>
+                </table><br>
+            </div>
+
+
+            <h4 class="text-primary">INFORMASI KONTAK</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Provinsi</th>
+                            <td>:</td>
+                            <td>Jawa Barat</td>
+
+
+                            <th>Kabupaten</th>
                             <td>:</td>
                             <td>Bandung</td>
-
-
-                        </tr>
-                        <tr>
-                            <th>Tanggal lahir</th>
-                            <td>:</td>
-                            <td>02 April</td>
-
-                            <th>Alamat</th>
-                            <td>:</td>
-                            <td>Kp. Citereup</td>
-
-                        </tr>
-                        <tr>
-                            <th>RT</th>
-                            <td>:</td>
-                            <td>02</td>
-
-                            <th>RW</th>
-                            <td>:</td>
-                            <td>07</td>
 
                         </tr>
 
@@ -112,195 +136,178 @@
                             <td>:</td>
                             <td>Katapang</td>
 
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp. Cibolerang</td>
+
+                        </tr>
+
+                        <tr>
                             <th>Kode Pos</th>
                             <td>:</td>
-                            <td>40971</td>
+                            <td>40921</td>
+
+                            <th>RT</th>
+                            <td>:</td>
+                            <td>02</td>
                         </tr>
 
                         <tr>
-                            <th>Desa</th>
+                            <th>RW</th>
                             <td>:</td>
-                            <td>Sukamukti</td>
+                            <td>22</td>
 
-
-                            <th>Agama</th>
+                            <th>No Telepon</th>
                             <td>:</td>
-                            <td>Islam</td>
-
+                            <td>085713278789</td>
                         </tr>
 
                         <tr>
-                            <th>GTK</th>
+                            <th>Email</th>
                             <td>:</td>
-                            <td>16.17.006</td>
-
-
-                            <th>NUPTK</th>
-                            <td>:</td>
-                            <td>423908429938490</td>
-
+                            <td>rizki@gmail.com</td>
                         </tr>
-
-
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-success">Data Suami/Istri</h4>
+
+            <h4 class="text-primary">DATA SUAMI/ISTERI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
                             <th>Nama Suami/Istri</th>
                             <td>:</td>
-                            <td>Berliana</td>
+                            <td>Merlina</td>
 
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>3204370204900002</td>
+                            <td>-</td>
 
                         </tr>
+
                         <tr>
-                            <th>Pekerjaan</th>
-                            <td>:</td>
-                            <td>Ibu Rumah Tangga</td>
 
                             <th>NIP</th>
                             <td>:</td>
                             <td>-</td>
+
+                            <th>Pekerjaan</th>
+                            <td>:</td>
+                            <td>Ibu Rumah Tangga</td>
 
                         </tr>
 
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-success">Status Pekerjaan</h4>
+<!-- //di komentarin dulu, masa calon ada status kepegawaian?
+            <h4 class="text-primary">STATUS KEPEGAWAIAN</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
-                            <th>TMT</th>
-                            <td>:</td>
-                            <td>Juni 2016</td>
-
-
                             <th>No SK</th>
                             <td>:</td>
-                            <td>-</td>
+                            <td>-/td>
 
+                            <th>Tahun Masuk</th>
+                            <td>:</td>
+                            <td>Juni 2016</td>
                         </tr>
+
                         <tr>
-                            <th>Durasi</th>
+                            <th>Kontrak Kerja</th>
                             <td>:</td>
                             <td>1 Tahun</td>
 
-                            <th>NIP</th>
+                            <th>Status Staf</th>
                             <td>:</td>
-                            <td>-</td>
+                            <td>Staf Tidak Tetap</td>
 
                         </tr>
                         <tr>
-                            <th>Status Guru</th>
+                            <th>Jabatan</th>
                             <td>:</td>
-                            <td>Guru Tidak Tetap</td>
-
-                            <th>Posisi</th>
-                            <td>:</td>
-                            <td>Guru Mata Pelajaran</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>Sudah Belum Inpassing?</th>
-                            <td>:</td>
-                            <td>Belum</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
-
+                            <td>Kepala Staf</td>
                         </tr>
 
                     </tbody>
                 </table><br>
-
-                <h4 class="text-success">Sejarah Mengajar</h4>
-                <div class="table-responsive">
-                    <table class="table table-stripped">
-                        <tbody>
-                            <tr>
-                                <th>Subjek</th>
-                                <td>:</td>
-                                <td>-</td>
-
-
-                                <th>Nama Sekolah</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                            <tr>
-                                <th>Kelas</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                                <th>Jumlah Jam</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                            <tr>
-                                <th>Dari tahun</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                                <th>Status</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                        </tbody>
-                    </table><br>
-                </div>
-                <h4 class="text-success">Latar Belakang Pendidikan</h4>
+ -->
+                <h4 class="text-primary">RIWAYAT PENDIDIKAN</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
                             <tr>
                                 <th>Sekolah Dasar</th>
                                 <td>:</td>
-                                <td>SDN Angkasa 1 Bandung </td>
+                                <td>SDN Angkasa 04</td>
 
+
+                                <th>Tahun</th>
+                                <td>:</td>
+                                <td>2005</td>
+
+                            </tr>
+                            <tr>
+                                <th>Sekolah Menengah Pertama</th>
+                                <td>:</td>
+                                <td>SMP Angkasa</td>
+
+                                <th>Tahun</th>
+                                <td>:</td>
+                                <td>2008</td>
+
+                            </tr>
+                            <tr>
+                                <th>Sekolah Menengah Akhir</th>
+                                <td>:</td>
+                                <td>SMK Angkasa 2</td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
                                 <td>2011</td>
 
                             </tr>
+
                             <tr>
-                                <th>Sekolah Menengah Pertama</th>
+                                <th>Perguruan Tinggi</th>
                                 <td>:</td>
-                                <td>SMPN 1 Bandung</td>
+                                <td>-</td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2018</td>
+                                <td>-</td>
+
+                            </tr>
+
+                            <tr>
+                                <th>Fakultas</th>
+                                <td>:</td>
+                                <td>-</td>
+
+                                <th>Jurusan</th>
+                                <td>:</td>
+                                <td>-</td>
 
                             </tr>
                             <tr>
-                                <th>Sekolah Menengah Akhir</th>
+                                <th>Gelar</th>
                                 <td>:</td>
-                                <td>SMA 23 </td>
+                                <td>-</td>
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>-</td>
 
                             </tr>
-                            </tbody>
+
+                        </tbody>
                     </table><br>
                 </div>
-                <h4 class="text-success">Sertifikasi</h4>
+                <h4 class="text-primary">SERTIFIKASI</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>

@@ -59,7 +59,7 @@
               <tr>
                 <td>1</td>
                 <td>Udin Nurahmat</td>
-                <td>S1 Universias Gajah Munding</td>
+                <td>S1 Akuntansi</td>
                 <td>
                   <a href="{{ url('staffs/prospective/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/staffs')}}" type="button" data-toggle="tooltip" data-placement="top" title="TERIMA" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="zmdi zmdi-check fa-lg"></i> </a>

@@ -27,8 +27,8 @@
         <h4 class="page-title">Detail Staff</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staff</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Detail Staff</li>
+            <li class="breadcrumb-item"><a href="{{ url('staffs')}}">Daftar Staf</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Staf</li>
         </ol>
     </div>
 </div>
@@ -45,33 +45,53 @@
         <hr>
     </div>
 </div>
+
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="text-primary">Data Pribadi</h4>
+            <h4 class="text-primary">DATA PRIBADI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
                             <th>Nama</th>
                             <td>:</td>
-                            <td>Hamdan Firmansyah</td>
-
-
-                            <th>Email</th>
-                            <td>:</td>
-                            <td>hamdan@gmail.com</td>
-
-                        </tr>
-                        <tr>
-                            <th>No Telepon</th>
-                            <td>:</td>
-                            <td>089613272481</td>
+                            <td>Hamdan Firmansyah S. Pd</td>
 
                             <th>NIK</th>
                             <td>:</td>
                             <td>3204370204900002</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>GTK</th>
+                            <td>:</td>
+                            <td>16.17.007</td>
 
+                            <th>NUPTK</th>
+                            <td>:</td>
+                            <td>4734768669130082</td>
+                        </tr>
+
+                        <tr>
+                            <th>Kewarganegaraan</th>
+                            <td>:</td>
+                            <td>WNI</td>
+
+                            <th>Nama Negara</th>
+                            <td>:</td>
+                            <td>Indonesia</td>
+                        </tr>
+
+                        <tr>
+                            
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>02/04/1990</td>
                         </tr>
 
                         <tr>
@@ -79,31 +99,35 @@
                             <td>:</td>
                             <td>Laki Laki</td>
 
+                            <th>Agama</th>
+                            <td>:</td>
+                            <td>Islam</td>
+                        </tr>
 
-                            <th>Tempat Lahir</th>
+                        <tr>
+                            <th>Status Nikah</th>
+                            <td>:</td>
+                            <td>Sudah</td>    
+                        </tr>
+                        
+                    </tbody>
+                </table><br>
+            </div>
+
+
+            <h4 class="text-primary">INFORMASI KONTAK</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Provinsi</th>
+                            <td>:</td>
+                            <td>Jawa Barat</td>
+
+
+                            <th>Kabupaten</th>
                             <td>:</td>
                             <td>Bandung</td>
-
-
-                        </tr>
-                        <tr>
-                            <th>Tanggal lahir</th>
-                            <td>:</td>
-                            <td>02 April</td>
-
-                            <th>Alamat</th>
-                            <td>:</td>
-                            <td>Kp. Citereup</td>
-
-                        </tr>
-                        <tr>
-                            <th>RT</th>
-                            <td>:</td>
-                            <td>02</td>
-
-                            <th>RW</th>
-                            <td>:</td>
-                            <td>07</td>
 
                         </tr>
 
@@ -112,40 +136,42 @@
                             <td>:</td>
                             <td>Katapang</td>
 
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp. Citereup</td>
+
+                        </tr>
+
+                        <tr>
                             <th>Kode Pos</th>
                             <td>:</td>
-                            <td>40971</td>
+                            <td>40921</td>
+
+                            <th>RT</th>
+                            <td>:</td>
+                            <td>02</td>
                         </tr>
 
                         <tr>
-                            <th>Desa</th>
+                            <th>RW</th>
                             <td>:</td>
-                            <td>Sukamukti</td>
+                            <td>07</td>
 
-
-                            <th>Agama</th>
+                            <th>No Telepon</th>
                             <td>:</td>
-                            <td>Islam</td>
-
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>
-                            <th>GTK</th>
+                            <th>Email</th>
                             <td>:</td>
-                            <td>16.17.006</td>
-
-
-                            <th>NUPTK</th>
-                            <td>:</td>
-                            <td>423908429938490</td>
-
+                            <td>odney04@gmail.com</td>
                         </tr>
-
-
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-primary">Data Suami/Istri</h4>
+
+            <h4 class="text-primary">DATA SUAMI/ISTERI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
@@ -157,151 +183,59 @@
 
                             <th>NIK</th>
                             <td>:</td>
-                            <td>3204370204900002</td>
+                            <td>-</td>
 
                         </tr>
                         <tr>
-                            <th>Pekerjaan</th>
-                            <td>:</td>
-                            <td>Ibu Rumah Tangga</td>
 
                             <th>NIP</th>
                             <td>:</td>
                             <td>-</td>
+
+                            <th>Pekerjaan</th>
+                            <td>:</td>
+                            <td>Ibu Rumah Tangga</td>
 
                         </tr>
 
                     </tbody>
                 </table><br>
             </div>
-            <h4 class="text-primary">Status Pekerjaan</h4>
+
+            <h4 class="text-primary">STATUS KEPEGAWAIAN</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
-                            <th>TMT</th>
-                            <td>:</td>
-                            <td>Juni 2016</td>
-
-
                             <th>No SK</th>
                             <td>:</td>
-                            <td>-</td>
+                            <td>181/102.10/SMK.MP/KS/VII/2018</td>
 
+                            <th>Tahun Masuk</th>
+                            <td>:</td>
+                            <td>Juni 2016</td>
                         </tr>
-                        <tr>primary
-                            <th>Durasi</th>
+
+                        <tr>
+                            <th>Kontrak Kerja</th>
                             <td>:</td>
                             <td>1 Tahun</td>
 
-                            <th>NIP</th>
+                            <th>Status Staf</th>
                             <td>:</td>
-                            <td>-</td>
+                            <td>Staf Tidak Tetap</td>
 
                         </tr>
                         <tr>
-                            <th>Status Guru</th>
+                            <th>Jabatan</th>
                             <td>:</td>
-                            <td>Guru Tidak Tetap</td>
-
-                            <th>Posisi</th>
-                            <td>:</td>
-                            <td>Guru Mata Pelajaran</td>
-
-                        </tr>
-
-                        <tr>
-                            <th>Sudah Belum Inpassing?</th>
-                            <td>:</td>
-                            <td>Belum</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
-
+                            <td>Kepala Staf</td>
                         </tr>
 
                     </tbody>
                 </table><br>
 
-                <h4 class="text-primary">Mengajar Di SMK</h4>
-                <div class="table-responsive">
-                    <table class="table table-stripped">
-                        <tbody>
-                            <tr>
-                                <th>Subjek</th>
-                                <td>:</td>
-                                <td>PJOK</td>
-
-
-                                <th>Kelas</th>
-                                <td>:</td>
-                                <td>XI MM dan X RPL</td>
-
-                            </tr>
-                            <tr>
-                                <th>Durasi</th>
-                                <td>:</td>
-                                <td>1 Tahun</td>
-
-                                <th>NIP</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                            <tr>
-                                <th>Jumlah Jam Pelajaran</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                                <th>Tugas Tambahan</th>
-                                <td>:</td>
-                                <td>Pembina Osis</td>
-
-                            </tr>
-                        </tbody>
-                    </table><br>
-                </div>
-
-                <h4 class="text-primary">Sejarah Mengajar</h4>
-                <div class="table-responsive">
-                    <table class="table table-stripped">
-                        <tbody>
-                            <tr>
-                                <th>Subjek</th>
-                                <td>:</td>
-                                <td>PJOK</td>
-
-
-                                <th>Nama Sekolah</th>
-                                <td>:</td>
-                                <td>SMP KP Margahayu</td>
-
-                            </tr>
-                            <tr>
-                                <th>Kelas</th>
-                                <td>:</td>
-                                <td>VII</td>
-
-                                <th>Jumlah Jam</th>
-                                <td>:</td>
-                                <td>8 JP</td>
-
-                            </tr>
-                            <tr>
-                                <th>Dari tahun</th>
-                                <td>:</td>
-                                <td>2011-2013</td>
-
-                                <th>Status</th>
-                                <td>:</td>
-                                <td>Tidak Aktif</td>
-
-                            </tr>
-                        </tbody>
-                    </table><br>
-                </div>
-                <h4 class="text-primary">Latar Belakang Pendidikan</h4>
+                <h4 class="text-primary">RIWAYAT PENDIDIKAN</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
@@ -313,7 +247,7 @@
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2011</td>
+                                <td>2001</td>
 
                             </tr>
                             <tr>
@@ -323,7 +257,7 @@
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2018</td>
+                                <td>2003</td>
 
                             </tr>
                             <tr>
@@ -333,7 +267,7 @@
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>2008</td>
 
                             </tr>
 
@@ -344,18 +278,18 @@
 
                                 <th>Tahun</th>
                                 <td>:</td>
-                                <td>FPOK</td>
+                                <td>2010</td>
 
                             </tr>
 
                             <tr>
+                                <th>Fakultas</th>
+                                <td>:</td>
+                                <td>FPOK</td>
+
                                 <th>Jurusan</th>
                                 <td>:</td>
-                                <td>S1 Pendidikan Jasmani </td>
-
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>2020</td>
+                                <td>S1 Pendidikan Jasmani Kesehatan dan Rekreasi</td>
 
                             </tr>
                             <tr>
@@ -363,16 +297,16 @@
                                 <td>:</td>
                                 <td>S. Pd</td>
 
-                                <th>Tahun</th>
+                                <th>Tahun Lulus</th>
                                 <td>:</td>
-                                <td>2020</td>
+                                <td>2014</td>
 
                             </tr>
 
                         </tbody>
                     </table><br>
                 </div>
-                <h4 class="text-primary">Sertifikasi</h4>
+                <h4 class="text-primary">SERTIFIKASI</h4>
                 <div class="table-responsive">
                     <table class="table table-stripped">
                         <tbody>
