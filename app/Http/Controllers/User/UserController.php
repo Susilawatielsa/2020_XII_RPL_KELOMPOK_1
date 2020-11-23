@@ -23,25 +23,25 @@ class UserController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        $user = Auth()->user();
+     {
+    //     $user = Auth()->user();
 
-        if ($user->usr_is_accepted == '0' && $user->hasRole('student')) {
-            return view('students.formulir');
+    //     if ($user->usr_is_accepted == '0' && $user->hasRole('student')) {
+    //         return view('students.formulir');
 
-        }elseif ($user->usr_is_accepted == '0' && $user->hasRole('teacher')) {
-            return view('teachers.formulir');
+    //     }elseif ($user->usr_is_accepted == '0' && $user->hasRole('teacher')) {
+    //         return view('teachers.formulir');
 
-        }elseif ($user->usr_is_accepted == '0' && $user->hasRole('staff')) {
-            return view('staffs.formulir');
+    //     }elseif ($user->usr_is_accepted == '0' && $user->hasRole('staff')) {
+    //         return view('staffs.formulir');
 
-        }elseif ($user->usr_is_accepted == '1') {
-            return view('dashboard');
-        }else{
-            return "kesini";
-        }
+    //     }elseif ($user->usr_is_accepted == '1') {
+    //         return view('dashboard');
+    //     }else{
+    //         return "kesini";
+    //     }
         
-        // return view('dashboard');
+        return view('dashboard');
     }
     public function create(){
         return view('users.create');
