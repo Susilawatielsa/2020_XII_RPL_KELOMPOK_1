@@ -30,10 +30,10 @@
             <div class="card-body">
                 <div class="card-content p-2">
                     <div class="text-center">
-                        <img src="{{ asset('assets/images/mahaputra.jfif') }}">
+                        <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
                     </div>
                     <div class="card-title text-uppercase text-center py-3">Sign Up</div>
-                    <form method="POST" action="{{ route('register') }}" id="submitForm">
+                    <form method="POST" action="{{ route('register') }}" id="submitForm" autocomplete="off">
                         @csrf
                         <div class="form-group">
                             <div class="position-relative has-icon-left">
@@ -52,7 +52,7 @@
                         <div class="form-group">
                             <div class="position-relative has-icon-left">
                                 <label for="exampleInputEmailId" class="sr-only">Email Address</label>
-                                <input type="text" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Email Address" name="usr_email" value="{{ old('usr_email') }}">
+                                <input type="email" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Email Address" name="usr_email" value="{{ old('usr_email') }}">
                                 <div class="form-control-position">
                                     <i class="icon-envelope-open"></i>
                                 </div>
@@ -63,19 +63,19 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="position-relative has-icon-left">
-                                <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
-                                <input type="text" id="usr_phone" value="{{ old('usr_phone') }}" class="form-control form-control-rounded @error('usr_phone') is-invalid @enderror" placeholder="Phone Number" name="usr_phone">
-                                @error('usr_phone')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                                <div class="form-control-position">
-                                    <i class="icon-phone"></i>
-                                </div>
+                       <div class="form-group" id="only-number">
+                          <div class="position-relative has-icon-left">
+                            <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
+                            <input type="text" value="{{ old('usr_phone') }}" class="form-control form-control-rounded @error('usr_phone') is-invalid @enderror only-number" placeholder="Phone Number" name="usr_phone">
+                            @error('usr_phone')
+                            <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                            <div class="form-control-position">
+                              <i class="icon-phone"></i>
                             </div>
+                          </div>
                         </div>
                         <div class="form-group">
                             <div class="position-relative has-icon-left">
@@ -128,6 +128,29 @@
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
+      <script>
+        $(document).ready(function() {
+            $("#submitForm").submit(function(e) {
+                $(this).find("button[type='submit']").prop('disabled', true);
+                $("#btnSubmit").attr("disabled", true);
+                return true;
+            });
+            $('#only-number').on('keydown', '#usr_phone', function(e) {
+                -1 !== $
+                    .inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) || /65|67|86|88/
+                    .test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) ||
+                    35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) &&
+                    (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+            });
+        });
+
+         $(".only-number").on("keypress keyup blur",function (event) {    
+           $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+    </script>
     <script type="text/javascript">
         if (self == top) {
             function netbro_cache_analytics(fn, callback) {

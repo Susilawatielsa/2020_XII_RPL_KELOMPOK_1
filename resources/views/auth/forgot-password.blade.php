@@ -28,7 +28,7 @@
       <div class="card-body">
         <div class="card-content p-2">
           <div class="text-center">
-            <img src="{{ asset('assets/images/mahaputra.jfif') }}">
+            <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
           <div class="card-title text-uppercase text-center py-3">Forgot Password</div>
           <form method="POST" action="{{ route('forgot.password') }}" id="submitForm">
@@ -93,6 +93,15 @@
   <script src="{{asset('assets/js/popper.min.js')}}"></script>
   <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
+   <script>
+        $(document).ready(function() {
+            $("#submitForm").submit(function(e) {
+                $(this).find("button[type='submit']").prop('disabled', true);
+                $("#btnSubmit").attr("disabled", true);
+                return true;
+            });
+        });
+    </script>
   <script type="text/javascript">
     if (self == top) {
       function netbro_cache_analytics(fn, callback) {

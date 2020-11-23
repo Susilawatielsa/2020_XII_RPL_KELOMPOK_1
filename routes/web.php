@@ -67,6 +67,8 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/students/prospective', 'StudentController@list_prospective');
     Route::get('/students/rejected', 'StudentController@list_rejected');
     Route::get('/students/create', 'StudentController@create');
+    Route::post('/students/create', 'StudentController@store');
+    
     Route::get('/student/1', 'StudentController@show');
     Route::get('/students/prospective/1', 'StudentController@show_prospective');
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
@@ -78,4 +80,15 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/page/detail', 'PageController@show');
     Route::get('/page/add', 'PageController@create');
     Route::get('/page/edit', 'PageController@edit');
+
+
 });
+
+ Route::get('/account/profile/1/edit-password', 'Auth\AccountController@editPassword');
+ Route::post('/account/profile/1/edit-password', 'Auth\AccountController@storeEditPassword');
+
+ Route::get('/account/profile/1/edit', 'Auth\AccountController@editProfile');
+ Route::post('/account/profile/1/edit', 'Auth\AccountController@storeEditProfile');
+ 
+
+ 

@@ -28,10 +28,15 @@ class CreateStudentsTable extends Migration
             $table->bigInteger('stu_created_by')->unsigned()->nullable();
             $table->bigInteger('stu_updated_by')->unsigned()->nullable();
             $table->bigInteger('stu_deleted_by')->unsigned()->nullable();
-            $table->string('stu_sys_note')->nullable();
+            
             $table->timestamp('stu_created_at')->nullable();
             $table->timestamp('stu_updated_at')->nullable();
             $table->timestamp('stu_deleted_at')->nullable();
+            $table->string('stu_sys_note')->nullable();
+
+            $table->foreign('stu_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stu_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stu_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
 
         });
     }

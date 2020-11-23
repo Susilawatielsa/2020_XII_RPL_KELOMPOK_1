@@ -1,65 +1,119 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Rocker - Bootstrap4 Admin Dashboard Template</title>
+    <!--favicon-->
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link href="{{ asset('assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- animate CSS-->
+    <link href="{{ asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
+    <!--Bootstrap Datepicker-->
+    <link href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
+    <!-- Icons CSS-->
+    <link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet" type="text/css">
+    <!-- Sidebar CSS-->
+    <link href="{{ asset('assets/css/sidebar-menu.css')}}" rel="stylesheet">
+    <!-- Custom Style-->
+    <link href="{{ asset('assets/css/app-style.css')}}" rel="stylesheet">
 
-@push('title')
-- List Add Staffs
-@endpush
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="{{ asset('assets/images/mahaputra.jfif') }}" style="width: 50px;" height="50px;"> {{ config('app.name', 'Laravel') }}
+                </a>
 
-@push('styles')
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Rocker - Bootstrap4 Admin Dashboard Template</title>
-<!--favicon-->
-<link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
-<!-- simplebar CSS-->
-<link href="{{ asset('assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet">
-<!-- Bootstrap core CSS-->
-<link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-<!-- animate CSS-->
-<link href="{{ asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
-<!--Bootstrap Datepicker-->
-<link href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
-<!-- Icons CSS-->
-<link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet" type="text/css">
-<!-- Sidebar CSS-->
-<link href="{{ asset('assets/css/sidebar-menu.css')}}" rel="stylesheet">
-<!-- Custom Style-->
-<link href="{{ asset('assets/css/app-style.css')}}" rel="stylesheet">
-@endpush
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
 
-@section('content')
+                        <!-- Authentication Links -->
+                        @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
 
-<div class="row pt-2 pb-2">
-    <div class="col-sm-9">
-        <h4 class="page-title">Tambah Staf</h4>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Staf</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tambah Staf</li>
-        </ol>
-    </div>
-</div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ __('Register') }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ url('register-student') }}">Siswa</a>
+                                <a class="dropdown-item" href="{{ url('register-teacher') }}">Guru</a>
+                                <a class="dropdown-item" href="{{ url('register-staff') }}">Staff TU</a>
+                            </div>
+                        </li>
+                        @endif
+                        @else
 
+
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->usr_name }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </header><br>
+
+<div class="container-fluid">
+    
 <div class="row">
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" novalidate="novalidate" autocomplete="off">
+
+
+                <form id="signupForm" id="submitForm" novalidate="novalidate" autocomplete="off">
+
+                    
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                        Data Pribadi
+                        DATA PRIBADI
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <label>Nama Lengkap <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
+                        <img src="#" class="img-thumbnail" id="gambar_nodin" style="object-fit: cover; height: 200px; width: 200px"/> 
+                        <input type="file" name="gambar" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('gambar').value=this.value" /><br>
+                 
+                        <button type="button" id="gambar" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
+
                         </div>
+
                         <div class="col-sm-4">
                             <label>NIK</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan NIK">
@@ -72,10 +126,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>NO GTK</label>
-                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor GTK">
-                        </div>
+
 
                         <div class="col-sm-4">
                             <label>Kewarganegaraan</label>
@@ -202,11 +253,11 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <label>No Telepon <span style="color:red;">*</span></label>
+                            <label>No Telepon</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon">
                         </div>
                         <div class="col-sm-4">
-                            <label>Email <span style="color:red;">*</span></label>
+                            <label>Email</label>
                             <input type="text" class="form-control" id="input-10" placeholder="Masukan Email">
                         </div>
                     </div>
@@ -242,7 +293,7 @@
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                        STATUS KEPEGAWAIAN
+                        MENGAJAR DI SMK MAHAPUTRA
                     </h4>
 
                     <div class="form-group row">
@@ -267,7 +318,7 @@
 
 
                         <div class="col-sm-4">
-                            <label>Kontrak Kerja</label>
+                            <label>Kontrak Mengajar</label>
                             <select class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>1 Tahun</option>
@@ -282,19 +333,76 @@
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Status Staf</label>
+                            <label>Status Guru</label>
                             <select class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Staf Tetap</option>
-                                <option>Staf Tidak Tetap</option>
+                                <option>Guru Tetap</option>
+                                <option>Guru Tidak Tetap</option>
                             </select>
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Jabatan</label>
-                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Jabatan">
+                            <label>NIP</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan NIP">
+                        </div>
+
+                         <div class="col-sm-4">
+                            <label>Mata Pelajaran</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Mata Pelajaran">
                         </div>
                     </div>
+
+                    
+                    <div class="form-group row">
+                       
+                        <div class="col-sm-4">
+                            <label>Kelas</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Kelas">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Jumlah Jam Mengajar</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Jumlah Jam Mengajar">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Tugas Tambahan</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Tugas Tambahan">
+                        </div>
+                    </div>
+
+
+                     <h4 class="form-header text-uppercase">
+                        <i class="fa fa-address-book-o"></i>
+                        RIWAYAT MENGAJAR DI SEKOLAH LAIN
+                    </h4>
+
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label>Nama Sekolah</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Nama Sekolah">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Lama Mengajar</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Lama Mengajar">
+                        </div>
+                      
+                    </div>
+
+                     <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label>Mata Pelajaran</label>
+                            <input type="text" class="form-control" id="input-10" placeholder="Masukan Lama Mengajar">
+                        </div>
+                      
+                         <div class="col-sm-6">
+                                <label>Status</label>
+                                <select class="form-control" id="basic-select">
+                                    <option disabled="" selected="">Pilih</option>
+                                    <option>Aktif</option>
+                                    <option>Tidak Aktif</option>
+                                 </select>
+                            </div>
+                     </div>
+
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
@@ -411,20 +519,21 @@
 
 
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <a href="/staffs" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
+                        <button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-times"></i> SAVE</button>
+                        
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+</div>
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
 <!--End Back To Top Button-->
 
-@push('scripts')
 <!-- Bootstrap core JavaScript-->
 <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
 <script src="{{ asset('assets/js/popper.min.js')}}"></script>
@@ -502,6 +611,29 @@
         });
 
     });
+$(document).ready(function() {
+            $("#submitForm").submit(function(e) {
+                $(this).find("button[type='submit']").prop('disabled', true);
+                $("#btnSubmit").attr("disabled", true);
+                return true;
+            });
+        });
+
+function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#gambar_nodin').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
+
 </script>
 
 <!--Bootstrap Datepicker Js-->
@@ -521,5 +653,7 @@
 
     $('#dateragne-picker .input-daterange').datepicker({});
 </script>
-@endpush
-@endsection
+
+
+</body>
+</html>

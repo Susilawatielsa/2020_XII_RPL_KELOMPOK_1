@@ -19,10 +19,16 @@ class CreateEntryTypesTable extends Migration
             $table->bigInteger('ent_created_by')->unsigned()->nullable();
             $table->bigInteger('ent_updated_by')->unsigned()->nullable();
             $table->bigInteger('ent_deleted_by')->unsigned()->nullable();
-            $table->string('ent_sys_note')->nullable();
+            
             $table->timestamp('ent_created_at')->nullable();
             $table->timestamp('ent_updated_at')->nullable();
             $table->timestamp('ent_deleted_at')->nullable();
+            $table->string('ent_sys_note')->nullable();
+
+            $table->foreign('ent_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('ent_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('ent_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+
         });
     }
 

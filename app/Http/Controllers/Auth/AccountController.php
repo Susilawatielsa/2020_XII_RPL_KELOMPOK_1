@@ -103,4 +103,16 @@ class AccountController extends Controller
 
         return redirect('/login')->with(['success' => 'Password Anda Berhasil di Updated']);
     }
+    public function editPassword(){
+        return view('auth.edit-password');
+    }
+     public function storeEditPassword(Request $request){
+        dd($request);
+    }
+    public function editProfile(){
+        return view('profile.index');
+    }
+     public function storeEditProfile(Request $request){
+        dd($request);
+    }
 }

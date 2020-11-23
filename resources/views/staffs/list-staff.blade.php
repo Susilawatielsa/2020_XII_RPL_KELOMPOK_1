@@ -40,7 +40,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="card">
-      <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
+      <div class="card-header"><i class="fa fa-table"></i> Data Staf</div>
       <div class="card-body">
         <div class="table-responsive" >
         
@@ -110,11 +110,11 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="card">
-          <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
+          <div class="card-header"><i class="fa fa-table"></i> Data Staf</div>
           <div class="card-body">
             <div class="table-responsive" >
             <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-              <a href="{{URL::to('/staffs/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH PETUGAS" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+              <a href="{{URL::to('/staffs/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH STAF" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
               </div>
               <table id="example" class="table table-bordered" >
                 <thead>

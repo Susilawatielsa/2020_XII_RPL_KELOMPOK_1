@@ -19,13 +19,19 @@ class CreateStaffsTable extends Migration
             $table->foreign('stf_user_id')->references('usr_id')->on('users');
             $table->string('stf_gtk');
             $table->string('stf_nuptk');
+            $table->tinyInteger('stf_registration_status');
             $table->bigInteger('stf_created_by')->unsigned()->nullable();
             $table->bigInteger('stf_updated_by')->unsigned()->nullable();
             $table->bigInteger('stf_deleted_by')->unsigned()->nullable();
-            $table->string('stf_sys_note')->nullable();
+          
             $table->timestamp('stf_created_at')->nullable();
             $table->timestamp('stf_updated_at')->nullable();
             $table->timestamp('stf_deleted_at')->nullable();
+            $table->string('stf_sys_note')->nullable();
+
+            $table->foreign('stf_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stf_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stf_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
     }
 

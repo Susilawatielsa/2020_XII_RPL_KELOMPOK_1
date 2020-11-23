@@ -1,0 +1,1 @@
+Paste dan sortir input mana aja untuk candidate student

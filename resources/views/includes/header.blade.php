@@ -28,7 +28,13 @@
             </a>
           </li>
           <li class="dropdown-divider"></li>
-          <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
+          <div><a class="dropdown-item" href="{{ url('account/profile/1/edit') }}">
+              <i class="fa fa-edit icons"></i> Edit Profil</a>
+          </div>
+          <div><a class="dropdown-item" href="{{ url('account/profile/1/edit-password') }}">
+              <i class="fa fa-lock icons"></i> Edit Password</a>
+          </div>
+         
           <li class="dropdown-divider"></li>
           <div><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
          document.getElementById('logout-form').submit();" style="color: black;">

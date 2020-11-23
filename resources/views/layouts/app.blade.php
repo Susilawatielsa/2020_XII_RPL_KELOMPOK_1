@@ -20,6 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @stack('styles')
 </head>
 
 <body>
@@ -90,6 +91,7 @@
     </div>
 
 
+     @stack('scripts')
     <script>
         $(document).ready(function() {
             $("#submitForm").submit(function(e) {

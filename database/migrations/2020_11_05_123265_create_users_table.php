@@ -36,14 +36,21 @@ class CreateUsersTable extends Migration
             $table->string('usr_religion')->nullable();
             $table->string('usr_profile_picture')->nullable();
             $table->boolean('usr_is_active'); //kolom ini digunakan untuk users jika value 1 maka aktif jika 0 maka tidak aktif jadi sebagai pengganti soft delete
-            $table->timestamp('usr_created_at')->nullable();
-            $table->timestamp('usr_updated_at')->nullable();
-            $table->timestamp('usr_deleted_at')->nullable();
-            $table->string('usr_sys_note')->nullable();
+            $table->boolean('usr_is_accepted');
             $table->bigInteger('usr_created_by')->unsigned()->nullable();
             $table->bigInteger('usr_updated_by')->unsigned()->nullable();
             $table->bigInteger('usr_deleted_by')->unsigned()->nullable();
+            $table->timestamp('usr_created_at')->nullable();
+            $table->timestamp('usr_updated_at')->nullable();
+            $table->timestamp('usr_deleted_at')->nullable();
+            
+
+            $table->foreign('usr_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('usr_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('usr_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+
             $table->rememberToken();
+            $table->string('usr_sys_note')->nullable();
         });
     }
 

@@ -24,14 +24,38 @@ class CreatePermissionTables extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('guard_name');
-            $table->timestamps();
+
+            $table->bigInteger('created_by')->unsigned()->nullable();
+            $table->bigInteger('updated_by')->unsigned()->nullable();
+            $table->bigInteger('deleted_by')->unsigned()->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->string('sys_note')->nullable();
+
+            $table->foreign('created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+
+
         });
 
         Schema::create($tableNames['roles'], function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('guard_name');
-            $table->timestamps();
+
+            $table->bigInteger('created_by')->unsigned()->nullable();
+            $table->bigInteger('updated_by')->unsigned()->nullable();
+            $table->bigInteger('deleted_by')->unsigned()->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->string('sys_note')->nullable();
+
+            $table->foreign('created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
 
         Schema::create($tableNames['model_has_permissions'], function (Blueprint $table) use ($tableNames, $columnNames) {
@@ -48,6 +72,19 @@ class CreatePermissionTables extends Migration
 
             $table->primary(['permission_id', $columnNames['model_morph_key'], 'model_type'],
                     'model_has_permissions_permission_model_type_primary');
+
+            $table->bigInteger('created_by')->unsigned()->nullable();
+            $table->bigInteger('updated_by')->unsigned()->nullable();
+            $table->bigInteger('deleted_by')->unsigned()->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->string('sys_note')->nullable();
+
+            $table->foreign('created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+
         });
 
         Schema::create($tableNames['model_has_roles'], function (Blueprint $table) use ($tableNames, $columnNames) {
@@ -64,6 +101,18 @@ class CreatePermissionTables extends Migration
 
             $table->primary(['role_id', $columnNames['model_morph_key'], 'model_type'],
                     'model_has_roles_role_model_type_primary');
+
+            $table->bigInteger('created_by')->unsigned()->nullable();
+            $table->bigInteger('updated_by')->unsigned()->nullable();
+            $table->bigInteger('deleted_by')->unsigned()->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->string('sys_note')->nullable();
+
+            $table->foreign('created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
 
         Schema::create($tableNames['role_has_permissions'], function (Blueprint $table) use ($tableNames) {
@@ -81,6 +130,18 @@ class CreatePermissionTables extends Migration
                 ->onDelete('cascade');
 
             $table->primary(['permission_id', 'role_id'], 'role_has_permissions_permission_id_role_id_primary');
+
+            $table->bigInteger('created_by')->unsigned()->nullable();
+            $table->bigInteger('updated_by')->unsigned()->nullable();
+            $table->bigInteger('deleted_by')->unsigned()->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->string('sys_note')->nullable();
+
+            $table->foreign('created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
 
         app('cache')

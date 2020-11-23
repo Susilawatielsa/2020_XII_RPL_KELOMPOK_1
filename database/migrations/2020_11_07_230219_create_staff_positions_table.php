@@ -22,10 +22,15 @@ class CreateStaffPositionsTable extends Migration
             $table->bigInteger('stp_created_by')->unsigned()->nullable();
             $table->bigInteger('stp_updated_by')->unsigned()->nullable();
             $table->bigInteger('stp_deleted_by')->unsigned()->nullable();
-            $table->string('stp_sys_note')->nullable();
+     
             $table->timestamp('stp_created_at')->nullable();
             $table->timestamp('stp_updated_at')->nullable();
             $table->timestamp('stp_deleted_at')->nullable();
+            $table->string('stp_sys_note')->nullable();
+
+            $table->foreign('stp_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stp_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('stp_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
 
         });
     }

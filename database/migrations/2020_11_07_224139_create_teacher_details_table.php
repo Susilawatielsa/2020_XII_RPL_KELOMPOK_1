@@ -23,11 +23,15 @@ class CreateTeacherDetailsTable extends Migration
             $table->bigInteger('tcd_created_by')->unsigned()->nullable();
             $table->bigInteger('tcd_updated_by')->unsigned()->nullable();
             $table->bigInteger('tcd_deleted_by')->unsigned()->nullable();
-            $table->string('tcd_sys_note')->nullable();
+         
             $table->timestamp('tcd_created_at')->nullable();
             $table->timestamp('tcd_updated_at')->nullable();
             $table->timestamp('tcd_deleted_at')->nullable();
+            $table->string('tcd_sys_note')->nullable();
 
+            $table->foreign('tcd_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('tcd_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('tcd_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
     }
 

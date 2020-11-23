@@ -23,10 +23,14 @@ class CreateStudentDetailsTable extends Migration
             $table->bigInteger('std_created_by')->unsigned()->nullable();
             $table->bigInteger('std_updated_by')->unsigned()->nullable();
             $table->bigInteger('std_deleted_by')->unsigned()->nullable();
-            $table->string('std_sys_note')->nullable();
             $table->timestamp('std_created_at')->nullable();
             $table->timestamp('std_updated_at')->nullable();
             $table->timestamp('std_deleted_at')->nullable();
+            $table->string('std_sys_note')->nullable();
+
+            $table->foreign('std_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('std_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('std_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
 
         });
     }

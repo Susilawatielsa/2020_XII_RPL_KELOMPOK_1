@@ -23,10 +23,14 @@ class CreateStaffDetailsTable extends Migration
             $table->bigInteger('sfd_created_by')->unsigned()->nullable();
             $table->bigInteger('sfd_updated_by')->unsigned()->nullable();
             $table->bigInteger('sfd_deleted_by')->unsigned()->nullable();
-            $table->string('sfd_sys_note')->nullable();
+  
             $table->timestamp('sfd_created_at')->nullable();
             $table->timestamp('sfd_updated_at')->nullable();
             $table->timestamp('sfd_deleted_at')->nullable();
+            $table->string('sfd_sys_note')->nullable();
+            $table->foreign('sfd_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('sfd_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('sfd_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
 
         });
     }

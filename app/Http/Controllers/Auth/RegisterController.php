@@ -74,8 +74,9 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'usr_name' => ['required', 'string', 'max:255'],
             'usr_email' => ['required', 'string', 'max:255', 'unique:users,usr_email'],
+            //untuk pattern regex email bila butuh 'regex:/(.*)@gmail|yahoo\.com/i'
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'usr_phone' => ['required', 'min:11', 'max:14'],
+            'usr_phone' => ['required', 'min:10','regex:/^([0-9\s\-\+\(\)]*)$/'],
         ]);
     }
 
@@ -94,6 +95,8 @@ class RegisterController extends Controller
             'usr_password' => Hash::make($data['password']),
             'usr_verification_token' => str_replace('/', '', Hash::make(Str::random(12))),
             'usr_is_active' => true,
+            'usr_is_accepted' => false,
+            
         ]);
 
         if ($data['role'] == 1) {

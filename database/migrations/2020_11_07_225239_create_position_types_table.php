@@ -20,11 +20,15 @@ class CreatePositionTypesTable extends Migration
             $table->bigInteger('pst_created_by')->unsigned()->nullable();
             $table->bigInteger('pst_updated_by')->unsigned()->nullable();
             $table->bigInteger('pst_deleted_by')->unsigned()->nullable();
-            $table->string('pst_sys_note')->nullable();
+ 
             $table->timestamp('pst_created_at')->nullable();
             $table->timestamp('pst_updated_at')->nullable();
             $table->timestamp('pst_deleted_at')->nullable();
+            $table->string('pst_sys_note')->nullable();
 
+            $table->foreign('pst_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('pst_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('pst_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
     }
 

@@ -20,10 +20,10 @@ class CreateProvincesTable extends Migration
             $table->biginteger('prv_created_by')->unsigned()->nullable();
             $table->biginteger('prv_updated_by')->unsigned()->nullable();
             $table->biginteger('prv_deleted_by')->unsigned()->nullable();
-            $table->string('prv_sys_note')->nullable();
             $table->timestamp('prv_created_at')->nullable();
             $table->timestamp('prv_updated_at')->nullable();
             $table->timestamp('prv_deleted_at')->nullable();
+            $table->string('prv_sys_note')->nullable();
         });
     }
 
