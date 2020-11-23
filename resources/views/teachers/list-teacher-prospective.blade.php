@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Prospective Teachers
+- Daftar Calon Guru
 @endpush
 
 @push('styles')

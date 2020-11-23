@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Rejected Teachers
+- Daftar Guru Ditolak
 @endpush
 
 @push('styles')

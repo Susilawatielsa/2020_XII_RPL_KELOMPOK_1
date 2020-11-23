@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Rejected Students
+- Daftar Siswa Ditolak
 @endpush
 
 @push('styles')

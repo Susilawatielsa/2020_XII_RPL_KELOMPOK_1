@@ -1,16 +1,10 @@
 @extends('layouts.master')
 
 @push('title')
-- Edit Password
+- Edit Profil
 @endpush
   
 @push('styles')
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description" content=""/>
-  <meta name="author" content=""/>
-  <title>Rocker - Bootstrap4  Admin Dashboard Template</title>
   <!--favicon-->
   <link rel="icon" href="{{ asset('assets/images/favicon.ico')}}" type="image/x-icon">
   <!-- simplebar CSS-->

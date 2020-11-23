@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- Template Create
+- Tampilan Tambah
 @endpush
 
 @push('styles')

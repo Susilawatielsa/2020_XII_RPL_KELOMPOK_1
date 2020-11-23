@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- Template Detail
+- Detail Siswa
 @endpush
 
 @push('styles')

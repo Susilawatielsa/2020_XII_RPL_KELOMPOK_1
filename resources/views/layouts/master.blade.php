@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Smk Mahaputra @stack('title')</title>
+  <title>SMK Mahaputra @stack('title')</title>
 
   @stack('styles')
 </head>

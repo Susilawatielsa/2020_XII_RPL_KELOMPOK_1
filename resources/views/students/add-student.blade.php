@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Add Studends
+- Tambah Siswa
 @endpush
 
 @push('styles')
