@@ -34,36 +34,36 @@
     </div>
 </div>
 
-
 <div class="col-lg-12">
     <div class="profile-card-3 ">
         <div class="text-center">
             <img src="{{ url('assets/images/avatars/avatar-17.png')}}" alt="user avatar" class="card-img-top" style="width: 200px;
-                        height: 200px;
-                        background: #dac52c;
-                        border-radius: 100%;">
+            height: 200px;
+            background: #dac52c;
+            border-radius: 100%;">
         </div>
         <hr>
     </div>
 </div>
+
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
+
             <h4 class="text-primary">Data Pribadi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
-                         <tr>
+                        <tr>
                             <th>Nama</th>
                             <td>:</td>
                             <td>Meli</td>
 
-
                             <th>Email</th>
                             <td>:</td>
                             <td>Meli@gmail.com</td>
-
                         </tr>
+
                         <tr>
                             <th>No Telepon</th>
                             <td>:</td>
@@ -72,7 +72,6 @@
                             <th>NIK</th>
                             <td>:</td>
                             <td>321044070027770007</td>
-
                         </tr>
 
                         <tr>
@@ -80,13 +79,11 @@
                             <td>:</td>
                             <td>perempuan</td>
 
-
                             <th>Tempat Lahir</th>
                             <td>:</td>
                             <td>Bandung</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
@@ -95,8 +92,8 @@
                             <th>Alamat</th>
                             <td>:</td>
                             <td>Kp. Cikambuy</td>
-
                         </tr>
+
                         <tr>
                             <th>RT</th>
                             <td>:</td>
@@ -105,7 +102,6 @@
                             <th>RW</th>
                             <td>:</td>
                             <td>012</td>
-
                         </tr>
 
                         <tr>
@@ -123,11 +119,9 @@
                             <td>:</td>
                             <td>Sangkanhurip</td>
 
-
                             <th>Agama</th>
                             <td>:</td>
                             <td>Islam</td>
-
                         </tr>
 
                         <tr>
@@ -135,11 +129,9 @@
                             <td>:</td>
                             <td>11203321</td>
 
-
                             <th>Tinggal Bersama</th>
                             <td>:</td>
                             <td>Orang Tua</td>
-
                         </tr>
 
                         <tr>
@@ -147,11 +139,22 @@
                             <td>:</td>
                             <td>2</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
-                            </tr>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Ayah</h4>
@@ -163,12 +166,11 @@
                             <td>:</td>
                             <td>Endang</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>32104407002777</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -177,7 +179,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>SD Sederajat</td>
-
                         </tr>
 
                         <tr>
@@ -185,13 +186,11 @@
                             <td>:</td>
                             <td>Buruh</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>1.000.000</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
@@ -200,12 +199,19 @@
                             <th></th>
                             <td></td>
                             <td></td>
-
-
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Ibu</h4>
@@ -217,12 +223,11 @@
                             <td>:</td>
                             <td>Lala</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>321044070027770007</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -231,7 +236,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>SD Sederajat</td>
-
                         </tr>
 
                         <tr>
@@ -239,13 +243,11 @@
                             <td>:</td>
                             <td>IRT</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>-</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
@@ -254,11 +256,19 @@
                             <th></th>
                             <td></td>
                             <td></td>
-
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Wali</h4>
@@ -270,12 +280,11 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -284,7 +293,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -292,13 +300,11 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>-</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
@@ -309,33 +315,54 @@
                             <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Kontak Rumah</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
-                       <tr>
+                        <tr>
                             <th>Telepon Rumah</th>
                             <td>:</td>
                             <td>022121213312</td>
 
-
                             <th>Email Rumah</th>
                             <td>:</td>
                             <td>damili@gmail.com</td>
-
                         </tr>
+
                         <tr>
                             <th>Nomor Telepon HP</th>
                             <td>:</td>
                             <td>0812345678</td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Periodik</h4>
@@ -347,11 +374,9 @@
                             <td>:</td>
                             <td>140 cm</td>
 
-
                             <th>Berat Badan</th>
                             <td>:</td>
                             <td>40 kg</td>
-
                         </tr>
 
                         <tr>
@@ -362,21 +387,31 @@
                             <th>Waktu tempuh</th>
                             <td>:</td>
                             <td>30 Menit</td>
-
                         </tr>
 
                         <tr>
-
                             <th>Jumlah Saudara Kandung</th>
                             <td>:</td>
                             <td>2</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
+
             <h4 class="text-primary">Prestasi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
@@ -386,11 +421,9 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Nama Prestasi</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -398,11 +431,9 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Tahun</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -410,27 +441,27 @@
                             <td>:</td>
                             <td>-</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
+                        <tr>
                             <th></th>
                             <td></td>
                             <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
-
-
                     </tbody>
-                </table><br>
+                </table>
             </div>
-
-            
-
-
 
         </div>
     </div>
 </div>
-
-
 
 @endsection
 

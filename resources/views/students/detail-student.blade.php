@@ -33,14 +33,13 @@
     </div>
 </div>
 
-
 <div class="col-lg-12">
     <div class="profile-card-3 ">
         <div class="text-center">
             <img src="{{ url('assets/images/avatars/avatar-17.png')}}" alt="user avatar" class="card-img-top" style="width: 200px;
-                        height: 200px;
-                        background: #dac52c;
-                        border-radius: 100%;">
+            height: 200px;
+            background: #dac52c;
+            border-radius: 100%;">
         </div>
         <hr>
     </div>
@@ -50,6 +49,7 @@
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
+
             <h4 class="text-primary">Data Pribadi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
@@ -59,40 +59,42 @@
                             <td>:</td>
                             <td>Ahmad Suherman</td>
                         </tr>
+                        
                         <tr>
                             <th>Tahun Masuk</th>
                             <td>:</td>
                             <td>2018</td>
-
                         </tr>
-                         <tr>
+
+                        <tr>
                             <th>Agama</th>
                             <td>:</td>
                             <td>islam</td>
-
                         </tr>
 
                         <tr>
-
                             <th>Tempat Lahir</th>
                             <td>:</td>
                             <td>Bandung</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
-                            <td>05 Mei</td>
-
-                            
+                            <td>05 Mei</td>    
                         </tr>
+
                         <tr>
                             <th>Alamat</th>
                             <td>:</td>
                             <td>Kp. Cicangkudu</td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -105,6 +107,7 @@
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
+
             <h4 class="text-primary">Data Pribadi</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
@@ -114,12 +117,11 @@
                             <td>:</td>
                             <td>Ahmad Suherman</td>
 
-
                             <th>NIK / No. KITAS</th>
                             <td>:</td>
                             <td>3210440700277</td>
-
                         </tr>
+
                         <tr>
                             <th>No Registrasi Akta Lahir</th>
                             <td>:</td>
@@ -128,9 +130,9 @@
                             <th>NISN</th>
                             <td>:</td>
                             <td>0038614257</td>
-
                         </tr>
-                         <tr>
+
+                        <tr>
                             <th>Kewarganegaraan</th>
                             <td>:</td>
                             <td>INDONESIA</td>
@@ -138,7 +140,6 @@
                             <th>Agama</th>
                             <td>:</td>
                             <td>islam</td>
-
                         </tr>
 
                         <tr>
@@ -146,13 +147,11 @@
                             <td>:</td>
                             <td>Laki Laki</td>
 
-
                             <th>Tempat Lahir</th>
                             <td>:</td>
                             <td>Bandung</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Tanggal lahir</th>
                             <td>:</td>
@@ -161,8 +160,8 @@
                             <th>Alamat</th>
                             <td>:</td>
                             <td>Kp. Cicangkudu</td>
-
                         </tr>
+
                         <tr>
                             <th>RT</th>
                             <td>:</td>
@@ -171,7 +170,6 @@
                             <th>RW</th>
                             <td>:</td>
                             <td>012</td>
-
                         </tr>
 
                         <tr>
@@ -189,11 +187,9 @@
                             <td>:</td>
                             <td>Sangkanhurip</td>
 
-
                             <th>Tinggal Bersama</th>
                             <td>:</td>
                             <td>Orang Tua</td>
-
                         </tr>
 
                         <tr>
@@ -201,11 +197,22 @@
                             <td>:</td>
                             <td>2</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Ayah</h4>
@@ -217,12 +224,11 @@
                             <td>:</td>
                             <td>Maman</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>32104407002777</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -231,7 +237,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>SD Sederajat</td>
-
                         </tr>
 
                         <tr>
@@ -239,13 +244,11 @@
                             <td>:</td>
                             <td>Buruh</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>1.000.000</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
@@ -254,12 +257,19 @@
                             <th></th>
                             <td></td>
                             <td></td>
-
-
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Ibu</h4>
@@ -271,12 +281,11 @@
                             <td>:</td>
                             <td>Wiwin</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>321044070027770007</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -285,7 +294,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>SD Sederajat</td>
-
                         </tr>
 
                         <tr>
@@ -293,22 +301,32 @@
                             <td>:</td>
                             <td>IRT</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>-</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
                             <td>Tidak</td>
 
-                            </tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Wali</h4>
@@ -320,12 +338,11 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
+
                         <tr>
                             <th>Tahun Lahir</th>
                             <td>:</td>
@@ -334,7 +351,6 @@
                             <th>Pendidikan Terakhir</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -342,20 +358,32 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Penghasilan Perbulan</th>
                             <td>:</td>
                             <td>-</td>
-
-
                         </tr>
+
                         <tr>
                             <th>Berkebutuhan Khusus</th>
                             <td>:</td>
                             <td>-</td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Kontak Rumah</h4>
@@ -367,21 +395,32 @@
                             <td>:</td>
                             <td>022121213312</td>
 
-
                             <th>Email Rumah</th>
                             <td>:</td>
                             <td>damili@gmail.com</td>
-
                         </tr>
+
                         <tr>
                             <th>Nomor Telepon HP</th>
                             <td>:</td>
                             <td>0812345678</td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Data Periodik</h4>
@@ -393,11 +432,9 @@
                             <td>:</td>
                             <td>140 cm</td>
 
-
                             <th>Berat Badan</th>
                             <td>:</td>
                             <td>40 kg</td>
-
                         </tr>
 
                         <tr>
@@ -408,20 +445,29 @@
                             <th>Waktu tempuh</th>
                             <td>:</td>
                             <td>30 Menit</td>
-
                         </tr>
 
                         <tr>
-
                             <th>Jumlah Saudara Kandung</th>
                             <td>:</td>
                             <td>2</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">Prestasi</h4>
@@ -433,11 +479,9 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Nama Prestasi</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -445,11 +489,9 @@
                             <td>:</td>
                             <td>-</td>
 
-
                             <th>Tahun</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
@@ -457,24 +499,30 @@
                             <td>:</td>
                             <td>-</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             
-
-
-
         </div>
     </div>
 </div>
 
 @endif
-
-
 
 @endsection
 

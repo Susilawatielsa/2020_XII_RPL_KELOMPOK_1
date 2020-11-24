@@ -47,7 +47,8 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" novalidate="novalidate" autocomplete="off">
+                <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('staffs/create') }}" novalidate="novalidate">
+                    @csrf
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
@@ -411,8 +412,8 @@
 
 
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <a href="/staffs" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
+                        <a href="/staffs" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</a>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</button>
                     </div>
                 </form>
             </div>

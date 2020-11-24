@@ -93,7 +93,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
           @elseif(Auth()->user()->hasRole('teacher'))
 
@@ -152,7 +152,6 @@
       </div>
     </div>
   </div>
-</div>
 
           @else
           <div class="row">
@@ -218,8 +217,7 @@
         </div>
       </div>
     </div>
-  </div>
-</div><!-- End Row-->
+  </div><!-- End Row-->
 @endif
 
 <!--Start Back To Top Button-->

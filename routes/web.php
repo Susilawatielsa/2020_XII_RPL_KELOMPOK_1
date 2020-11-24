@@ -44,7 +44,8 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/staffs', 'StaffController@index');
     Route::get('/staffs/prospective', 'StaffController@list_prospective');
     Route::get('/staffs/rejected', 'StaffController@list_rejected');
-    Route::get('staffs/create', 'StaffController@create');
+    Route::post('/staffs/create', 'StaffController@store');
+    Route::get('/staffs/create', 'StaffController@create');
     Route::get('/staff/1', 'StaffController@show');
     Route::get('/staffs/prospective/1', 'StaffController@show_prospective');
     Route::get('/staffs/rejected/1', 'StaffController@show_rejected');
