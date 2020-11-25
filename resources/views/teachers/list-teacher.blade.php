@@ -182,7 +182,7 @@
                 <td>
                   <a href="{{ url('teacher/1') }}" data-toggle="tooltip" data-placement="top" title="DETAIL" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/teachers/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -193,7 +193,7 @@
                 <td>
                   <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
               <tr>
@@ -204,7 +204,7 @@
                 <td>
                   <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
                   <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
+                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
                 </td>
               </tr>
 
