@@ -22,6 +22,12 @@
 
     <!-- My Css -->
     <style>
+        
+html , body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
         /* navbar */
 .navbar{
     position: relative;
@@ -85,7 +91,7 @@
 .info-panel{
     box-shadow: 0 3px 20px rgba(0,0,0,0.5);
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: white;
     padding: 30px;
 
@@ -262,7 +268,7 @@ footer{
     font-weight: 200;
     text-shadow: 2px 2px 10px grey;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 40px;
 }
 
