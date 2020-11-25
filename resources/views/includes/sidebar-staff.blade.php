@@ -47,7 +47,23 @@
       </ul>
     </li>
 
+    <li>
+      <a href="{{ url('school-years')}}" class="waves-effect active">
+        <i></i> <span>Tahun Ajaran</span>
+      </a>
+    </li>
 
+    <li>
+      <a href="{{ url('majors')}}" class="waves-effect active">
+        <i></i> <span>Jurusan</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ url('subjects')}}" class="waves-effect active">
+        <i></i> <span>Mata Pelajaran</span>
+      </a>
+    </li>
 
 
   </ul>

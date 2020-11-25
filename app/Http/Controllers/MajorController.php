@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Years;
 use Illuminate\Http\Request;
 
-class YearController extends Controller
+class MajorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class YearController extends Controller
      */
     public function index()
     {
-        return view('years.index');
+        return view('majors.index');
     }
 
     /**
@@ -24,7 +23,7 @@ class YearController extends Controller
      */
     public function create()
     {
-        return view('years.create');
+        return view('majors.create');
     }
 
     /**
@@ -41,10 +40,10 @@ class YearController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Years  $years
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Years $years)
+    public function show($id)
     {
         //
     }
@@ -52,22 +51,22 @@ class YearController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Years  $years
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Years $years)
+    public function edit()
     {
-        return view('years.edit');
+        return view('majors.edit');
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Years  $years
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Years $years)
+    public function update(Request $request)
     {
         dd($request);
     }
@@ -75,11 +74,11 @@ class YearController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Years  $years
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Years $years)
+    public function destroy()
     {
-        dd("Tahun Ajaran Telah dihapus");
+        dd("Jurusan Berhasil DI delete");
     }
 }

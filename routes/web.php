@@ -62,14 +62,14 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');
     Route::get('/teachers/edit/1', 'TeacherController@edit');
     Route::get('/teachers/delete', 'TeacherController@destroy');
-    
+
 
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
     Route::get('/students/rejected', 'StudentController@list_rejected');
     Route::get('/students/create', 'StudentController@create');
     Route::post('/students/create', 'StudentController@store');
-    
+
     Route::get('/student/1', 'StudentController@show');
     Route::get('/students/prospective/1', 'StudentController@show_prospective');
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
@@ -81,15 +81,34 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/page/detail', 'PageController@show');
     Route::get('/page/add', 'PageController@create');
     Route::get('/page/edit', 'PageController@edit');
-
-
 });
 
- Route::get('/account/profile/1/edit-password', 'Auth\AccountController@editPassword');
- Route::post('/account/profile/1/edit-password', 'Auth\AccountController@storeEditPassword');
+Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack', 'role:admin|staff']], function () {
+    Route::get('/school-years', 'YearController@index');
+    Route::get('/school-years/create', 'YearController@create');
+    Route::post('/school-years/create', 'YearController@store');
+    Route::get('/school-years/edit/1', 'YearController@edit');
+    Route::post('/school-years/edit/1', 'YearController@update');
+    Route::get('/school-years/delete', 'YearController@destroy');
 
- Route::get('/account/profile/1/edit', 'Auth\AccountController@editProfile');
- Route::post('/account/profile/1/edit', 'Auth\AccountController@storeEditProfile');
- 
+    Route::get('/majors', 'MajorController@index');
+    Route::get('/majors/create', 'MajorController@create');
+    Route::post('/majors/create', 'MajorController@store');
+    Route::get('/majors/edit/1', 'MajorController@edit');
+    Route::post('/majors/edit/1', 'MajorController@update');
+    Route::get('/majors/delete', 'MajorController@destroy');
 
- 
+    Route::get('/subjects', 'SubjectController@index');
+    Route::get('/subjects/create', 'SubjectController@create');
+    Route::post('/subjects/create', 'SubjectController@store');
+    Route::get('/subjects/edit/1', 'SubjectController@edit');
+    Route::post('/subjects/edit/1', 'SubjectController@update');
+    Route::get('/subjects/delete', 'SubjectController@destroy');
+});
+
+
+Route::get('/account/profile/1/edit-password', 'Auth\AccountController@editPassword');
+Route::post('/account/profile/1/edit-password', 'Auth\AccountController@storeEditPassword');
+
+Route::get('/account/profile/1/edit', 'Auth\AccountController@editProfile');
+Route::post('/account/profile/1/edit', 'Auth\AccountController@storeEditProfile');
