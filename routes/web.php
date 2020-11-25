@@ -63,13 +63,11 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/teachers/edit/1', 'TeacherController@edit');
     Route::get('/teachers/delete/1', 'TeacherController@destroy');
 
-
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
     Route::get('/students/rejected', 'StudentController@list_rejected');
     Route::get('/students/create', 'StudentController@create');
     Route::post('/students/create', 'StudentController@store');
-    
     Route::get('/student/1', 'StudentController@show');
     Route::get('/students/prospective/1', 'StudentController@show_prospective');
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
