@@ -50,7 +50,7 @@
                 <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('students/create') }}" novalidate="novalidate">
                     @csrf
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
+                        <i class="  "></i>
                         Data Pribadi
                     </h4>
 
@@ -61,12 +61,12 @@
                             <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
                         </div>
                         <div class="col-sm-4">
-                            <label>NIK / No. KITAS (untuk WNA)</label>
+                            <label>NIK / No. KITAS (untuk WNA)<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan Nomor NIK">
                         </div>
                         <div class="col-sm-4">
                         <label>Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">                        
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">                        
                         </div>
 
 
@@ -76,28 +76,28 @@
 
                         <div class="col-sm-4">
                             <label>Email<span style="color:red"> *</span></label>
-                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nama Lengkap">
+                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Alamat Eamil">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Password<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_password" placeholder="No Registrasi Akta Lahir">
+                            <input type="text" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Password">
                         </div>
                         <div class="col-sm-4">
-                            <label>Ulangi Password</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_confirm-password" placeholder="No Registrasi Akta Lahir">
+                            <label>Ulangi Password<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_confirm-password" placeholder="Ulangi Passsword">
                         </div>
 
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>NISN</label>
+                            <label>NISN<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="std_nisn" placeholder="Masukan Nomor NISN">
                         </div>
 
-                        <div class="col-sm-2">
-                            <label>Kewarganegaraan</label>
+                        <div class="col-sm-3">
+                            <label>Kewarganegaraan<span style="color:red"> *</span></label>
                             <select name="personal[citizenship]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>WNI</option>
@@ -105,11 +105,11 @@
                             </select>
                         </div>
                         <div class="col-sm-2">
-                            <label>Nama Negara</label>
-                            <input name="personal[country_name]" type="text" class="form-control" id="input-10" placeholder="Masukan Nama Negara">
+                            <label>Nama Negara<span style="color:red"> *</span></label>
+                            <input name="personal[country_name]" type="text" class="form-control" id="input-10" placeholder="Nama Negara">
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <label>No Registrasi Akta Lahir</label>
                             <input type="text" class="form-control" id="input-10" name="personal[birth_certificate_registration_no]" placeholder="No Registrasi Akta Lahir">
                         </div>
@@ -117,16 +117,16 @@
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Tempat Lahir</label>
+                            <label>Tempat Lahir<span style="color:red"> *</span></label>
                             <input type="text" name="usr_place_of_birth" class="form-control" id="input-10" name="firstname" placeholder="Masukan Tempat Lahir">
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Tanggal Lahir</label>
-                            <input type="text" name="usr_date_of_birth" id="autoclose-datepicker" class="form-control" placeholder="dd/mm/yyyy">
+                            <label>Tanggal Lahir<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_date_of_birth" id="autoclose-datepicker" class="form-control" placeholder="tanggal/bulan/tahun">
                         </div>
                         <div class="col-sm-4">
-                            <label>Jenis Kelamin</label>
+                            <label>Jenis Kelamin<span style="color:red"> *</span></label>
 
                             <select name="usr_gender" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
@@ -137,56 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
-
-                        <div class="col-sm-4">
-                            <label>Provinsi</label>
-                            <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option>Jawa BArat</option>
-                                <option>Jawa Timur</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Kota</label>
-                            <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Kabupaten</label>
-                            <select name="usr_district_id" class="form-control" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option>Katapang</option>
-                                <option>Arjasari</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="form-group row">
-
-                        <div class="col-sm-6">
-                            <label>Alamat</label>
-                            <input type="text" name="usr_address" class="form-control" id="input-10" placeholder="Masukan Alamat">
-                        </div>
-
-                        <div class="col-sm-2">
-                            <label>Kode Pos</label>
-                            <input type="text" name="usr_postal_code" class="form-control" id="input-10" placeholder="Masukan Kode Pos">
-                        </div>
-
-                        <div class="col-sm-2">
-                            <label>RT</label>
-                            <input type="text" name="usr_rt" class="form-control" id="input-10" placeholder="Masukan Nomor RT">
-                        </div>
-                        <div class="col-sm-2">
-                            <label>RW</label>
-                            <input type="text" name="usr_rw" class="form-control" id="input-10" placeholder="Masukan Nomor RW">
-                        </div>
-                    </div>
+                    
                     <div class="form-group row">
 
                         <div class="col-sm-2">
@@ -204,11 +155,11 @@
 
                         <div class="col-sm-3">
                             <label>NO KIP</label>
-                            <input type="text" name="stu_no_kip" class="form-control" id="input-10" placeholder="Masukan Nomor RW">
+                            <input type="text" name="stu_no_kip" class="form-control" id="input-10" placeholder="Masukan Nomor KIP">
                         </div>
 
                         <div class="col-sm-2">
-                            <label>Agama</label>
+                            <label>Agama<span style="color:red"> *</span></label>
                             <select class="form-control" name="usr_religion" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option value="Islam">Islam</option>
@@ -220,7 +171,7 @@
                             </select>
                         </div>
                         <div class="col-sm-3">
-                            <label>Tempat Tinggal</label>
+                            <label>Tempat Tinggal<span style="color:red"> *</span></label>
                             <select class="form-control" name="personal[living_together]" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option value="Orang Tua">Orang Tua</option>
@@ -232,31 +183,31 @@
                             </select>
                         </div>
                          <div class="col-sm-2">
-                            <label>Anak Ke</label>
-                            <input type="text" name="personal[child]" class="form-control" id="input-10" placeholder="Masukan Nomor RW">
+                            <label>Anak Ke<span style="color:red"> *</span></label>
+                            <input type="text" name="personal[child]" class="form-control" id="input-10" placeholder="Anak Ke">
                         </div>
                     </div>
 
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-envelope-o"></i>
+                        <i class=""></i>
                         Data Ayah
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Nama Ayah Kandung</label>
+                            <label>Nama Ayah Kandung<span style="color:red"> *</span></label>
                             <input type="text" name="father_data[name]" class="form-control" id="input-10" name="name" placeholder="Masukan Nama Lengkap">
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Nomor Identitas (NIK)</label>
+                            <label>Nomor Identitas (NIK)<span style="color:red"> *</span></label>
                             <input type="text" name="father_data[nik]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NIK">
                         </div>
 
                         <div class="col-sm-2">
-                            <label>Tahun Lahir</label>
+                            <label>Tahun Lahir<span style="color:red"> *</span></label>
                             <select class="form-control" name="father_data[year_of_birth]" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>2001</option>
@@ -267,7 +218,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-3">
-                            <label>Pendidikan Terakhir</label>
+                            <label>Pendidikan Terakhir<span style="color:red"> *</span></label>
                             <select name="father_data[education]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>SD - Sederajat</option>
@@ -278,7 +229,7 @@
                             </select>
                         </div>
                         <div class="col-sm-3">
-                            <label>Pekerjaan</label>
+                            <label>Pekerjaan<span style="color:red"> *</span></label>
 
                             <select name="father_data[profession]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
@@ -288,7 +239,7 @@
 
                         </div>
                         <div class="col-sm-3">
-                            <label>Pendapatan Perbulan</label>
+                            <label>Pendapatan Perbulan<span style="color:red"> *</span></label>
                             <select name="father_data[monthly_income]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>
@@ -299,7 +250,7 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disability</label> <br>
+                            <label>Disabilitas<span style="color:red"> *</span></label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="disability_father1" value="Ya" name="father_data[disability]">
@@ -313,24 +264,24 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-envelope-o"></i>
+                        <i class=""></i>
                         Data Ibu
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Nama Ibu Kandung</label>
+                            <label>Nama Ibu Kandung<span style="color:red"> *</span></label>
                             <input type="text" name="mother_data[name]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Nomor Identitas (NIK)</label>
+                            <label>Nomor Identitas (NIK)<span style="color:red"> *</span></label>
                             <input type="text" name="mother_data[nik]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NIK">
                         </div>
 
                         <div class="col-sm-2">
-                            <label>Tahun Lahir</label>
+                            <label>Tahun Lahir<span style="color:red"> *</span></label>
                             <select name="mother_data[year_of_birth]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>2001</option>
@@ -341,7 +292,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-3">
-                            <label>Pendidikan Terakhir</label>
+                            <label>Pendidikan Terakhir<span style="color:red"> *</span></label>
                             <select name="mother_data[education]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>SD - Sederajat</option>
@@ -351,7 +302,7 @@
                             </select>
                         </div>
                         <div class="col-sm-3">
-                            <label>Pekerjaan</label>
+                            <label>Pekerjaan<span style="color:red"> *</span></label>
 
                             <select name="mother_data[profession]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
@@ -362,7 +313,7 @@
 
                         </div>
                         <div class="col-sm-3">
-                            <label>Pendapatan Perbulan</label>
+                            <label>Pendapatan Perbulan<span style="color:red"> *</span></label>
                             <select name="mother_data[monthly_income]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>
@@ -373,7 +324,7 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disability</label> <br>
+                            <label>Disabilitas<span style="color:red"> *</span></label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="disability_mother1" value="Ya" name="mother_data[disability]">
@@ -387,14 +338,14 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-envelope-o"></i>
+                        <i class=""></i>
                         Data Wali
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Nama Lengkap</label>
+                            <label>Nama Wali Murid</label>
                             <input type="text" name="guardian_data[name]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
                         </div>
 
@@ -447,7 +398,7 @@
 
 
                         <div class="col-sm-3">
-                            <label>Disability</label> <br>
+                            <label>Disabilitas</label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="disability_guardian1" value="Ya" name="guardian_data[disability]">
@@ -461,43 +412,94 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-phone"></i>
-                        Kontak
+                        <i class=""></i>
+                         informasi Kontak
                     </h4>
 
                     <div class="form-group row">
 
+                        <div class="col-sm-4">
+                            <label>Provinsi<span style="color:red"> *</span></label>
+                            <select class="form-control" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option>Jawa BArat</option>
+                                <option>Jawa Timur</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Kota<span style="color:red"> *</span></label>
+                            <select class="form-control" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option>Bandung</option>
+                                <option>Jakarta</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Kabupaten<span style="color:red"> *</span></label>
+                            <select name="usr_district_id" class="form-control" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option>Katapang</option>
+                                <option>Arjasari</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <label>Alamat<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_address" class="form-control" id="input-10" placeholder="Masukan Alamat">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <label>Kode Pos<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_postal_code" class="form-control" id="input-10" placeholder="Masukan Kode Pos">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <label>RT<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_rt" class="form-control" id="input-10" placeholder="Masukan Nomor RT">
+                        </div>
+                        <div class="col-sm-2">
+                            <label>RW<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_rw" class="form-control" id="input-10" placeholder="Masukan Nomor RW">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+
                         <div class="col-sm-6">
                             <label>Telepon Rumah</label>
-                            <input type="text" name="contact[landline_number]" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon Rmah">
+                            <input type="text" name="contact[landline_number]" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon Rumah">
                         </div>
 
                         <div class="col-sm-6">
                             <label>Email Rumah</label>
-                            <input type="text" name="contact[email]" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon">
+                            <input type="text" name="contact[email]" class="form-control" id="input-10" placeholder="Masukan Alamat Email Rumah">
                         </div>
 
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-laptop"></i>
+                        <i class=""></i>
                         Data Periodik
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <label>Tinggi Badan</label>
+                            <label>Tinggi Badan<span style="color:red"> *</span></label>
                             <input type="text" name="periodic_data[height]" class="form-control" id="input-10" placeholder="Masukan Tinggi Badan">
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Berat Badan</label>
+                            <label>Berat Badan<span style="color:red"> *</span></label>
                             <input name="periodic_data[weight]" type="text" class="form-control" id="input-10" name="firstname" placeholder="Masukan Berat Badan">
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Jarak Ke Sekolah</label>
+                            <label>Jarak Ke Sekolah<span style="color:red"> *</span></label>
                             <input type="text" name="periodic_data[distance_to_school]" class="form-control" id="input-10" placeholder="Masukan Jarak Dalam Kilometer">
                         </div>
 
@@ -506,7 +508,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <label>Berapa KM</label>
+                            <label>Berapa KM<span style="color:red"> *</span></label>
                             <select name="periodic_data[many_km]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option value="0,5"> 0,5 KM</option>
@@ -515,18 +517,18 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Waktu Tempuh</label>
+                            <label>Waktu Tempuh<span style="color:red"> *</span></label>
                             <input type="text" name="periodic_data[travel_time_to_school]" class="form-control" id="input-10" placeholder="Masukan Dalam Satuan Jam/Menit">
                         </div>
                         <div class="col-sm-4">
-                            <label>Jumlah Saudara Kandung</label>
+                            <label>Jumlah Saudara Kandung<span style="color:red"> *</span></label>
                             <input type="text" name="periodic_data[number_of_sibling]" class="form-control" id="input-10" placeholder="Masukan Jumlah Saudara Kandung">
                         </div>
 
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-laptop"></i>
+                        <i class=""></i>
                         Prestasi
                     </h4>
                     <div class="form-group row">
@@ -599,7 +601,7 @@
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-image-o"></i>
-                        Image Picture
+                        Lainnya<span style="color:red"> *</span>
                     </h4>
 
                     <div class="form-group row">
