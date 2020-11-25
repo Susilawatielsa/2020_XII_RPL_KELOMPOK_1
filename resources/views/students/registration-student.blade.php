@@ -141,7 +141,7 @@
 
                                 <div class="col-sm-2">
                                     <label>Kewarganegaraan<span style="color:red"> *</span></label>
-                                    <select name="personal[citizenship]" class="form-control" id="basic-select">
+                                    <select name="usr_citizenship" class="form-control" id="basic-select">
                                         <option disabled="" selected="">Pilih</option>
                                         <option>WNI</option>
                                         <option>WNA</option>
@@ -149,7 +149,7 @@
                                 </div>
                                 <div class="col-sm-2">
                                     <label>Nama Negara<span style="color:red"> *</span></label>
-                                    <input name="personal[country_name]" type="text" class="form-control" id="input-10" placeholder="Masukan Nama Negara">
+                                    <input name="usr_country_name" type="text" class="form-control" id="input-10" placeholder="Masukan Nama Negara">
                                 </div>
 
                                 <div class="col-sm-4">
@@ -166,7 +166,7 @@
 
                                 <div class="col-sm-4">
                                     <label>Tanggal Lahir<span style="color:red"> *</span></label>
-                                    <input type="text" name="usr_date_of_birth" id="autoclose-datepicker" class="form-control" placeholder="tanggal/bulan/tahun">
+                                    <input type="text" name="usr_date_of_birth" id="autoclose-datepicker" class="form-control" placeholder="Tanggal/Bulan/Tahun">
                                 </div>
                                 <div class="col-sm-4">
                                     <label>Jenis Kelamin<span style="color:red"> *</span></label>
@@ -241,12 +241,12 @@
 
                                 <div class="col-sm-6">
                                     <label>Nama Ayah Kandung<span style="color:red"> *</span></label>
-                                    <input type="text" name="father_data[name]" class="form-control" id="input-10" name="name" placeholder="Masukan Nama Lengkap">
+                                    <input type="text" name="father_data[name]" class="form-control" id="input-10" placeholder="Masukan Nama Lengkap">
                                 </div>
 
                                 <div class="col-sm-4">
                                     <label>Nomor Identitas (NIK)<span style="color:red"> *</span></label>
-                                    <input type="text" name="father_data[nik]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NIK">
+                                    <input type="text" name="father_data[nik]" class="form-control" id="input-10" placeholder="Masukan Nomor NIK">
                                 </div>
 
                                 <div class="col-sm-2">
@@ -315,12 +315,12 @@
 
                                 <div class="col-sm-6">
                                     <label>Nama Ibu Kandung<span style="color:red"> *</span></label>
-                                    <input type="text" name="mother_data[name]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nama Lengkap">
+                                    <input type="text" name="mother_data[name]" class="form-control" id="input-10" placeholder="Masukan Nama Lengkap">
                                 </div>
 
                                 <div class="col-sm-4">
                                     <label>Nomor Identitas (NIK)<span style="color:red"> *</span></label>
-                                    <input type="text" name="mother_data[nik]" class="form-control" id="input-10" name="firstname" placeholder="Masukan Nomor NIK">
+                                    <input type="text" name="mother_data[nik]" class="form-control" id="input-10" placeholder="Masukan Nomor NIK">
                                 </div>
 
                                 <div class="col-sm-2">

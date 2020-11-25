@@ -159,7 +159,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <label>Kewarganegaraan <span style="color:red;">*</span></label>
-                                    <select class="form-control" name="" id="basic-select">
+                                    <select class="form-control" name="usr_citizenship" id="basic-select">
                                         <option disabled="" selected="">Pilih</option>
                                         <option>WNI</option>
                                         <option>WNA</option>
@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <label>Nama Negara <span style="color:red;">*</span></label>
-                                    <input type="text" class="form-control" id="input-10" name="country_name" placeholder="Masukan Nama Negara">
+                                    <input type="text" class="form-control" id="input-10" name="usr_country_name" placeholder="Masukan Nama Negara">
                                 </div>
                                 <div class="col-sm-4">
                                     <label>Jenis Kelamin <span style="color:red;">*</span></label>
@@ -183,11 +183,11 @@
                                     <label>Status Nikah <span style="color:red;">*</span></label> <br>
 
                                     <div class="radio icheck-info icheck-inline">
-                                        <input type="radio" id="info1" name="info">
+                                        <input type="radio" id="info1" name="stf_marital_status" value="sudah">
                                         <label for="info1">Sudah</label>
                                     </div>
                                     <div class="radio icheck-info icheck-inline">
-                                        <input type="radio" checked="" id="info2" name="info">
+                                        <input type="radio" checked="" id="info2" name="stf_marital_status" value="belum">
                                         <label for="info2">Belum</label>
                                     </div>
                                 </div>
@@ -200,7 +200,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <label>Provinsi <span style="color:red;">*</span></label>
-                                    <select class="form-control" name="provinces" id="basic-select">
+                                    <select class="form-control" id="basic-select">
                                         <option disabled="" selected="">Pilih</option>
                                         <option>Jawa Barat</option>
                                         <option>Jawa Timur</option>
@@ -219,7 +219,7 @@
 
                                 <div class="col-sm-4">
                                     <label>Kecamatan <span style="color:red;">*</span></label>
-                                    <select class="form-control" name="usr_district" id="basic-select">
+                                    <select class="form-control" name="usr_rural_name" id="basic-select">
                                         <option disabled="" selected="">Pilih</option>
                                         <option>Katapang</option>
                                         <option>Arjasari</option>
@@ -255,7 +255,7 @@
 
                                 <div class="col-sm-4">
                                     <label>No Telepon <span style="color:red;">*</span></label>
-                                    <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">
+                                    <input type="text" class="form-control" id="input-10" name="usr_phone_number" placeholder="Masukan Nomor Telepon">
                                 </div>
                                 <div class="col-sm-4">
                                     <label>Email <span style="color:red;">*</span></label>
