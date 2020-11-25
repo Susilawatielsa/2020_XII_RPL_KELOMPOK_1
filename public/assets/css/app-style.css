@@ -4439,7 +4439,7 @@ table.grid td {
   color: #272727;
   text-align: center;
   padding: 12px 30px;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 240px;
   background-color: #f9f9f9;
@@ -4450,7 +4450,7 @@ table.grid td {
   transition: all 0.3s ease; 
 }
 #wrapper.toggled .footer{
-    position: absolute;
+    position: fixed;
     left: 0px;
 }
 .back-to-top {
@@ -4478,7 +4478,7 @@ table.grid td {
 }
 
 .waves-effect {
-  position: relative;
+  position: initial;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
@@ -4739,7 +4739,7 @@ table.grid td {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0px;
 }
 
@@ -4760,7 +4760,7 @@ table.grid td {
 }
 
 #wrapper.toggled .footer{
-    position: absolute;
+    position: fixed;
     left: 0px;
 }
 

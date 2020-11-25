@@ -1,4 +1,4 @@
-<?php
+<?php\
 
 use Illuminate\Database\Seeder;
 
@@ -13,7 +13,7 @@ class ProvincesSeeder extends Seeder
     {
         DB::table('provinces')->insert([
         	'prv_id'=>1,
-        	'prv_name'=>'JNanggroe Aceh Darussalam',
+        	'prv_name'=>'Nanggroe Aceh Darussalam',
         ]);
         DB::table('provinces')->insert([
         	'prv_id'=>2,
