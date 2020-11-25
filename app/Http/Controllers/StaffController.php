@@ -46,6 +46,12 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
+        $validatedData = $request->validate([
+        'usr_name' => ['required', 'string', 'max:255'],
+        'usr_email' => ['required', 'string', 'max:255', 'unique:users,usr_email'],
+        'usr_password' => ['required', 'string', 'min:8', 'confirmed'],
+        'usr_phone' => ['required', 'min:10','regex:/^([0-9\s\-\+\(\)]*)$/'],
+    ]);
         dd($request);
     }
 
@@ -85,9 +91,12 @@ class StaffController extends Controller
      * @param  \App\Staffs  $staffs
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Staffs $staffs)
+    public function update(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+        'usr_name' => ['required', 'string', 'max:255'],
+    ]);
+        dd($request);
     }
 
     /**

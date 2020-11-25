@@ -59,26 +59,48 @@
 
                         <div class="col-sm-4">
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
+                            <input type="text" class="form-control @error('usr_name') is-invalid @enderror" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap" value="{{ old('usr_name') }}">
+                            @error('usr_name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                         </div>
-                         <div class="col-sm-4">
-                        <label>Email<span style="color:red"> *</span></label>
-                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nomor Telepon">                        
+
+                        <div class="col-sm-4">
+                            <label>Email<span style="color:red"> *</span></label>
+                            <input type="email" class="form-control @error('usr_email') is-invalid @enderror" id="input-10" name="usr_email" placeholder="Masukan Email" value="{{ old('usr_email') }}">
+                            @error('usr_email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror                        
                         </div>
+
                         <div class="col-sm-4">
                             <label>No Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">
+                            <input type="text" class="form-control @error('usr_phone_number') is-invalid @enderror" id="input-10" name="usr_phone_number" placeholder="Masukan Nomor Telepon" value="{{ old('usr_phone_number') }}">
+                            @error('usr_phone_number')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror                        
                         </div>
                     </div>
                     <div class="form-group row">
 
                         <div class="col-sm-6">
                             <label>Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Nama Lengkap">
+                            <input type="password" class="form-control @error('usr_password') is-invalid @enderror" id="input-10" name="usr_password" placeholder="Masukan Password" value="{{ old('usr_password') }}">
+                            @error('usr_password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror                        
                         </div>
                         <div class="col-sm-6">
                             <label>Retype Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Nomor NIK">
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Password">
                         </div>
                     </div>
 
@@ -88,10 +110,10 @@
                     </h4>
                     <div class="form-group row">
 
-                        
+
                         <div class="col-sm-4">
                             <label>NIK <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan NIK">
+                            <input type="text" class="form-control" id="input-10" name="usr_nik_or_kitas" placeholder="Masukan NIK">
                         </div>
                         <div class="col-sm-4">
                             <label>NUPTK</label>
@@ -121,15 +143,15 @@
 
                         <div class="col-sm-4">
                             <label>Kewarganegaraan <span style="color:red;">*</span></label>
-                            <select class="form-control" name="" id="basic-select">
+                            <select class="form-control" name="usr_citizenship" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>WNI</option>
-                                <option>WNA</option>
+                                <option value="WNI">WNI</option>
+                                <option value="WNA">WNA</option>
                             </select>
                         </div>
                         <div class="col-sm-4">
                             <label>Nama Negara <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="country_name" placeholder="Masukan Nama Negara">
+                            <input type="text" class="form-control" id="input-10" name="usr_country_name" placeholder="Masukan Nama Negara">
                         </div>
                     </div>
 
@@ -143,14 +165,14 @@
                             <label>Tanggal Lahir <span style="color:red;">*</span></label>
                             <input type="text" id="autoclose-datepicker" class="form-control" name="usr_date_of_birth" placeholder="Tanggal/Bulan/Tahun">
                         </div>
+
                         <div class="col-sm-4">
                             <label>Jenis Kelamin <span style="color:red;">*</span></label>
                             <select class="form-control" name="usr_gender" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Laki Laki</option>
-                                <option>Perempuan</option>
+                                <option value="Laki-Laki">Laki Laki</option>
+                                <option value="Perempuan">Perempuan</option>
                             </select>
-
                         </div>
                     </div>
 
@@ -160,11 +182,11 @@
                             <label>Status Nikah <span style="color:red;">*</span></label> <br>
 
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio" id="info1" name="info">
+                                <input type="radio" id="info1" name="stf_marital_status" value="Sudah">
                                 <label for="info1">Sudah</label>
                             </div>
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio" checked="" id="info2" name="info">
+                                <input type="radio" checked="" id="info2" name="stf_marital_status" value="belum">
                                 <label for="info2">Belum</label>
                             </div>
                         </div>
@@ -180,18 +202,18 @@
                             <label>Provinsi <span style="color:red;">*</span></label>
                             <select class="form-control" name="provinces" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Jawa Barat</option>
-                                <option>Jawa Timur</option>
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="Jawa Timur">Jawa Timur</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
                             <label>Kabupaten <span style="color:red;">*</span></label>
-                            <select class="form-control" name="usr_district" id="basic-select">
+                            <select class="form-control" name="city" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
                             </select>
                         </div>
 
@@ -199,8 +221,8 @@
                             <label>Kecamatan <span style="color:red;">*</span></label>
                             <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Katapang</option>
-                                <option>Arjasari</option>
+                                <option value="Katapang">Katapang</option>
+                                <option value="Arjasari">Arjasari</option>
                             </select>
                         </div>
 
@@ -221,28 +243,28 @@
                             <label>RT <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" name="usr_rt" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
-                          <div class="col-sm-2">
+                        <div class="col-sm-2">
                             <label>RW <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_rw" placeholder="Masukan Nomor RW">
                         </div>
                     </div>
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                        DATA SUAMI/Istri
+                        DATA SUAMI/ISTRI
                     </h4>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Nama Suami/Istri <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Istri">
+                            <input type="text" class="form-control" id="input-10" name="husband_or_wife_data[name_of_husband_wife]" placeholder="Masukan Nama Suami/Istri">
                         </div>
                         <div class="col-sm-4">
                             <label>NIK <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[nik]" placeholder="Masukan NIK">
+                            <input type="text" class="form-control" id="input-10" name="husband_or_wife_data[husband_wife_nik]" placeholder="Masukan NIK">
                         </div>
                         <div class="col-sm-4">
                             <label>NIP</label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[nip]" placeholder="Masukan NIP">
+                            <input type="text" class="form-control" id="input-10" name="husband_or_wife_data[nip]" placeholder="Masukan NIP">
                         </div>
 
                     </div>
@@ -250,7 +272,7 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Pekerjaan <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[profession]" placeholder="Masukan Nama Pekerjaan">
+                            <input type="text" class="form-control" id="input-10" name="husband_or_wife_data[profession]" placeholder="Masukan Nama Pekerjaan">
                         </div>
                     </div>
 
@@ -271,12 +293,12 @@
                             <label>Tahun Masuk</label>
                             <select class="form-control" id="basic-select" name="employment_status[date_starting_assignment]">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                                <option>2019</option>
-                                <option>2020</option>
-                                <option>2021</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
                             </select>
                         </div>
 
@@ -285,29 +307,28 @@
                             <label>Kontrak Kerja</label>
                             <select class="form-control" id="basic-select" name="employment_status[employment_contract]">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>1 Tahun</option>
-                                <option>2 Tahun</option>
-                                <option>3 Tahun</option>
-                                <option>4 Tahun</option>
-                                <option>5 Tahun</option>
-
+                                <option value="1 Tahun">1 Tahun</option>
+                                <option value="2 Tahun">2 Tahun</option>
+                                <option value="3 Tahun">3 Tahun</option>
+                                <option value="4 Tahun">4 Tahun</option>
+                                <option value="5 Tahun">5 Tahun</option>
                             </select>
-                         </div>
-                     </div>
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Status Staf</label>
                             <select class="form-control" id="basic-select" name="employment_status[staff_status]">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Staf Tetap</option>
-                                <option>Staf Tidak Tetap</option>
+                                <option value="Staf Tetap">Staf Tetap</option>
+                                <option value="Staf Tidak Tetap">Staf Tidak Tetap</option>
                             </select>
                         </div>
 
                         <div class="col-sm-4">
                             <label>Jabatan</label>
-                            <input type="text" class="form-control" id="input-10" name="employment_status[staff_position]" placeholder="Masukan Jabatan">
+                            <input type="text" class="form-control" id="input-10" name="stp_position_id" placeholder="Masukan Jabatan">
                         </div>
                     </div>
 
@@ -423,11 +444,6 @@
                             <input type="text" class="form-control" id="input-10" name="certification[organizer]" placeholder="Masukan Penyelenggara">
                         </div>
                     </div>
-                    
-                    <h4 class="form-header text-uppercase">
-                        <i class="fa fa-image-o"></i>
-                        Image Picture
-                    </h4>
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-image-o"></i>
@@ -437,10 +453,10 @@
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                        <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
-                         <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
+                            <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
+                            <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
 
-                        <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
+                            <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
 
                         </div>
                     </div>
@@ -540,8 +556,8 @@
     });
 
 
-function bacaGambar(input) {
-   if (input.files && input.files[0]) {
+    function bacaGambar(input) {
+     if (input.files && input.files[0]) {
       var reader = new FileReader();
 
       reader.onload = function (e) {
@@ -549,10 +565,10 @@ function bacaGambar(input) {
       }
 
       reader.readAsDataURL(input.files[0]);
-   }
+  }
 }
 $("#preview_gambar").change(function(){
-   bacaGambar(this);
+ bacaGambar(this);
 });
 
 </script>

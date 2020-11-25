@@ -71,37 +71,40 @@
 
                         <div class="col-sm-4">
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="Hamdan Firmansyah S. Pd">
+                            <input type="text" class="form-control @error('usr_name') is-invalid @enderror" id="input-10" name="usr_name" value="Hamdan Firmansyah S. Pd">
+                            @error('usr_name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                         </div>
                         <div class="col-sm-4">
                             <label>NIK</label>
-                            <input type="text" class="form-control" id="input-10" value="3204370204900002">
+                            <input type="text" class="form-control" id="input-10" name="usr_nik_or_kitas" value="3204370204900002">
                         </div>
                         <div class="col-sm-4">
                             <label>NUPTK</label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="4734768669130082">
+                            <input type="text" class="form-control" id="input-10" name="stf_nuptk" value="4734768669130082">
                         </div>
-
-
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>NO GTK</label>
-                            <input type="text" class="form-control" id="input-10" value="16.17.007">
+                            <input type="text" class="form-control" id="input-10" name="stf_gtk" value="16.17.007">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Kewarganegaraan</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="usr_citizenship">
                                 <option disabled="" selected="">WNI</option>
-                                <option>WNI</option>
-                                <option>WNA</option>
+                                <option value="WNI">WNI</option>
+                                <option value="WNA">WNA</option>
                             </select>
                         </div>
                         <div class="col-sm-4">
                             <label>Nama Negara</label>
-                            <input type="text" class="form-control" id="input-10" value="Indonesia">
+                            <input type="text" class="form-control" id="input-10" value="Indonesia" name="usr_country_name">
                         </div>
 
 
@@ -110,29 +113,29 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tempat Lahir<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="firstname" value="Bandung">
+                            <input type="text" class="form-control" id="input-10" name="firstname" value="Bandung" name="usr_place_of_birth">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Tanggal Lahir</label>
-                            <input type="text" id="autoclose-datepicker" class="form-control" value="02/04/1990">
+                            <input type="text" id="autoclose-datepicker" class="form-control" value="02/04/1990" name="usr_date_of_birth">
                         </div>
+
                         <div class="col-sm-4">
                             <label>Jenis Kelamin</label>
 
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="usr_gender">
                                 <option disabled="" selected="" >Laki Laki</option>
-                                <option>Laki Laki</option>
-                                <option>Perempuan</option>
+                                <option value="Laki Laki">Laki Laki</option>
+                                <option value="Perempuan">Perempuan</option>
                             </select>
-
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Agama</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="usr_religion">
                                 <option disabled="" selected="">Islam</option>
                                 <option value="Islam">Islam</option>
                                 <option value="Protestan">Protestan</option>
@@ -146,11 +149,11 @@
                             <label>Status Nikah</label> <br>
 
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio" checked="" id="info1" name="info">
+                                <input type="radio" checked="" id="info1" name="stf_marital_status">
                                 <label for="info1">Sudah</label>
                             </div>
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio"  id="info2" name="info">
+                                <input type="radio"  id="info2" name="stf_marital_status">
                                 <label for="info2">Belum</label>
                             </div>
                         </div>
@@ -164,29 +167,29 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Provinsi</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="provinces">
                                 <option disabled="" selected="">Jawa Barat</option>
-                                <option>Jawa Barat</option>
-                                <option>Jawa Timur</option>
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="Jawa Timur">Jawa Timur</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
                             <label>Kabupaten</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" name="city" id="basic-select">
                                 <option disabled="" selected="">Bandung</option>
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
                             </select>
                         </div>
 
                         <div class="col-sm-4">
                             <label>Kecamatan</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Katapang</option>
-                                <option>Katapang</option>
-                                <option>Arjasari</option>
+                                <option value="Katapang">Katapang</option>
+                                <option value="Arjasari">Arjasari</option>
                             </select>
                         </div>
 
@@ -195,17 +198,17 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Alamat</label>
-                            <input type="text" class="form-control" id="input-10" value="Kp. Citereup">
+                            <input type="text" name="usr_address" class="form-control" id="input-10" value="Kp. Citereup">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Kode Pos</label>
-                            <input type="text" class="form-control" id="input-10" value="40921">
+                            <input type="text" name="usr_postal_code" class="form-control" id="input-10" value="40921">
                         </div>
 
                         <div class="col-sm-4">
                             <label>RT</label>
-                            <input type="text" class="form-control" id="input-10" value="02">
+                            <input type="text" class="form-control" name="usr_rt" id="input-10" value="02">
                         </div>
 
                     </div>
@@ -214,16 +217,16 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>RW</label>
-                            <input type="text" class="form-control" id="input-10" value="07">
+                            <input type="text" class="form-control" id="input-10" name="usr_rw" value="07">
                         </div>
 
                         <div class="col-sm-4">
                             <label>No Telepon</label>
-                            <input type="text" class="form-control" id="input-10" value="089613272481">
+                            <input type="text" class="form-control" name="usr_phone_number" id="input-10" value="089613272481">
                         </div>
                         <div class="col-sm-4">
                             <label>Email</label>
-                            <input type="text" class="form-control" id="input-10" value="odney04@gmail.com">
+                            <input type="text" class="form-control" id="input-10" name="usr_email" value="odney04@gmail.com">
                         </div>
                     </div>
 
@@ -235,15 +238,15 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Nama Suami/Isteri</label>
-                            <input type="text" class="form-control" id="input-10" value="Hani Nuraeni">
+                            <input type="text" name="husband_or_wife_data[name_of_husband_wife]" class="form-control" id="input-10" value="Hani Nuraeni">
                         </div>
                         <div class="col-sm-4">
                             <label>NIK</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" name="husband_or_wife_data[husband_wife_nik]" class="form-control" id="input-10" value="-">
                         </div>
                         <div class="col-sm-4">
                             <label>NIP</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" name="husband_or_wife_data[nip]" class="form-control" id="input-10" value="-">
                         </div>
 
                     </div>
@@ -251,7 +254,7 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Pekerjaan</label>
-                            <input type="text" class="form-control" id="input-10" value="ibu rumah tangga">
+                            <input type="text" class="form-control" id="input-10" name="husband_or_wife_data[profession]" value="ibu rumah tangga">
                         </div>
                     </div>
 
@@ -265,32 +268,32 @@
 
                         <div class="col-sm-4">
                             <label>NO SK</label>
-                            <input type="text" class="form-control" id="input-10" value="181/102.10/SMK.MP/KS/VII/2018">
+                            <input type="text" name="employment_status[no_sk]" class="form-control" id="input-10" value="181/102.10/SMK.MP/KS/VII/2018">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Tahun Masuk</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" name="employment_status[date_starting_assignment]" id="basic-select">
                                 <option disabled="" selected="">2016</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                                <option>2019</option>
-                                <option>2020</option>
-                                <option>2021</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
                             <label>Kontrak Kerja</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="employment_status[employment_contract]">
                                 <option disabled="" selected="">1 Tahun</option>
-                                <option>1 Tahun</option>
-                                <option>2 Tahun</option>
-                                <option>3 Tahun</option>
-                                <option>4 Tahun</option>
-                                <option>5 Tahun</option>
+                                <option value="1 Tahun">1 Tahun</option>
+                                <option value="2 Tahun">2 Tahun</option>
+                                <option value="3 Tahun">3 Tahun</option>
+                                <option value="4 Tahun">4 Tahun</option>
+                                <option value="5 Tahun">5 Tahun</option>
                             </select>
                         </div>
                     </div>
@@ -307,7 +310,7 @@
 
                         <div class="col-sm-4">
                             <label>Jabatan</label>
-                            <input type="text" class="form-control" id="input-10" value="Ketua Staf">
+                            <input type="text" name="stp_position_id" class="form-control" id="input-10" value="Ketua Staf">
                         </div>
                     </div>
 
@@ -319,31 +322,31 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Tahun SD/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="2001">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[year_grade_school]" value="2001">
                         </div>
                         <div class="col-sm-4">
                             <label>Nama SD/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="SDN Parung Serab IV">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[grade_school]" value="SDN Parung Serab IV">
                         </div>
                         <div class="col-sm-4">
                             <label>Tahun SMP/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="2003">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[year_junior_high_school]" value="2003">
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Nama SMP/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="SMPN 1 Soreang">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[junior_high_school]" value="SMPN 1 Soreang">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Tahun SMA/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="2008">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[year_senior_high_school]" value="2008">
                         </div>
                         <div class="col-sm-4">
                             <label>Nama SMA/Sederajat</label>
-                            <input type="text" class="form-control" id="input-10" value="SMAN 1 Katapang">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[senior_high_school]" value="SMAN 1 Katapang">
                         </div>
 
                     </div>
@@ -352,15 +355,15 @@
 
                         <div class="col-sm-4">
                             <label>Tahun Perguruan Tinggi</label>
-                            <input type="text" class="form-control" id="input-10" value="2010">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[year]" value="2010">
                         </div>
                         <div class="col-sm-4">
                             <label>Nama Perguruan Tinggi</label>
-                            <input type="text" class="form-control" id="input-10" value="UPI Bandung">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[college]" value="UPI Bandung">
                         </div>
                         <div class="col-sm-4">
                             <label>Nama Fakultas</label>
-                            <input type="text" class="form-control" id="input-10" value="FPOK">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[faculty]" value="FPOK">
                         </div>
 
                     </div>
@@ -369,15 +372,15 @@
 
                         <div class="col-sm-4">
                             <label>Nama Jurusan</label>
-                            <input type="text" class="form-control" id="input-10" value="S1 Pendidikan Jasmani Kesehatan dan Rekreasi">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[majors]" value="S1 Pendidikan Jasmani Kesehatan dan Rekreasi">
                         </div>
                         <div class="col-sm-4">
                             <label>Tahun Lulus</label>
-                            <input type="text" class="form-control" id="input-10" value="2014">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[year]" value="2014">
                         </div>
                         <div class="col-sm-4">
                             <label>Gelar</label>
-                            <input type="text" class="form-control" id="input-10" value="S. Pd">
+                            <input type="text" class="form-control" id="input-10" name="educational_background[degree]" value="S.Pd">
                         </div>
 
                     </div>
@@ -391,21 +394,21 @@
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Status</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="certification[status]">
                                 <option disabled="" selected="">Belum</option>
-                                <option>Sudah</option>
-                                <option>Belum</option>
+                                <option value="Sudah">Sudah</option>
+                                <option value="Belum">Belum</option>
                             </select>
                         </div>
 
                         <div class="col-sm-4">
                             <label>Tahun</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" class="form-control" id="input-10" name="certification[year]" value="-">
                         </div>
 
                         <div class="col-sm-4">
                             <label>No Sertifikat</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" class="form-control" id="input-10" name="certification[certificate_no]" value="-">
                         </div>
                     </div>
 
@@ -413,12 +416,12 @@
 
                         <div class="col-sm-4">
                             <label>Bidang studi</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" class="form-control" id="input-10" name="certification[field_of_study]" value="-">
                         </div>
 
                         <div class="col-sm-4">
                             <label>Penyelenggara</label>
-                            <input type="text" class="form-control" id="input-10" value="-">
+                            <input type="text" class="form-control" id="input-10" name="certification[organizer]" value="-">
                         </div>
                     </div>
 
