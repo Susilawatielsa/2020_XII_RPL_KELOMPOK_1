@@ -61,7 +61,7 @@ class StudentController extends Controller
     }
     public function show_prospective()
     {
-       return view('students.detail-student-prospective');
+        return view('students.detail-student-prospective');
     }
     public function show_rejected()
     {
@@ -99,5 +99,13 @@ class StudentController extends Controller
     public function destroy(Students $students)
     {
         return 'data terhapus';
+    }
+    public function formRegistrasion()
+    {
+        return view('students.registration-student');
+    }
+    public function storeFormRegistrasion(Request $request)
+    {
+        dd($request, "MASUK KE HALAMAN MENUNGGU KEPUTUSAN DAN INFO PEMBAYARAN");
     }
 }
