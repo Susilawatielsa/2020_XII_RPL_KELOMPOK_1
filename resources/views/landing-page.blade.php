@@ -68,7 +68,7 @@
 .jumbotron .display-4{
     color: white;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
     font-weight: 200;
     text-shadow: 2px 2px 10px grey;
     font-size: 30px;
@@ -439,20 +439,32 @@ footer{
                             <li data-target="" data-slide-to="0" class="active"></li>
                             <li data-target="" data-slide-to="1"></li>
                             <li data-target="" data-slide-to="2"></li>
+                            <li data-target="" data-slide-to="3"></li>
+                            <li data-target="" data-slide-to="4"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
                                 <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                             <div class="carousel-item">
+                                <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
                                 <img src="assets/images/4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div> 
+                            <div class="carousel-item">
+                                <img src="assets/images/kerjasama1.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/kerjasama2.jpeg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
