@@ -435,24 +435,24 @@
                         <button type="button" id="gambar" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
                         </div>
                     </div>
-
-
-                    <div class="form-footer">
-                        <button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <a href="#" button type="submit" class="btn btn-success"><i class="fa fa-times"></i> SAVE</a>
-                        <div class="container">
-                            <div class="text-center">
-                             Copyright © 2018 Rocker Admin
-                            </div>
-                            
-                        </div>
-                    </div>
+                   
                 </form>
+                   
             </div>
         </div>
     </div>
 </div>
+
+  <footer>
+                          <div>
+                            <div class="text-center">
+                              Copyright © 2018 Rocker Admin
+                            </div>
+                          </div>
+                        </footer>
 </div>
+
+
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
