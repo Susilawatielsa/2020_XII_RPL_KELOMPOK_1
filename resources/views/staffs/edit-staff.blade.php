@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Add Staffs
+- Edit Staf
 @endpush
 
 @push('styles')

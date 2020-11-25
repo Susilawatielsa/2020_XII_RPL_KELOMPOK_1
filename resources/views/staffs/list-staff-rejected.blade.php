@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Rejected Staffs
+- Daftar Staf Ditolak
 @endpush
 
 @push('styles')

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Staffs
+- Tampilan Daftar
 @endpush
 
 @push('styles')

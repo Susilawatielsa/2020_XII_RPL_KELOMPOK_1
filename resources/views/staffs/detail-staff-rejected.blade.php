@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- Template Detail
+- Detail Staf Ditolak
 @endpush
 
 @push('styles')
@@ -33,14 +33,13 @@
     </div>
 </div>
 
-
 <div class="col-lg-12">
     <div class="profile-card-3 ">
         <div class="text-center">
             <img src="{{ url('assets/images/avatars/avatar-2.png')}}" alt="user avatar" class="card-img-top" style="width: 200px;
-                        height: 200px;
-                        background: #dac52c;
-                        border-radius: 100%;">
+            height: 200px;
+            background: #dac52c;
+            border-radius: 100%;">
         </div>
         <hr>
     </div>
@@ -49,6 +48,7 @@
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
+
             <h4 class="text-primary">DATA PRIBADI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
@@ -84,7 +84,6 @@
                         </tr>
 
                         <tr>
-                            
                             <th>Tempat Lahir</th>
                             <td>:</td>
                             <td>Bandung</td>
@@ -107,13 +106,25 @@
                         <tr>
                             <th>Status Nikah</th>
                             <td>:</td>
-                            <td>Sudah</td>    
-                        </tr>
-                        
-                    </tbody>
-                </table><br>
-            </div>
+                            <td>Sudah</td>
 
+                            <th></th>
+                            <td></td>
+                            <td></td>    
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h4 class="text-primary">INFORMASI KONTAK</h4>
             <div class="table-responsive">
@@ -124,11 +135,9 @@
                             <td>:</td>
                             <td>Jawa Barat</td>
 
-
                             <th>Kabupaten</th>
                             <td>:</td>
                             <td>Bandung</td>
-
                         </tr>
 
                         <tr>
@@ -139,7 +148,6 @@
                             <th>Alamat</th>
                             <td>:</td>
                             <td>Kp. Cibolerang</td>
-
                         </tr>
 
                         <tr>
@@ -166,9 +174,23 @@
                             <th>Email</th>
                             <td>:</td>
                             <td>rizki@gmail.com</td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 
             <h4 class="text-primary">DATA SUAMI/ISTERI</h4>
@@ -180,15 +202,12 @@
                             <td>:</td>
                             <td>Merlina</td>
 
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>-</td>
-
                         </tr>
 
                         <tr>
-
                             <th>NIP</th>
                             <td>:</td>
                             <td>-</td>
@@ -196,11 +215,19 @@
                             <th>Pekerjaan</th>
                             <td>:</td>
                             <td>Ibu Rumah Tangga</td>
-
                         </tr>
 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table><br>
+                </table>
             </div>
 <!-- //di komentarin dulu, masa calon ada status kepegawaian?
             <h4 class="text-primary">STATUS KEPEGAWAIAN</h4>
@@ -235,140 +262,156 @@
 
                     </tbody>
                 </table><br>
- -->
-                <h4 class="text-primary">RIWAYAT PENDIDIKAN</h4>
-                <div class="table-responsive">
-                    <table class="table table-stripped">
-                        <tbody>
-                            <tr>
-                                <th>Sekolah Dasar</th>
-                                <td>:</td>
-                                <td>SDN Angkasa 04</td>
+            -->
 
+            <h4 class="text-primary">RIWAYAT PENDIDIKAN</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Sekolah Dasar</th>
+                            <td>:</td>
+                            <td>SDN Angkasa 04</td>
 
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>2005</td>
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>2005</td>
+                        </tr>
 
-                            </tr>
-                            <tr>
-                                <th>Sekolah Menengah Pertama</th>
-                                <td>:</td>
-                                <td>SMP Angkasa</td>
+                        <tr>
+                            <th>Sekolah Menengah Pertama</th>
+                            <td>:</td>
+                            <td>SMP Angkasa</td>
 
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>2008</td>
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>2008</td>
+                        </tr>
 
-                            </tr>
-                            <tr>
-                                <th>Sekolah Menengah Akhir</th>
-                                <td>:</td>
-                                <td>SMK Angkasa 2</td>
+                        <tr>
+                            <th>Sekolah Menengah Akhir</th>
+                            <td>:</td>
+                            <td>SMK Angkasa 2</td>
 
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>2011</td>
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>2011</td>
+                        </tr>
 
-                            </tr>
+                        <tr>
+                            <th>Perguruan Tinggi</th>
+                            <td>:</td>
+                            <td>-</td>
 
-                            <tr>
-                                <th>Perguruan Tinggi</th>
-                                <td>:</td>
-                                <td>-</td>
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
 
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>-</td>
+                        <tr>
+                            <th>Fakultas</th>
+                            <td>:</td>
+                            <td>-</td>
 
-                            </tr>
+                            <th>Jurusan</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
 
-                            <tr>
-                                <th>Fakultas</th>
-                                <td>:</td>
-                                <td>-</td>
+                        <tr>
+                            <th>Gelar</th>
+                            <td>:</td>
+                            <td>-</td>
 
-                                <th>Jurusan</th>
-                                <td>:</td>
-                                <td>-</td>
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
 
-                            </tr>
-                            <tr>
-                                <th>Gelar</th>
-                                <td>:</td>
-                                <td>-</td>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-
-                        </tbody>
-                    </table><br>
-                </div>
-                <h4 class="text-primary">SERTIFIKASI</h4>
-                <div class="table-responsive">
-                    <table class="table table-stripped">
-                        <tbody>
-                            <tr>
-                                <th>Sudah atau Belum</th>
-                                <td>:</td>
-                                <td>Belum</td>
-
-
-                                <th>Tahun</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                            <tr>
-                                <th>No Sertifikasi</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                                <th>Bidang Studi</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                            </tr>
-                            <tr>
-                                <th>Penyelenggara</th>
-                                <td>:</td>
-                                <td>-</td>
-
-                                <th></th>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                        </tbody>
-                    </table><br>
-                </div>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
+            <h4 class="text-primary">SERTIFIKASI</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <th>Sudah atau Belum</th>
+                            <td>:</td>
+                            <td>Belum</td>
+
+                            <th>Tahun</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <th>No Sertifikasi</th>
+                            <td>:</td>
+                            <td>-</td>
+
+                            <th>Bidang Studi</th>
+                            <td>:</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <th>Penyelenggara</th>
+                            <td>:</td>
+                            <td>-</td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </div>
+</div>
 
 
 
-    @endsection
+@endsection
 
-    @push('scripts')
+@push('scripts')
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
-    <script src="{{ asset('assets/js/popper.min.js')}}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="{{ asset('assets/js/jquery.min.js')}}"></script>
+<script src="{{ asset('assets/js/popper.min.js')}}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
 
-    <!-- simplebar js -->
-    <script src="{{ asset('assets/plugins/simplebar/js/simplebar.js')}}"></script>
-    <!-- waves effect js -->
-    <script src="{{ asset('assets/js/waves.js')}}"></script>
-    <!-- sidebar-menu js -->
-    <script src="{{ asset('assets/js/sidebar-menu.js')}}"></script>
-    <!-- Custom scripts -->
-    <script src="{{ asset('assets/js/app-script.js')}}"></script>
+<!-- simplebar js -->
+<script src="{{ asset('assets/plugins/simplebar/js/simplebar.js')}}"></script>
+<!-- waves effect js -->
+<script src="{{ asset('assets/js/waves.js')}}"></script>
+<!-- sidebar-menu js -->
+<script src="{{ asset('assets/js/sidebar-menu.js')}}"></script>
+<!-- Custom scripts -->
+<script src="{{ asset('assets/js/app-script.js')}}"></script>
 
-    </body>
+</body>
 
-    @endpush
+@endpush

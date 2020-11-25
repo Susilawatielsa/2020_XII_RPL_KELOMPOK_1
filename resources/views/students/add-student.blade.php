@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- List Add Studends
+- Tambah Siswa
 @endpush
 
 @push('styles')
@@ -613,9 +613,6 @@
                         <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
 
                         </div>
-
-
-
                     </div>
 
                     <div class="form-footer">

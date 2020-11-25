@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
--Edit Teachers
+-Edit Guru
 @endpush
 
 @push('styles')
@@ -50,7 +50,6 @@
                 <form id="signupForm" novalidate="novalidate">
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         DATA PRIBADI
                     </h4>
 
@@ -141,7 +140,7 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
+                        
                         INFORMASI KONTAK
                     </h4>
 
@@ -212,7 +211,7 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
+                       
                         DATA SUAMI/ISTERI
                     </h4>
 
@@ -241,8 +240,7 @@
 
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
-                        MENGAJAR DI SMK MAHAPUTRA
+                       MENGAJAR DI SMK MAHAPUTRA
                     </h4>
 
                     <div class="form-group row">
@@ -320,7 +318,6 @@
 
 
                      <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         RIWAYAT MENGAJAR DI SEKOLAH LAIN
                     </h4>
 
@@ -354,7 +351,6 @@
 
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         RIWAYAT PENDIDIKAN
                     </h4>
 
@@ -428,7 +424,6 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         SERTIFIKASI
                     </h4>
 
