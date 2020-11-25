@@ -110,7 +110,7 @@
                     <div class="card-body">
 
 
-                        <form id="signupForm" id="submitForm" method="POST" action="{{ url('teacher-registration') }}" novalidate="novalidate" autocomplete="off">
+                        <form id="submitForm" id="submitForm" method="POST" action="{{ url('teacher-registration') }}" novalidate="novalidate" autocomplete="off">
                             @csrf
                             <h4 class="form-header text-uppercase">
                                 DATA PRIBADI
@@ -553,30 +553,32 @@
             });
 
         });
+ function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#tampil_picture').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
+    </script>
+
+        <script>
         $(document).ready(function() {
             $("#submitForm").submit(function(e) {
                 $(this).find("button[type='submit']").prop('disabled', true);
                 $("#btnSubmit").attr("disabled", true);
                 return true;
-            });
+            });      
         });
 
-        function bacaGambar(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    $('#gambar_nodin').attr('src', e.target.result);
-                }
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $("#preview_gambar").change(function() {
-            bacaGambar(this);
-        });
     </script>
-
     <!--Bootstrap Datepicker Js-->
     <script src="{{ asset('assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
     <script>

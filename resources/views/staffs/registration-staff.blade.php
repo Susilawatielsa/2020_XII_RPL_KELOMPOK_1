@@ -107,7 +107,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('staff-registration') }}" novalidate="novalidate">
+                        <form id="submitForm" autocomplete="off" method="POST" action="{{ url('staff-registration') }}" novalidate="novalidate">
                             @csrf
 
                             <h4 class="form-header text-uppercase">
@@ -525,28 +525,31 @@
             });
 
         });
+ function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#tampil_picture').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
+    </script>
+
+        <script>
         $(document).ready(function() {
             $("#submitForm").submit(function(e) {
                 $(this).find("button[type='submit']").prop('disabled', true);
                 $("#btnSubmit").attr("disabled", true);
                 return true;
-            });
+            });      
         });
 
-        function bacaGambar(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    $('#gambar_nodin').attr('src', e.target.result);
-                }
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $("#preview_gambar").change(function() {
-            bacaGambar(this);
-        });
     </script>
 
     <!--Bootstrap Datepicker Js-->

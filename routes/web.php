@@ -62,6 +62,7 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/teachers/prospective', 'TeacherController@list_prospective');
     Route::get('/teachers/rejected', 'TeacherController@list_rejected');
     Route::get('/teachers/create', 'TeacherController@create');
+    Route::post('/teachers/create', 'TeacherController@store');
     Route::get('/teacher/1', 'TeacherController@show');
     Route::get('/teachers/prospective/1', 'TeacherController@show_prospective');
     Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');

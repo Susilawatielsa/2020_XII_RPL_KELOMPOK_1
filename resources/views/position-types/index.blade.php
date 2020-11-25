@@ -55,7 +55,7 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>staff kepegawaian</td>
+                                <td>Staf kepegawaian</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -64,7 +64,7 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>staff kesiswaan</td>
+                                <td>Staf kesiswaan</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -73,7 +73,7 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>staff persuratan</td>
+                                <td>Staf persuratan</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -82,7 +82,7 @@
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>staff sarana/prasarana</td>
+                                <td>Staf sarana/prasarana</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -91,7 +91,7 @@
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>staff kerumahtanggaan</td>
+                                <td>Staf kerumahtanggaan</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
@@ -100,7 +100,7 @@
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td>staff pelayanan khusus</td>
+                                <td>Staf pelayanan khusus</td>
                                 <td>
 
                                     <a href="{{ url('/position-types/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>

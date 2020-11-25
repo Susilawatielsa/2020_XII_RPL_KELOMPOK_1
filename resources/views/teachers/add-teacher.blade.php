@@ -47,7 +47,42 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" novalidate="novalidate">
+                <form id="signupForm" method="POST" action="{{ url('teachers/create') }}" novalidate="novalidate">
+                    @csrf
+
+
+                     <h4 class="form-header text-uppercase">
+                        <i class="  "></i>
+                        Data Akun
+                    </h4>
+
+                    <div class="form-group row">
+
+                        <div class="col-sm-4">
+                            <label>Nama Lengkap<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
+                        </div>
+                         <div class="col-sm-4">
+                        <label>Emal<span style="color:red"> *</span></label>
+                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nomor Telepon">                        
+                        </div>
+                        <div class="col-sm-4">
+                            <label>No Telepon<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <label>Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Nama Lengkap">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Retype Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+
 
                     <h4 class="form-header text-uppercase">
                         DATA PRIBADI
@@ -185,50 +220,25 @@
                             <input type="text" class="form-control" id="input-10" name="usr_postal_code" placeholder="Masukan Kode Pos">
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                             <label>RT</label>
                             <input type="text" class="form-control" id="input-10" name="usr_rt" placeholder="Masukan Nomor RT">
                         </div>
-
-                    </div>
-
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
+                         <div class="col-sm-2">
                             <label>RW</label>
                             <input type="text" class="form-control" id="input-10" name="usr_rw" placeholder="Masukan Nomor RW">
                         </div>
-
-                        <div class="col-sm-4">
-                            <label>No Telepon</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Email</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Email">
-                        </div>
                     </div>
 
-                    <div class="form-group row">
-                        
-                        <div class="col-sm-4">
-                            <label>Password</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Password">
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Password</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Password">
-                        </div>
-                    </div>
 
                     <h4 class="form-header text-uppercase">
-                         DATA SUAMI/ISTERI
+                         DATA SUAMI/Istri
                     </h4>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Nama Suami/Isteri</label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Isteri">
+                            <label>Nama Suami/Istri</label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Istri">
                         </div>
                         <div class="col-sm-4">
                             <label>NIK</label>
@@ -469,7 +479,7 @@
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-image-o"></i>
-                        IMAGE PICTURE
+                        LAINYA
                     </h4>
 
                     <div class="form-group row">
@@ -485,8 +495,9 @@
 
 
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                        <a href="/teachers" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
+                        <button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-times"></i> SAVE</button>
+                        
                     </div>
                 </form>
             </div>
@@ -576,6 +587,23 @@
         });
 
     });
+
+function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#tampil_picture').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
+
+
 </script>
 
 <!--Bootstrap Datepicker Js-->

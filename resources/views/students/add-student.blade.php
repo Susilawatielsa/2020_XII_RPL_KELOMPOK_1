@@ -47,11 +47,11 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('students/create') }}" novalidate="novalidate">
+                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('students/create') }}" novalidate="novalidate">
                     @csrf
                     <h4 class="form-header text-uppercase">
                         <i class="  "></i>
-                        Data Pribadi
+                        Data Akun
                     </h4>
 
                     <div class="form-group row">
@@ -60,35 +60,58 @@
                             <label>Nama Lengkap<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
                         </div>
+                         <div class="col-sm-4">
+                        <label>Email<span style="color:red"> *</span></label>
+                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nomor Telepon">                        
+                        </div>
+                        <div class="col-sm-4">
+                            <label>No Telepon<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <label>Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Nama Lengkap">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Retype Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+
+
+                    <h4 class="form-header text-uppercase">
+                        <i class="  "></i>
+                        Data Pribadi
+                    </h4>
+
+                    <div class="form-group row">
+
                         <div class="col-sm-4">
                             <label>NIK / No. KITAS (untuk WNA)<span style="color:red"> *</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan Nomor NIK">
                         </div>
                         <div class="col-sm-4">
-                        <label>Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">                        
+                            <label>No Registrasi Akta Lahir</label>
+                            <input type="text" class="form-control" id="input-10" name="personal[birth_certificate_registration_no]" placeholder="No Registrasi Akta Lahir">
                         </div>
 
-
+                        <div class="col-sm-4">
+                            <label>Agama<span style="color:red"> *</span></label>
+                            <select class="form-control" name="usr_religion" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Khonghucu">Khonghucu</option>
+                            </select>
+                        </div>
                     </div>
 
-                     <div class="form-group row">
-
-                        <div class="col-sm-4">
-                            <label>Email<span style="color:red"> *</span></label>
-                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Alamat Eamil">
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label>Password<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Password">
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Ulangi Password<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_confirm-password" placeholder="Ulangi Passsword">
-                        </div>
-
-                    </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
@@ -96,7 +119,7 @@
                             <input type="text" class="form-control" id="input-10" name="std_nisn" placeholder="Masukan Nomor NISN">
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <label>Kewarganegaraan<span style="color:red"> *</span></label>
                             <select name="personal[citizenship]" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
@@ -104,15 +127,12 @@
                                 <option>WNA</option>
                             </select>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <label>Nama Negara<span style="color:red"> *</span></label>
                             <input name="personal[country_name]" type="text" class="form-control" id="input-10" placeholder="Nama Negara">
                         </div>
 
-                        <div class="col-sm-3">
-                            <label>No Registrasi Akta Lahir</label>
-                            <input type="text" class="form-control" id="input-10" name="personal[birth_certificate_registration_no]" placeholder="No Registrasi Akta Lahir">
-                        </div>
+             
                     </div>
 
                     <div class="form-group row">
@@ -153,24 +173,13 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <label>NO KIP</label>
                             <input type="text" name="stu_no_kip" class="form-control" id="input-10" placeholder="Masukan Nomor KIP">
                         </div>
 
-                        <div class="col-sm-2">
-                            <label>Agama<span style="color:red"> *</span></label>
-                            <select class="form-control" name="usr_religion" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Hindu">Hindu</option>
-                                <option value="Budha">Budha</option>
-                                <option value="Khonghucu">Khonghucu</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-3">
+                
+                        <div class="col-sm-4">
                             <label>Tempat Tinggal<span style="color:red"> *</span></label>
                             <select class="form-control" name="personal[living_together]" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
@@ -599,9 +608,9 @@
                         </div>
                     </div>
 
-                    <h4 class="form-header text-uppercase">
+                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-image-o"></i>
-                        Lainnya<span style="color:red"> *</span>
+                        LAINYA
                     </h4>
 
                     <div class="form-group row">
@@ -654,13 +663,25 @@
         // validate signup form on keyup and submit
         $("#signupForm").validate({
             rules: {
-                usr_name: "required",
-                usr_name: {
+                firstname: "required",
+                lastname: "required",
+                username: {
                     required: true,
                     minlength: 2
                 },
-                
-
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                confirm_password: {
+                    required: true,
+                    minlength: 5,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
                 contactnumber: {
                     required: true,
                     minlength: 10
@@ -672,14 +693,21 @@
                 agree: "required"
             },
             messages: {
-                usr_name: "Kolom Name Tidak Boleh Kosong",
-                usr_name: {
+                firstname: "Please enter your firstname",
+                lastname: "Please enter your lastname",
+                username: {
                     required: "Please enter a username",
                     minlength: "Your username must consist of at least 2 characters"
                 },
-
-                
-
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long"
+                },
+                confirm_password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long",
+                    equalTo: "Please enter the same password as above"
+                },
                 email: "Please enter a valid email address",
                 contactnumber: "Please enter your 10 digit number",
                 agree: "Please accept our policy",
@@ -689,7 +717,7 @@
 
     });
 
-    function bacaGambar(input) {
+function bacaGambar(input) {
    if (input.files && input.files[0]) {
       var reader = new FileReader();
 
@@ -703,6 +731,7 @@
 $("#preview_gambar").change(function(){
    bacaGambar(this);
 });
+
 
 </script>
 

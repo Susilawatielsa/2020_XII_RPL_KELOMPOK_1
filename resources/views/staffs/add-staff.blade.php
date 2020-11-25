@@ -47,18 +47,48 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('staffs/create') }}" novalidate="novalidate">
+                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('staffs/create') }}" novalidate="novalidate">
                     @csrf
+
+                    <h4 class="form-header text-uppercase">
+                        <i class="  "></i>
+                        Data Akun
+                    </h4>
+
+                    <div class="form-group row">
+
+                        <div class="col-sm-4">
+                            <label>Nama Lengkap<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
+                        </div>
+                         <div class="col-sm-4">
+                        <label>Email<span style="color:red"> *</span></label>
+                            <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nomor Telepon">                        
+                        </div>
+                        <div class="col-sm-4">
+                            <label>No Telepon<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <label>Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Nama Lengkap">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Retype Password<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Nomor NIK">
+                        </div>
+                    </div>
+
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
                         Data Pribadi
                     </h4>
                     <div class="form-group row">
 
-                        <div class="col-sm-4">
-                            <label>Nama Lengkap <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
-                        </div>
+                        
                         <div class="col-sm-4">
                             <label>NIK <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan NIK">
@@ -66,6 +96,19 @@
                         <div class="col-sm-4">
                             <label>NUPTK</label>
                             <input type="text" class="form-control" id="input-10" name="stf_nuptk" placeholder="Masukan NUPTK">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>Agama <span style="color:red;">*</span></label>
+                            <select class="form-control" name="usr_religion" id="basic-select">
+                                <option disabled="" selected="">Pilih</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Khonghucu">Khonghucu</option>
+                            </select>
                         </div>
 
                     </div>
@@ -112,18 +155,6 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Agama <span style="color:red;">*</span></label>
-                            <select class="form-control" name="usr_religion" id="basic-select">
-                                <option disabled="" selected="">Pilih</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Hindu">Hindu</option>
-                                <option value="Budha">Budha</option>
-                                <option value="Khonghucu">Khonghucu</option>
-                            </select>
-                        </div>
 
                         <div class="col-sm-3">
                             <label>Status Nikah <span style="color:red;">*</span></label> <br>
@@ -186,39 +217,24 @@
                             <input type="text" class="form-control" name="usr_postal_code" id="input-10" placeholder="Masukan Kode Pos">
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                             <label>RT <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" name="usr_rt" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
-
-                    </div>
-
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
+                          <div class="col-sm-2">
                             <label>RW <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_rw" placeholder="Masukan Nomor RW">
                         </div>
-
-                        <div class="col-sm-4">
-                            <label>No Telepon <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">
-                        </div>
-                        <div class="col-sm-4">
-                            <label>Email <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Email">
-                        </div>
                     </div>
-
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
-                        DATA SUAMI/ISTERI
+                        DATA SUAMI/Istri
                     </h4>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Nama Suami/Isteri <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Isteri">
+                            <label>Nama Suami/Istri <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Istri">
                         </div>
                         <div class="col-sm-4">
                             <label>NIK <span style="color:red;">*</span></label>
@@ -413,18 +429,20 @@
                         Image Picture
                     </h4>
 
+                    <h4 class="form-header text-uppercase">
+                        <i class="fa fa-image-o"></i>
+                        LAINYA
+                    </h4>
+
                     <div class="form-group row">
 
                         <div class="col-sm-4">
                         <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
-                        <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
-                 
+                         <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
+
                         <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
 
                         </div>
-
-
-
                     </div>
 
 
@@ -520,6 +538,23 @@
         });
 
     });
+
+
+function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#tampil_picture').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
+
 </script>
 
 <!--Bootstrap Datepicker Js-->
