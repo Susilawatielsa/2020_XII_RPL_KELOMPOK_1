@@ -62,7 +62,7 @@ class StaffController extends Controller
 
     public function show_prospective()
     {
-       return view('staffs.detail-staff-prospective'); 
+        return view('staffs.detail-staff-prospective');
     }
     public function show_rejected()
     {
@@ -99,5 +99,13 @@ class StaffController extends Controller
     public function destroy(Staffs $staffs)
     {
         return 'data terhapus';
+    }
+    public function formRegistrasion()
+    {
+        return view('staffs.registration-staff');
+    }
+    public function storeFormRegistrasion(Request $request)
+    {
+        dd($request, "MASUK KE HALAMAN MENUNGGU KEPUTUSAN DAN INFO PEMBAYARAN");
     }
 }

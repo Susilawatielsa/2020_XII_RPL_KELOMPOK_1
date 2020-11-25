@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
+
 class UserController extends Controller
 {
     /**
@@ -23,27 +24,25 @@ class UserController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-     {
+    {
         $user = Auth()->user();
 
         if ($user->usr_is_accepted == '0' && $user->hasRole('student')) {
-            return view('students.formulir');
-
-        }elseif ($user->usr_is_accepted == '0' && $user->hasRole('teacher')) {
-            return view('teachers.formulir');
-
-        }elseif ($user->usr_is_accepted == '0' && $user->hasRole('staff')) {
-            return view('staffs.formulir');
-
-        }elseif ($user->usr_is_accepted == '1') {
+            return redirect('student-registration');
+        } elseif ($user->usr_is_accepted == '0' && $user->hasRole('teacher')) {
+            return redirect('teacher-registration');
+        } elseif ($user->usr_is_accepted == '0' && $user->hasRole('staff')) {
+            return redirect('staff-registration');
+        } elseif ($user->usr_is_accepted == '1') {
             return view('dashboard');
-        }else{
-            return "kesini";
+        } else {
+            abort(404);
         }
-        return view('dashboard');
 
+        // return view('dashboard');
     }
-    public function create(){
+    public function create()
+    {
         return view('users.create');
     }
 }

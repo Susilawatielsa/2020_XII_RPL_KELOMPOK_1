@@ -31,6 +31,17 @@
             <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
           <div class="card-title text-uppercase text-center py-3">Sign In</div>
+          @if ($message = Session::get('success'))
+          <div class="alert alert-light-success alert-dismissible alert-round" role="alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <div class="alert-icon contrast-alert">
+              <i class="icon-exclamation"></i>
+            </div>
+            <div class="alert-message">
+              <span>{{$message}}</span>
+            </div>
+          </div>
+          @endif
           <form method="POST" action="{{ route('login') }}" id="submitForm">
             @csrf
 
@@ -94,16 +105,15 @@
   <script src="{{asset('assets/js/jquery.min.js')}}"></script>
   <script src="{{asset('assets/js/popper.min.js')}}"></script>
   <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script>
-        $(document).ready(function() {
-            $("#submitForm").submit(function(e) {
-                $(this).find("button[type='submit']").prop('disabled', true);
-                $("#btnSubmit").attr("disabled", true);
-                return true;
-            });      
-        });
-
-    </script>
+  <script>
+    $(document).ready(function() {
+      $("#submitForm").submit(function(e) {
+        $(this).find("button[type='submit']").prop('disabled', true);
+        $("#btnSubmit").attr("disabled", true);
+        return true;
+      });
+    });
+  </script>
 </body>
 
 <!-- Mirrored from codervent.com/rocker/color-version/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 12:20:55 GMT -->

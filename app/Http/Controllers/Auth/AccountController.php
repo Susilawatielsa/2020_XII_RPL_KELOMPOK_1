@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 
+
 class AccountController extends Controller
 {
     public function verifyToken($userID, $verifyToken)
@@ -24,8 +25,8 @@ class AccountController extends Controller
         if ($user) {
             $user->usr_email_verified_at = now();
             $user->save();
-
-            return redirect('/dashboard')->with(['success' => 'Selamat akun anda berhasil diverifikasi']);;
+            Auth::logout();
+            return redirect()->route('login')->with(['success' => 'Selamat akun anda berhasil diverifikasi']);;
         }
     }
 
@@ -103,16 +104,20 @@ class AccountController extends Controller
 
         return redirect('/login')->with(['success' => 'Password Anda Berhasil di Updated']);
     }
-    public function editPassword(){
+    public function editPassword()
+    {
         return view('auth.edit-password');
     }
-     public function storeEditPassword(Request $request){
+    public function storeEditPassword(Request $request)
+    {
         dd($request);
     }
-    public function editProfile(){
+    public function editProfile()
+    {
         return view('profile.index');
     }
-     public function storeEditProfile(Request $request){
+    public function storeEditProfile(Request $request)
+    {
         dd($request);
     }
 }

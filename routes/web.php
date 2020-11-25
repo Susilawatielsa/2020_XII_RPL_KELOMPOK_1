@@ -51,6 +51,8 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/staffs/rejected/1', 'StaffController@show_rejected');
     Route::get('/staffs/edit/1', 'StaffController@edit');
     Route::get('/staffs/delete/1', 'StaffController@destroy');
+    Route::get('/staff-registration', 'StaffController@formRegistrasion');
+    Route::post('/staff-registration', 'StaffController@storeFormRegistrasion');
 
 
     Route::get('/teachers', 'TeacherController@index');
@@ -62,6 +64,9 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');
     Route::get('/teachers/edit/1', 'TeacherController@edit');
     Route::get('/teachers/delete/1', 'TeacherController@destroy');
+    Route::get('/teacher-registration', 'TeacherController@formRegistrasion');
+    Route::post('/teacher-registration', 'TeacherController@storeFormRegistrasion');
+
 
     Route::get('/students', 'StudentController@index');
     Route::get('/students/prospective', 'StudentController@list_prospective');
@@ -73,7 +78,8 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
     Route::get('/students/edit/1', 'StudentController@edit');
     Route::get('/students/delete/1', 'StudentController@destroy');
-
+    Route::get('/student-registration', 'StudentController@formRegistrasion');
+    Route::post('/student-registration', 'StudentController@storeFormRegistrasion');
 
     Route::get('/page/list', 'PageController@index');
     Route::get('/page/detail', 'PageController@show');

@@ -60,7 +60,7 @@ class TeacherController extends Controller
     }
     public function show_prospective()
     {
-     return view('teachers.detail-teacher-prospective');   
+        return view('teachers.detail-teacher-prospective');
     }
     public function show_rejected()
     {
@@ -99,5 +99,13 @@ class TeacherController extends Controller
     {
         return 'data terhapus';
     }
-    
+
+    public function formRegistrasion()
+    {
+        return view('teachers.registration-teacher');
+    }
+    public function storeFormRegistrasion(Request $request)
+    {
+        dd($request, "MASUK KE HALAMAN MENUNGGU KEPUTUSAN DAN INFO PEMBAYARAN");
+    }
 }
