@@ -34,7 +34,7 @@
         <h4 class="page-title">Tambah Mata Pelajaran</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('majors') }}">Mata Pelajaran</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('subjects') }}">Mata Pelajaran</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tambah Mata Pelajaran</li>
         </ol>
     </div>

@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/logout', function(){
+    abort(404);
+});
 
 Route::get('/', function () {
     return view('landing-page');
@@ -114,4 +117,13 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack', 'role:a
     Route::get('/subjects/edit/1', 'SubjectController@edit');
     Route::post('/subjects/edit/1', 'SubjectController@update');
     Route::get('/subjects/delete', 'SubjectController@destroy');
+
+    Route::get('/position-types', 'PositionTypeController@index');
+    Route::get('/position-types/create', 'PositionTypeController@create');
+    Route::post('/position-types/create', 'PositionTypeController@store');
+    Route::get('/position-types/edit/1', 'PositionTypeController@edit');
+    Route::post('/position-types/edit/1', 'PositionTypeController@update');
+    Route::get('/position-types/delete', 'PositionTypeController@destroy');
+
+    
 });

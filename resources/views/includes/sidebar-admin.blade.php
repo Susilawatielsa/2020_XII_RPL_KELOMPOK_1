@@ -70,6 +70,12 @@
         <i></i> <span>Mata Pelajaran</span>
       </a>
     </li>
+
+     <li>
+      <a href="{{ url('position-types')}}" class="waves-effect active">
+        <i></i> <span>Jabatan</span>
+      </a>
+    </li>
   </ul>
 
 </div>

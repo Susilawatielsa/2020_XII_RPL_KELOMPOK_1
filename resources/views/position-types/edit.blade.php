@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- Edit Mata Pelajaran
+- Edit Jabatan
 @endpush
 
 @push('styles')
@@ -31,11 +31,11 @@
 @section('content')
 <div class="row pt-2 pb-2">
     <div class="col-sm-9">
-        <h4 class="page-title">Edit Mata Pelajaran</h4>
+        <h4 class="page-title">Edit Jabatan</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('subjects') }}">Mata Pelajaran</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Edit Mata Pelajaran</li>
+            <li class="breadcrumb-item"><a href="{{ url('position-types') }}">Jabatan</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Jabatan</li>
         </ol>
     </div>
 </div>
@@ -44,14 +44,14 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <div class="card-title">Edit Mata Pelajarann</div>
+                <div class="card-title">Edit Jabatan</div>
                 <hr>
-                <form method="POST" autocomplete="off" action="{{ url('subjects/edit/1')}}" id="submitForm">
+                <form method="POST" autocomplete="off" action="{{ url('position-types/edit/1')}}" id="submitForm">
                     @csrf
                     <div class="form-group row">
-                        <label for="input-2" class="col-sm-3 col-form-label">Nama Mata Pelajaran</label>
+                        <label for="input-2" class="col-sm-3 col-form-label">Nama Jabatan</label>
                         <div class="col-sm-9">
-                            <input type="text" name="sbj_name" value="PAB" class="form-control" id="input-4" placeholder="Masukan Nama  Mata Pelajaran">
+                            <input type="text" name="pst_name" value="Staff Kepegawaian" class="form-control" id="input-4" placeholder="Masukan Nama  Jabatan">
                         </div>
                     </div>
 

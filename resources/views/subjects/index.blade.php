@@ -42,7 +42,7 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-                        <a href="{{URL::to('subjects/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH JURUSAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+                        <a href="{{URL::to('subjects/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH MATA PELAJARAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
                     </div>
                     <table id="example" class="table table-bordered">
                         <thead>

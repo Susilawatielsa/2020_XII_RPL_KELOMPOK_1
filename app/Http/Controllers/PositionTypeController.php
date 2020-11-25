@@ -14,7 +14,7 @@ class PositionTypeController extends Controller
      */
     public function index()
     {
-        //
+        return view('position-types.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class PositionTypeController extends Controller
      */
     public function create()
     {
-        //
+        return view('position-types.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class PositionTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -55,9 +55,9 @@ class PositionTypeController extends Controller
      * @param  \App\PositionTypes  $positionTypes
      * @return \Illuminate\Http\Response
      */
-    public function edit(PositionTypes $positionTypes)
+    public function edit()
     {
-        //
+        return view('position-types.edit');
     }
 
     /**
@@ -67,9 +67,9 @@ class PositionTypeController extends Controller
      * @param  \App\PositionTypes  $positionTypes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PositionTypes $positionTypes)
+    public function update(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -78,8 +78,8 @@ class PositionTypeController extends Controller
      * @param  \App\PositionTypes  $positionTypes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PositionTypes $positionTypes)
+    public function destroy()
     {
-        //
+        dd("Jabatan Berhasil Di Hapus");
     }
 }

@@ -5,8 +5,6 @@
     <h5 class="logo-text" style="cursor: default;">SMK Mahaputra</h5>
   </div>
 
-
-
   <ul class="sidebar-menu do-nicescrol">
     <li class="sidebar-header"></li>
     <li>
@@ -65,6 +63,11 @@
       </a>
     </li>
 
+    <li>
+      <a href="{{ url('position-types')}}" class="waves-effect active">
+        <i></i> <span>Jabatan</span>
+      </a>
+    </li>
 
   </ul>
 
