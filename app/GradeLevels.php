@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GradeLevel extends Model
+class GradeLevels extends Model
 {
     protected $primaryKey = 'grl_id';
     const CREATED_AT = 'grl_created_at';

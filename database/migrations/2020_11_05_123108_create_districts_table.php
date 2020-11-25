@@ -15,12 +15,14 @@ class CreateDistrictsTable extends Migration
     {
         Schema::create('districts', function (Blueprint $table) {
             $table->bigIncrements('dst_id');
-            $table->foreignId('dst_city_id')->unique();
+            $table->foreignId('dst_city_id');
             $table->foreign('dst_city_id')->references('cit_id')->on('cities');
+            $table->string('dst_name');
             
-            $table->biginteger('dst_created_by')->unsigned()->nullable();
-            $table->biginteger('dst_updated_by')->unsigned()->nullable();
-            $table->biginteger('dst_deleted_by')->unsigned()->nullable();
+            $table->biginteger('dst_created_by')->nullable();
+            $table->biginteger('dst_updated_by')->nullable();
+            $table->biginteger('dst_deleted_by')->nullable();
+
             $table->timestamp('dst_created_at')->nullable();
             $table->timestamp('dst_updated_at')->nullable();
             $table->timestamp('dst_deleted_at')->nullable();

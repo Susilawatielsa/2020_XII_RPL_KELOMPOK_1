@@ -14,22 +14,23 @@ class CreateSubjectsTable extends Migration
     public function up()
     {
         Schema::create('subjects', function (Blueprint $table) {
-             $table->id('sbj_id');
+             $table->bigIncrements('sbj_id');
             $table->string('sbj_name');
 
             $table->bigInteger('sbj_created_by')->unsigned()->nullable();
             $table->bigInteger('sbj_updated_by')->unsigned()->nullable();
             $table->bigInteger('sbj_deleted_by')->unsigned()->nullable();
-     
+            
+            $table->foreign('sbj_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('sbj_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('sbj_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+
             $table->timestamp('sbj_created_at')->nullable();
             $table->timestamp('sbj_updated_at')->nullable();
             $table->timestamp('sbj_deleted_at')->nullable();
             $table->string('sbj_sys_note')->nullable();
 
-            $table->foreign('sbj_created_by')->references('usr_id')->on('users')->onDelete('cascade');
-            $table->foreign('sbj_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
-            $table->foreign('sbj_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
-
+            
         });
     }
 
