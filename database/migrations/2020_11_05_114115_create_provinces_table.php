@@ -17,9 +17,11 @@ class CreateProvincesTable extends Migration
         Schema::create('provinces', function (Blueprint $table) {
             $table->bigIncrements('prv_id');
             $table->string('prv_name');
-            $table->biginteger('prv_created_by')->unsigned()->nullable();
-            $table->biginteger('prv_updated_by')->unsigned()->nullable();
-            $table->biginteger('prv_deleted_by')->unsigned()->nullable();
+
+            $table->biginteger('prv_created_by')->nullable();
+            $table->biginteger('prv_updated_by')->nullable();
+            $table->biginteger('prv_deleted_by')->nullable();
+            
             $table->timestamp('prv_created_at')->nullable();
             $table->timestamp('prv_updated_at')->nullable();
             $table->timestamp('prv_deleted_at')->nullable();

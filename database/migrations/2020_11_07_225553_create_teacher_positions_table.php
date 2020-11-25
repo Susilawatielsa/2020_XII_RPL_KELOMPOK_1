@@ -19,18 +19,20 @@ class CreateTeacherPositionsTable extends Migration
             $table->foreign('tcp_teacher_id')->references('tcr_id')->on('teachers');
             $table->foreignId('tcp_position_type_id');
             $table->foreign('tcp_position_type_id')->references('pst_id')->on('position_types');
+
             $table->bigInteger('tcp_created_by')->unsigned()->nullable();
             $table->bigInteger('tcp_updated_by')->unsigned()->nullable();
             $table->bigInteger('tcp_deleted_by')->unsigned()->nullable();
-     
+
+            $table->foreign('tcp_created_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('tcp_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
+            $table->foreign('tcp_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
+                 
             $table->timestamp('tcp_created_at')->nullable();
             $table->timestamp('tcp_updated_at')->nullable();
             $table->timestamp('tcp_deleted_at')->nullable();
             $table->string('tcp_sys_note')->nullable();
 
-            $table->foreign('tcp_created_by')->references('usr_id')->on('users')->onDelete('cascade');
-            $table->foreign('tcp_updated_by')->references('usr_id')->on('users')->onDelete('cascade');
-            $table->foreign('tcp_deleted_by')->references('usr_id')->on('users')->onDelete('cascade');
         });
     }
 
