@@ -99,4 +99,5 @@ class TeacherController extends Controller
     {
         return 'data terhapus';
     }
+    
 }

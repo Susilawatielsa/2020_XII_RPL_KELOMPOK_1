@@ -50,18 +50,17 @@
                 <form id="signupForm" novalidate="novalidate">
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         DATA PRIBADI
                     </h4>
 
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <label>Nama Lengkap</label>
+                            <label>Nama Lengkap<span style="color:red">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
                         </div>
                         <div class="col-sm-4">
-                            <label>NIK</label>
+                            <label>NIK<span style="color:red">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan NIK">
                         </div>
                         <div class="col-sm-4">
@@ -141,7 +140,6 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         INFORMASI KONTAK
                     </h4>
 
@@ -211,9 +209,20 @@
                         </div>
                     </div>
 
+                    <div class="form-group row">
+                        
+                        <div class="col-sm-4">
+                            <label>Password</label>
+                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Password">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Password</label>
+                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Password">
+                        </div>
+                    </div>
+
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
-                        DATA SUAMI/ISTERI
+                         DATA SUAMI/ISTERI
                     </h4>
 
                     <div class="form-group row">
@@ -241,8 +250,7 @@
 
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
-                        MENGAJAR DI SMK MAHAPUTRA
+                       MENGAJAR DI SMK MAHAPUTRA
                     </h4>
 
                     <div class="form-group row">
@@ -319,8 +327,7 @@
                     </div>
 
 
-                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
+                    <h4 class="form-header text-uppercase">
                         RIWAYAT MENGAJAR DI SEKOLAH LAIN
                     </h4>
 
@@ -350,7 +357,6 @@
 
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
                         RIWAYAT PENDIDIKAN
                     </h4>
 
@@ -424,8 +430,7 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        <i class="fa fa-address-book-o"></i>
-                        SERTIFIKASI
+                         SERTIFIKASI
                     </h4>
 
                     <div class="form-group row">
@@ -459,6 +464,22 @@
                         <div class="col-sm-4">
                             <label>Penyelenggara</label>
                             <input type="text" class="form-control" id="input-10" name="certification[organizer]" placeholder="Masukan Penyelenggara">
+                        </div>
+                    </div>
+
+                    <h4 class="form-header text-uppercase">
+                        <i class="fa fa-image-o"></i>
+                        IMAGE PICTURE
+                    </h4>
+
+                    <div class="form-group row">
+
+                        <div class="col-sm-4">
+                        <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
+                        <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
+                 
+                        <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
+
                         </div>
                     </div>
 
