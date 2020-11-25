@@ -40,12 +40,8 @@ class UserController extends Controller
         }else{
             return "kesini";
         }
-        
-<<<<<<< HEAD
-         return view('students.formulir');
-=======
         return view('dashboard');
->>>>>>> 394e78e08df067c6718152e2a1dd603d2008951c
+
     }
     public function create(){
         return view('users.create');

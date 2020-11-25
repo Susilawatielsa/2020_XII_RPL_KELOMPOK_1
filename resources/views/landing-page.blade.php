@@ -452,7 +452,7 @@ footer{
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/images/4.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
