@@ -66,8 +66,8 @@
                        <div class="form-group" id="only-number">
                           <div class="position-relative has-icon-left">
                             <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
-                            <input type="text" value="{{ old('usr_phone') }}" class="form-control form-control-rounded @error('usr_phone') is-invalid @enderror only-number" placeholder="Phone Number" name="usr_phone">
-                            @error('usr_phone')
+                            <input type="text" value="{{ old('usr_phone_number') }}" class="form-control form-control-rounded @error('usr_phone_number') is-invalid @enderror only-number" placeholder="Phone Number" name="usr_phone_number">
+                            @error('usr_phone_number')
                             <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                             </span>

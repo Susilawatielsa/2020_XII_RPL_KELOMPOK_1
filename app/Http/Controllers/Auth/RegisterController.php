@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'usr_email' => ['required', 'string', 'max:255', 'unique:users,usr_email'],
             //untuk pattern regex email bila butuh 'regex:/(.*)@gmail|yahoo\.com/i'
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'usr_phone' => ['required', 'min:10','regex:/^([0-9\s\-\+\(\)]*)$/'],
+            'usr_phone_number' => ['required', 'min:10','regex:/^([0-9\s\-\+\(\)]*)$/'],
         ]);
     }
 
@@ -91,7 +91,7 @@ class RegisterController extends Controller
         $user = User::create([
             'usr_name' => $data['usr_name'],
             'usr_email' => $data['usr_email'],
-            'usr_phone' => $data['usr_phone'],
+            'usr_phone_number' => $data['usr_phone_number'],
             'usr_password' => Hash::make($data['password']),
             'usr_verification_token' => str_replace('/', '', Hash::make(Str::random(12))),
             'usr_is_active' => true,

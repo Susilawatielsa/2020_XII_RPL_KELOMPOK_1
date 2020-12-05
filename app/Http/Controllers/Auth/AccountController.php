@@ -25,8 +25,7 @@ class AccountController extends Controller
         if ($user) {
             $user->usr_email_verified_at = now();
             $user->save();
-            Auth::logout();
-            return redirect()->route('login')->with(['success' => 'Selamat akun anda berhasil diverifikasi']);;
+            return redirect('/dashboard')->with(['success' => 'Selamat akun anda berhasil diverifikasi']);;
         }
     }
 
