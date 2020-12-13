@@ -183,7 +183,7 @@
                                 </div>
 
                                 <div class="col-sm-3">
-                                    <label>Status Nikah <span style="color:red;">*</span></label> <br>
+                                    <label>Status Perkawinan <span style="color:red;">*</span></label> <br>
 
                                     <div class="radio icheck-info icheck-inline">
                                         <input type="radio" id="info1" name="tcr_marital_status" value="sudah">

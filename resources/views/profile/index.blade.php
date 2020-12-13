@@ -25,10 +25,10 @@
 @section('content')
     <div class="row pt-2 pb-2">
   <div class="col-sm-9">
-    <h4 class="page-title">Edit Profile</h4>
+    <h4 class="page-title">Edit Profil</h4>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Edit Profile</li>
+      <li class="breadcrumb-item active" aria-current="page">Edit Profil</li>
     </ol>
   </div>
 </div>
@@ -126,8 +126,8 @@
 
 
                 <div class="form-footer">
-                    <button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</button>
-                    <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</button>
+                    <button type="reset" class="btn btn-danger"><i class="fa fa-times"></i> Batal</button>
+                    <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> Simpan</button>
                 </div>
               </form>
                  </div>

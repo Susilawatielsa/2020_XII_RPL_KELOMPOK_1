@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <label>Status Nikah</label> <br>
+                            <label>Status Perkawinan</label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" checked="" id="info1" name="info">

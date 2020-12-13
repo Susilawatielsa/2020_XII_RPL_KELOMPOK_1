@@ -30,7 +30,7 @@
           <div class="text-center">
             <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
-          <div class="card-title text-uppercase text-center py-3">Pilih Register</div>
+          <div class="card-title text-uppercase text-center py-3">Pilih Daftar</div>
             <center><div class="col-sm-9">
               <a href="{{ url('register-student') }}" class="btn btn-info btn-round btn-block waves-effect waves-light m-1">Siswa</a>
               </div>
@@ -38,7 +38,7 @@
               <a href="{{ url('register-teacher') }}" class="btn btn-info btn-round btn-block waves-effect waves-light m-1">Guru</a>
               </div>
               <div class="col-sm-9">
-              <a href="{{ url('register-staff') }}" class="btn btn-info btn-round btn-block waves-effect waves-light m-1">Petugas TU</a>
+              <a href="{{ url('register-staff') }}" class="btn btn-info btn-round btn-block waves-effect waves-light m-1">Staf</a>
               </div></center>
         </div>
       </div>

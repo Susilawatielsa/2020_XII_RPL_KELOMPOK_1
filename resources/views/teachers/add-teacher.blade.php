@@ -63,23 +63,23 @@
                             <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
                         </div>
                          <div class="col-sm-4">
-                        <label>Emal<span style="color:red"> *</span></label>
+                        <label>Email<span style="color:red"> *</span></label>
                             <input type="email" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Nomor Telepon">                        
                         </div>
                         <div class="col-sm-4">
-                            <label>No Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor NIK">
+                            <label>Nomor Telepon<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">
                         </div>
                     </div>
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Nama Lengkap">
+                            <label>Kata Sandi<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_password" placeholder="Masukan Kata Sandi">
                         </div>
                         <div class="col-sm-6">
-                            <label>Retype Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Nomor NIK">
+                            <label>Ulangi Kata Sandi<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Kata Sandi">
                         </div>
                     </div>
 
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <label>Status Nikah</label> <br>
+                            <label>Status Perkawinan</label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="info1" name="info">

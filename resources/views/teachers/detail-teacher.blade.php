@@ -213,7 +213,7 @@
                         </tr>
 
                         <tr>
-                            <th>Status Nikah</th>
+                            <th>Status Perkawinan</th>
                             <td>:</td>
                             <td>Sudah</td>
 

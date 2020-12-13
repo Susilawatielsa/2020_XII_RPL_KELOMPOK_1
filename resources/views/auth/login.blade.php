@@ -30,7 +30,7 @@
           <div class="text-center">
             <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
-          <div class="card-title text-uppercase text-center py-3">Sign In</div>
+          <div class="card-title text-uppercase text-center py-3">Log In</div>
           @if ($message = Session::get('success'))
           <div class="alert alert-light-success alert-dismissible alert-round" role="alert">
             <button type="button" class="close" data-dismiss="alert">×</button>
@@ -48,7 +48,7 @@
             <div class="form-group">
               <div class="position-relative has-icon-left">
                 <label for="usr_email" class="sr-only col-md-6 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-                <input id="usr_email" type="email" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Masukkan Email" name="usr_email" value="{{ old('usr_email') }}" autocomplete="off" autofocus>
+                <input id="usr_email" type="email" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Masukan Email" name="usr_email" value="{{ old('usr_email') }}" autocomplete="off" autofocus>
                 <div class="form-control-position">
                   <i class="icon-user"></i>
                 </div>
@@ -63,7 +63,7 @@
             <div class="form-group">
               <div class="position-relative has-icon-left">
                 <label for="password" class="sr-only col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-                <input id="password" type="password" class="form-control form-control-rounded @error('password') is-invalid @enderror" placeholder="Password" name="password" autocomplete="current-password">
+                <input id="password" type="password" class="form-control form-control-rounded @error('password') is-invalid @enderror" placeholder="Masukan Kata Sandi" name="password" autocomplete="current-password">
                 <div class="form-control-position">
                   <i class="icon-lock"></i>
                 </div>
@@ -78,17 +78,17 @@
               <div class="form-group col-6">
                 <div class="icheck-primary">
                   <input type="checkbox" id="user-checkbox" checked="" />
-                  <label for="user-checkbox">Remember me</label>
+                  <label for="user-checkbox">Ingatkan Saya</label>
                 </div>
               </div>
               <div class="form-group col-6 text-right">
-                <a class="btn btn-link" href="{{ route('forgot.password') }}">Forgot Password</a>
+                <a  href="{{ route('forgot.password') }}">Lupa Kata Sandi</a>
               </div>
             </div>
-            <button id="btnSubmit" type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Sign In</button>
+            <button id="btnSubmit" type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Log In</button>
             <div class="text-center pt-3">
               <hr>
-              <p class="text-muted">Do not have an account? <a href="{{ url('select-registration') }}"> Sign Up here</a></p>
+              <p class="text-muted">Tidak Punya Akun? <a href="{{ url('select-registration') }}"> Daftar</a></p>
             </div>
           </form>
         </div>

@@ -64,7 +64,7 @@
                         </tr>
 
                         <tr>
-                            <th>No Telepon</th>
+                            <th>Nomor Telepon</th>
                             <td>:</td>
                             <td>089613272481</td>
 

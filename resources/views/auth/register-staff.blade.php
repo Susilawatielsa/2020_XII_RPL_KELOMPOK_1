@@ -32,13 +32,13 @@
           <div class="text-center">
             <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
-          <div class="card-title text-uppercase text-center py-3">Sign Up</div>
+          <div class="card-title text-uppercase text-center py-3">Daftar</div>
           <form method="POST" action="{{ route('register') }}" id="submitForm" autocomplete="off">
             @csrf
             <div class="form-group">
               <div class="position-relative has-icon-left">
-                <label for="exampleInputName" class="sr-only">Name</label>
-                <input type="text" id="exampleInputName" class="form-control form-control-rounded @error('usr_name') is-invalid @enderror" placeholder="Name" name="usr_name" value="{{ old('usr_name') }}">
+                <label for="exampleInputName" class="sr-only">Nama</label>
+                <input type="text" id="exampleInputName" class="form-control form-control-rounded @error('usr_name') is-invalid @enderror" placeholder="Nama" name="usr_name" value="{{ old('usr_name') }}">
                 @error('usr_name')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -51,8 +51,8 @@
             </div>
             <div class="form-group">
               <div class="position-relative has-icon-left">
-                <label for="exampleInputEmailId" class="sr-only">Email Address</label>
-                <input type="email" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Email Address" name="usr_email" value="{{ old('usr_email') }}">
+                <label for="exampleInputEmailId" class="sr-only">Alamat Email</label>
+                <input type="email" id="exampleInputEmailId" class="form-control form-control-rounded @error('usr_email') is-invalid @enderror" placeholder="Alamat Email" name="usr_email" value="{{ old('usr_email') }}">
                 <div class="form-control-position">
                   <i class="icon-envelope-open"></i>
                 </div>
@@ -65,8 +65,8 @@
             </div>
             <div class="form-group" id="only-number">
               <div class="position-relative has-icon-left">
-                <label for="exampleInputEmailId" class="sr-only">Phone Number</label>
-                <input type="text" value="{{ old('usr_phone_number') }}" class="form-control form-control-rounded @error('usr_phone_number') is-invalid @enderror only-number" placeholder="Phone Number" name="usr_phone_number">
+                <label for="exampleInputEmailId" class="sr-only">Nomor Telepon</label>
+                <input type="text" value="{{ old('usr_phone_number') }}" class="form-control form-control-rounded @error('usr_phone_number') is-invalid @enderror only-number" placeholder="Nomor Telepon" name="usr_phone_number">
                 @error('usr_phone_number')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -79,8 +79,8 @@
             </div>
             <div class="form-group">
               <div class="position-relative has-icon-left">
-                <label for="exampleInputPassword" class="sr-only">Password</label>
-                <input type="password" id="exampleInputPassword" class="form-control form-control-rounded @error('password') is-invalid @enderror" placeholder="Password" name="password">
+                <label for="exampleInputPassword" class="sr-only">Kata Sandi</label>
+                <input type="password" id="exampleInputPassword" class="form-control form-control-rounded @error('password') is-invalid @enderror" placeholder="Kata Sandi" name="password">
                 @error('password')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -93,8 +93,8 @@
             </div>
             <div class="form-group">
               <div class="position-relative has-icon-left">
-                <label for="exampleInputRetryPassword" class="sr-only">Retry Password</label>
-                <input type="password" id="exampleInputRetryPassword" class="form-control form-control-rounded" placeholder="Retry Password" name="password_confirmation">
+                <label for="exampleInputRetryPassword" class="sr-only">Ulangi Kata Sandi</label>
+                <input type="password" id="exampleInputRetryPassword" class="form-control form-control-rounded" placeholder="Ulangi Kata Sandi" name="password_confirmation">
                 <div class="form-control-position">
                   <i class="icon-lock"></i>
                 </div>
@@ -107,10 +107,10 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Sign Up</button>
+            <button type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Daftar</button>
             <div class="text-center pt-3">
               <hr>
-              <p class="text-muted">Already have an account? <a href="{{ route('login') }}"> Sign In here</a></p>
+              <p class="text-muted">Sudah Punya Akun? <a href="{{ route('login') }}"> Log In Disini</a></p>
             </div>
           </form>
         </div>

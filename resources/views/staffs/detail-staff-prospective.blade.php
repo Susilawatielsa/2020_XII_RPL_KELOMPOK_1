@@ -65,7 +65,7 @@
                         </tr>
                         
                         <tr>
-                            <th>GTK</th>
+                            <th>NO GTK</th>
                             <td>:</td>
                             <td>-</td>
 
@@ -106,7 +106,7 @@
                         </tr>
 
                         <tr>
-                            <th>Status Nikah</th>
+                            <th>Status Perkawinan</th>
                             <td>:</td>
                             <td>Sudah</td>    
 
@@ -167,7 +167,7 @@
                             <td>:</td>
                             <td>07</td>
 
-                            <th>No Telepon</th>
+                            <th>Nomor Telepon</th>
                             <td>:</td>
                             <td>089613278889</td>
                         </tr>

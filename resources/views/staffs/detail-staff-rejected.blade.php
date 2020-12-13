@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 
 @push('title')
@@ -64,7 +65,7 @@
                         </tr>
                         
                         <tr>
-                            <th>GTK</th>
+                            <th>NO GTK</th>
                             <td>:</td>
                             <td>-</td>
 
@@ -104,7 +105,7 @@
                         </tr>
 
                         <tr>
-                            <th>Status Nikah</th>
+                            <th>Status Perkawinan</th>
                             <td>:</td>
                             <td>Sudah</td>
 
@@ -165,7 +166,7 @@
                             <td>:</td>
                             <td>22</td>
 
-                            <th>No Telepon</th>
+                            <th>Nomor Telepon</th>
                             <td>:</td>
                             <td>085713278789</td>
                         </tr>

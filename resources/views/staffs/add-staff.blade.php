@@ -78,7 +78,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <label>No Telepon<span style="color:red"> *</span></label>
+                            <label>Nomor Telepon<span style="color:red"> *</span></label>
                             <input type="text" class="form-control @error('usr_phone_number') is-invalid @enderror" id="input-10" name="usr_phone_number" placeholder="Masukan Nomor Telepon" value="{{ old('usr_phone_number') }}">
                             @error('usr_phone_number')
                             <span class="invalid-feedback" role="alert">
@@ -90,8 +90,8 @@
                     <div class="form-group row">
 
                         <div class="col-sm-6">
-                            <label>Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control @error('usr_password') is-invalid @enderror" id="input-10" name="usr_password" placeholder="Masukan Password" value="{{ old('usr_password') }}">
+                            <label>Kata Sandi<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control @error('usr_password') is-invalid @enderror" id="input-10" name="usr_password" placeholder="Masukan Kata Sandi" value="{{ old('usr_password') }}">
                             @error('usr_password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -99,8 +99,8 @@
                             @enderror                        
                         </div>
                         <div class="col-sm-6">
-                            <label>Retype Password<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Password">
+                            <label>Ulangi Kata Sandi<span style="color:red"> *</span></label>
+                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Kata Sandi">
                         </div>
                     </div>
 
@@ -179,7 +179,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-3">
-                            <label>Status Nikah <span style="color:red;">*</span></label> <br>
+                            <label>Status Perkawinan <span style="color:red;">*</span></label> <br>
 
                             <div class="radio icheck-info icheck-inline">
                                 <input type="radio" id="info1" name="stf_marital_status" value="Sudah">

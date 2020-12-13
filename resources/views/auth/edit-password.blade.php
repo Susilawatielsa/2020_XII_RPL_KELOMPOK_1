@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('title')
-- Edit Password
+- Edit Kata Sandi
 @endpush
   
 @push('styles')
@@ -31,10 +31,10 @@
 @section('content')
     <div class="row pt-2 pb-2">
   <div class="col-sm-9">
-    <h4 class="page-title">Edit Password</h4>
+    <h4 class="page-title">Edit Kata Sandi</h4>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">SMK Mahaputra</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Edit Password</li>
+      <li class="breadcrumb-item active" aria-current="page">Edit Kata Sandi</li>
     </ol>
   </div>
 </div>
@@ -43,33 +43,33 @@
   <div class="col-lg-12">
       <div class="card">
                  <div class="card-body">
-                   <div class="card-title">Edit Password</div>
+                   <div class="card-title">Edit Kata Sandi</div>
                    <hr>
                     <form method="POST" autocomplete="off" action="{{ url('account/profile/1/edit-password')}}" id="submitForm">
                         @csrf
                      <div class="form-group row">
-                      <label for="input-4" class="col-sm-2 col-form-label">Password Lama</label>
+                      <label for="input-4" class="col-sm-2 col-form-label">Kata Sandi Lama</label>
                       <div class="col-sm-10">
-                        <input type="text" name="current-password" class="form-control" id="input-4" placeholder="Masukan Password Lama">
+                        <input type="text" name="current-password" class="form-control" id="input-4" placeholder="Masukan Kata Sandi Lama">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="input-5" class="col-sm-2 col-form-label">Password Baru</label>
+                      <label for="input-5" class="col-sm-2 col-form-label">Kata Sandi Baru</label>
                       <div class="col-sm-10">
-                        <input type="text" name="new-password" class="form-control" id="input-5" placeholder="Masukan Password Baru">
+                        <input type="text" name="new-password" class="form-control" id="input-5" placeholder="Masukan Kata Sandi Baru">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="input-6" class="col-sm-2 col-form-label">Ulangi Password</label>
+                      <label for="input-6" class="col-sm-2 col-form-label">Ulangi Kata Sandi</label>
                       <div class="col-sm-10">
-                        <input type="text" name="confirm-new-password" class="form-control" id="input-6" placeholder="Ulangi Password Baru">
+                        <input type="text" name="confirm-new-password" class="form-control" id="input-6" placeholder="Ulangi Kata Sandi Baru">
                       </div>
                     </div>
   
                      <div class="form-group row">
                       <label for="input-1" class="col-sm-2 col-form-label"></label>
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary shadow-primary px-5"><i class="icon-lock"></i> Update</button>
+                        <button type="submit" class="btn btn-primary shadow-primary px-5"><i class="icon-lock"></i> Perbarui</button>
                       </div>
                     </div>
                     </form>

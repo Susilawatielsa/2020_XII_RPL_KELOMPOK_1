@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>SMK Mahaputra - Lupa Password</title>
+  <title>SMK Mahaputra - Lupa Kata Sandi</title>
   <!--favicon-->
   <link rel="icon" href="{{ asset('assets/images/favicon.ico')}}" type="image/x-icon">
   <!-- Bootstrap core CSS-->
@@ -30,7 +30,7 @@
           <div class="text-center">
             <img style="height: 150px; width: 150px;" src="{{ asset('assets/images/mahaputra.jfif') }}">
           </div>
-          <div class="card-title text-uppercase text-center py-3">Forgot Password</div>
+          <div class="card-title text-uppercase text-center py-3">Lupa Kata Sandi</div>
           <form method="POST" action="{{ route('forgot.password') }}" id="submitForm">
             @csrf
 
@@ -72,10 +72,10 @@
                 @enderror
               </div>
             </div>
-            <button id="btnSubmit" type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Send Password Resend Link</button>
+            <button id="btnSubmit" type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Kirim Tautan Kirim Ulang Kata Sandi</button>
             <div class="text-center pt-3">
               <hr>
-              <p class="text-muted">Return to the <a href="{{ route('login') }}"> Sign In</a></p>
+              <p class="text-muted">Kembali Ke <a href="{{ route('login') }}"> Log In</a></p>
             </div>
           </form>
         </div>
