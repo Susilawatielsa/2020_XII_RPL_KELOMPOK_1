@@ -373,6 +373,7 @@ footer{
     background-color: #599be2;
     background-image: linear-gradient(to top, rgba(0,0,0,0.10), rgba(255,255,255,1));
     padding: 2cm 0cm;
+    font-size: 15px;
 }
 
 .footer-about__img{
@@ -381,12 +382,13 @@ footer{
 }
 
 .font{
-    font-size: 15px;
+    margin-top: 30px;
 }
 
 .font img{
     width: 25px;
-    height: 25px;   
+    height: 25px; 
+
 }
 
 
@@ -423,7 +425,7 @@ footer{
             <a class="nav-link" href="{{ route('login') }}">Login</a>
 
             @if (Route::has('register'))
-            <a class="nav-link" href="{{ url('select-registration') }}">Register</a>
+            <a class="nav-link" href="{{ url('select-registration') }}">Daftar</a>
             @endif
             @endauth
             @endif
@@ -505,7 +507,7 @@ footer{
                     <div class="col-lg">
                         <img src="assets/images/staff4.jfif" class="float-left">
                         <p>Pendaftaran</p>
-                        <a href="{{ url('register-staff') }}" style="color: #599be2; text-shadow: 0.1px 0.1px 0.1px blue;"><b style="font-size: 15px;">Kependidikan Baru</b></a>
+                        <a href="{{ url('register-staff') }}" style="color: #599be2; text-shadow: 0.1px 0.1px 0.1px blue;"><b style="font-size: 15px;">Staf Baru</b></a>
                     </div>
                 </div>
                 <!-- akhir info panel -->
@@ -615,7 +617,7 @@ footer{
 
                 </div>   
             </div>
-            <div class="container font" style="color: navy;">
+            <div class="container" style="color: navy;">
                  <p>
                     SMK MAHAPUTRA CERDAS UTAMA © 2020
                 </p>
