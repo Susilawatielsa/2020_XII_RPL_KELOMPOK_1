@@ -46,7 +46,7 @@
             <div class="card-body">
                 <div class="card-title">Tambah Jabatan</div>
                 <hr>
-                <form method="POST" autocomplete="off" action="{{ url('position-types/create')}}" id="submitForm">
+                <form method="POST" autocomplete="off" action="{{ url('position-type/create')}}" id="submitForm">
                     @csrf
                     <div class="form-group row">
                         <label for="input-2" class="col-sm-3 col-form-label">Nama Jabatan</label>

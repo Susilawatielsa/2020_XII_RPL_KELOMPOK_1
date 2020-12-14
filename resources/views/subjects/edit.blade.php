@@ -46,7 +46,7 @@
             <div class="card-body">
                 <div class="card-title">Edit Mata Pelajarann</div>
                 <hr>
-                <form method="POST" autocomplete="off" action="{{ url('subjects/edit/1')}}" id="submitForm">
+                <form method="POST" autocomplete="off" action="{{ url('subject/edit/1')}}" id="submitForm">
                     @csrf
                     <div class="form-group row">
                         <label for="input-2" class="col-sm-3 col-form-label">Nama Mata Pelajaran</label>

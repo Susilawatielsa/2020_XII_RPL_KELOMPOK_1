@@ -47,7 +47,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('students/create') }}" novalidate="novalidate">
+                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('student/create') }}" novalidate="novalidate">
                     @csrf
                     <h4 class="form-header text-uppercase">
                         <i class="  "></i>

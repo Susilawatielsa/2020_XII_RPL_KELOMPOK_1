@@ -19,10 +19,21 @@
 
     <li>
       <a href="{{URL::to('/teachers')}}" class="waves-effect">
-        <i class="icon-list icons"></i> <span>Daftar Guru</span>
+        <i></i> <span>Daftar Guru</span>
       </a>
     </li>
 
+    <li>
+      <a href="{{URL::to('/staffs')}}" class="waves-effect">
+        <i></i> <span>Daftar Staf</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{URL::to('/students')}}" class="waves-effect">
+        <i></i> <span>Daftar Siswa</span>
+      </a>
+    </li>
 
   </ul>
 

@@ -42,108 +42,19 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-                        <a href="{{URL::to('subjects/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH MATA PELAJARAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+                        <a href="{{URL::to('subject/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH MATA PELAJARAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
                     </div>
-                    <table id="example" class="table table-bordered">
+                    <table id="example" class="table table-bordered" style="width: 100%;">
                         <thead>
                             <tr>
                                 <th>NO</th>
                                 <th>Nama Mata Pelajaran</th>
+                                <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>PAB</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Bahasa Indonesia</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>PKn</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>PDKK</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>PBO</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Basis Data</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Bahasa Inggris</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Matematika</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>PWPB</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Bahasa Jepang</td>
-                                <td>
-
-                                    <a href="{{ url('/subjects/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                                    <a href="{{ url('/subjects/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                                </td>
-                            </tr>
-
+                            
                         </tbody>
 
                     </table>
@@ -186,21 +97,10 @@
 <script src="{{ asset('assets/plugins/bootstrap-datatable/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js') }}"></script>
 
-
+<script src="{{ asset('js_datatables/datatable.js') }}"></script>
 <script>
-    $(document).ready(function() {
-        //Default data table
-        $('#default-datatable').DataTable();
-
-
-        var table = $('#example').DataTable({
-            lengthChange: false,
-            buttons: ['copy', 'excel', 'pdf', 'print', 'colvis']
-        });
-
-        table.buttons().container()
-            .appendTo('#example_wrapper .col-md-6:eq(0)');
-
+    $(document).ready( function () {
+        subject()
     });
 </script>
 @endpush

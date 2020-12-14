@@ -7,16 +7,6 @@ use Illuminate\Http\Request;
 
 class TeacherController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('teachers.list-teacher');
-    }
-
     public function list_prospective()
     {
         return view('teachers.list-teacher-prospective');

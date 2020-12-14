@@ -14,9 +14,9 @@ class CreateSubjectsTable extends Migration
     public function up()
     {
         Schema::create('subjects', function (Blueprint $table) {
-             $table->bigIncrements('sbj_id');
+            $table->bigIncrements('sbj_id');
             $table->string('sbj_name');
-
+            $table->tinyInteger('sbj_is_active')->nullable();
             $table->bigInteger('sbj_created_by')->unsigned()->nullable();
             $table->bigInteger('sbj_updated_by')->unsigned()->nullable();
             $table->bigInteger('sbj_deleted_by')->unsigned()->nullable();

@@ -6,8 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Years extends Model
 {
-    protected $primaryKey = 'yrs_id';
-    const CREATED_AT = 'yrs_created_at';
-    const UPDATED_AT = 'yrs_updated_at';
+	protected $table = 'school_years';
+    protected $primaryKey = 'scy_id';
+    const CREATED_AT = 'scy_created_at';
+    const UPDATED_AT = 'scy_updated_at';
     protected $guarded = [];
+
+    public static function getSchoolYears($request){
+        $school_years = Years::all();
+
+        return $school_years;
+    }
 }

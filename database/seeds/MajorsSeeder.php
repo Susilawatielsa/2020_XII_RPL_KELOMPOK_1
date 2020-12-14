@@ -13,10 +13,12 @@ class MajorsSeeder extends Seeder
     {
         DB::table('majors')->insert([
         	'mjr_name' => 'Rekayasa Perangkat Lunak',
+            'mjr_is_active' => 1,
         ]);
 
         DB::table('majors')->insert([
         	'mjr_name' => 'Multimedia',
+            'mjr_is_active' => 1,
         ]);
     }
 }

@@ -47,7 +47,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('staffs/create') }}" novalidate="novalidate">
+                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('staff/create') }}" novalidate="novalidate">
                     @csrf
 
                     <h4 class="form-header text-uppercase">
@@ -74,7 +74,7 @@
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                            @enderror                        
+                            @enderror
                         </div>
 
                         <div class="col-sm-4">
@@ -84,7 +84,7 @@
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                            @enderror                        
+                            @enderror
                         </div>
                     </div>
                     <div class="form-group row">
@@ -96,7 +96,7 @@
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                            @enderror                        
+                            @enderror
                         </div>
                         <div class="col-sm-6">
                             <label>Ulangi Kata Sandi<span style="color:red"> *</span></label>
@@ -453,7 +453,7 @@
                     <div class="form-group row">
 
                         <div class="col-sm-4">
-                            <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
+                            <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px" />
                             <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
 
                             <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
@@ -557,20 +557,19 @@
 
 
     function bacaGambar(input) {
-     if (input.files && input.files[0]) {
-      var reader = new FileReader();
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-      reader.onload = function (e) {
-          $('#tampil_picture').attr('src', e.target.result);
-      }
+            reader.onload = function(e) {
+                $('#tampil_picture').attr('src', e.target.result);
+            }
 
-      reader.readAsDataURL(input.files[0]);
-  }
-}
-$("#preview_gambar").change(function(){
- bacaGambar(this);
-});
-
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#preview_gambar").change(function() {
+        bacaGambar(this);
+    });
 </script>
 
 <!--Bootstrap Datepicker Js-->

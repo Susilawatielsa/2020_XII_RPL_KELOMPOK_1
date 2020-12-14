@@ -42,63 +42,18 @@
       <div class="card-body">
         <div class="table-responsive">
           <div class="container" style="margin-bottom: 10px; margin-left: -5px; margin-top: -4px;">
-            <a href="{{URL::to('/school-years/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH TAHUN AJARAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
+            <a href="{{URL::to('/school-year/create')}}" data-toggle="tooltip" data-placement="top" title="TAMBAH TAHUN AJARAN" type="button" class="btn btn-outline-primary waves-effect waves-light m-1"> <i class="zmdi zmdi-plus fa-lg"></i> </a>
           </div>
-          <table id="example" class="table table-bordered" style="width: 100%;">
+          <table id="example" class="table table-bordered" width="100%">
             <thead>
               <tr>
                 <th>NO</th>
                 <th>Tahun Ajaran</th>
+                <th>Status</th>
                 <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>2016/2017</td>
-                <td>
-
-                  <a href="{{ url('/school-years/edit/1')}}" data-toggle="tooltip" data-placement="top" title="EDIT" type="button" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/school-years/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>2017/2018</td>
-                <td>
-
-                  <a href="{{ url('/school-years/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/school-years/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>2018/2019</td>
-                <td>
-
-                  <a href="{{ url('/school-years/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/school-years/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>2019/2020</td>
-                <td>
-
-                  <a href="{{ url('/school-years/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('/school-years/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>2020/2021</td>
-                <td>
-
-                  <a href="{{ url('/school-years/edit/1')}}" type="button" data-toggle="tooltip" data-placement="top" title="EDIT" class="btn btn-outline-success waves-effect waves-light m-1"> <i class="fa fa-edit fa-lg"></i> </a>
-                  <a href="{{ url('school-years/delete')}}" type="button" data-toggle="tooltip" data-placement="top" title="DELETE" class="btn btn-outline-danger waves-effect waves-light m-1"> <i class="fa fa-trash fa-lg"></i> </a>
-                </td>
-              </tr>
-
             </tbody>
 
           </table>
@@ -142,21 +97,11 @@
 <script src="{{ asset('assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js') }}"></script>
 
 
+<script src="{{ asset('js_datatables/datatable.js') }}"></script>
 <script>
-  $(document).ready(function() {
-    //Default data table
-    $('#default-datatable').DataTable();
-
-
-    var table = $('#example').DataTable({
-      lengthChange: false,
-      buttons: ['copy', 'excel', 'pdf', 'print', 'colvis']
+    $(document).ready( function () {
+        school_year()
     });
-
-    table.buttons().container()
-      .appendTo('#example_wrapper .col-md-6:eq(0)');
-
-  });
 </script>
 @endpush
 @endsection

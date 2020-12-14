@@ -47,7 +47,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" method="POST" action="{{ url('teachers/create') }}" novalidate="novalidate">
+                <form id="signupForm" method="POST" action="{{ url('teacher/create') }}" novalidate="novalidate">
                     @csrf
 
 

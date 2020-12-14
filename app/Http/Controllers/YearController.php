@@ -4,19 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Years;
 use Illuminate\Http\Request;
-
 class YearController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('years.index');
-    }
-
     /**
      * Show the form for creating a new resource.
      *

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Subjects;
 class SubjectController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        return view('subjects.index');
+        $subjects = Subjects::all();
+        return response()->json([ 'subjects' => $subjects], 200);
     }
 
     /**

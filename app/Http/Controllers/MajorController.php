@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Majors;
+use Datatables;
 class MajorController extends Controller
 {
     /**
@@ -11,8 +12,19 @@ class MajorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        if ($request->ajax()) {
+            $majors = Majors::all();
+            return Datatables::of($majors)
+                ->addIndexColumn()
+                ->addColumn('action', function ($row) {
+                    $btn = '<a href="" type="button" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>';
+                    return $btn;
+                })->rawColumns(['action'])
+                ->make(true);
+            }
+            // dd($request);
         return view('majors.index');
     }
 

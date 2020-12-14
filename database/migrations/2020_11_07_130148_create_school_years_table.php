@@ -16,6 +16,8 @@ class CreateSchoolYearsTable extends Migration
         Schema::create('school_years', function (Blueprint $table) {
             $table->bigIncrements('scy_id');
             $table->string('scy_name');
+            $table->tinyInteger('scy_is_active')->nullable();
+            
 
             $table->bigInteger('scy_created_by')->unsigned()->nullable();
             $table->bigInteger('scy_updated_by')->unsigned()->nullable();

@@ -96,9 +96,12 @@ class StudentController extends Controller
      * @param  \App\Students  $students
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Students $students)
+    public function destroy(Request $request)
     {
-        return 'data terhapus';
+        if($request->ajax()) {
+            User::findOrFail($request->studentID)->delete();
+            return $this->getResponse(true,200,'','Student berhasil dihapus');
+        }
     }
     public function formRegistrasion()
     {

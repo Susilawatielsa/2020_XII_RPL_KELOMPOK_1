@@ -7,16 +7,6 @@ use Illuminate\Http\Request;
 
 class StaffController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('staffs.list-staff');
-    }
-
     public function list_prospective()
     {
         return view('staffs.list-staff-prospective');

@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/logout', function(){
+
+Route::get('/logout', function () {
     abort(404);
 });
 
@@ -31,58 +32,70 @@ Route::post('/account/forgot-password', 'Auth\AccountController@sendEmailForgotP
 Route::get('/account/{resetVerificationToken}/forgot-password', 'Auth\AccountController@verifyForgotToken');
 Route::post('/account/reset-password', 'Auth\AccountController@updatePassword')->name('password-reset');
 
-//Route untuk register teacher dan staff
-
 Route::get('/select-registration', 'Auth\RegisterController@selectRegistration');
 Route::get('/register-student', 'Auth\RegisterController@registerStudent');
 Route::get('/register-teacher', 'Auth\RegisterController@registerTeacher');
 Route::get('/register-staff', 'Auth\RegisterController@registerStaff');
 
-//Route Untuk Admin, Student, Teacher, Staff TU, jika register dan login maka akan ke halaman ini 
 Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], function () {
     Route::get('/dashboard', 'User\UserController@index')->name('dashboard.users');
-    Route::get('/create', 'User\UserController@create');
 
+    Route::get('/staffs', function () {
+        return view('staffs.list-staff');
+    });
+    Route::get('staff', 'DatatableController@getStaffs');
 
-    Route::get('/staffs', 'StaffController@index');
     Route::get('/staffs/prospective', 'StaffController@list_prospective');
     Route::get('/staffs/rejected', 'StaffController@list_rejected');
-    Route::post('/staffs/create', 'StaffController@store');
-    Route::get('/staffs/create', 'StaffController@create');
-    Route::get('/staff/1', 'StaffController@show');
+    Route::post('/staff/create', 'StaffController@store');
+    Route::get('/staff/create', 'StaffController@create');
+    Route::get('/staff/{stf_id}', 'StaffController@show');
     Route::get('/staffs/prospective/1', 'StaffController@show_prospective');
     Route::get('/staffs/rejected/1', 'StaffController@show_rejected');
-    Route::get('/staffs/edit/1', 'StaffController@edit');
-    Route::post('/staffs/edit/1', 'StaffController@update');
+    Route::get('/staff/edit/{stf_id}', 'StaffController@edit');
+    Route::post('/staff/edit/{stf_id}', 'StaffController@update');
     Route::get('/staffs/delete/1', 'StaffController@destroy');
     Route::get('/staff-registration', 'StaffController@formRegistrasion');
     Route::post('/staff-registration', 'StaffController@storeFormRegistrasion');
 
 
-    Route::get('/teachers', 'TeacherController@index');
+    Route::get('/teachers', function () {
+        return view('teachers.list-teacher');
+    });
+    Route::get('teacher', 'DatatableController@getTeachers');
+
     Route::get('/teachers/prospective', 'TeacherController@list_prospective');
     Route::get('/teachers/rejected', 'TeacherController@list_rejected');
-    Route::get('/teachers/create', 'TeacherController@create');
-    Route::post('/teachers/create', 'TeacherController@store');
-    Route::get('/teacher/1', 'TeacherController@show');
+    Route::get('/teacher/create', 'TeacherController@create');
+    Route::post('/teacher/create', 'TeacherController@store');
+    Route::get('/teacher/{tcr_id}', 'TeacherController@show');
     Route::get('/teachers/prospective/1', 'TeacherController@show_prospective');
     Route::get('/teachers/rejected/1', 'TeacherController@show_rejected');
-    Route::get('/teachers/edit/1', 'TeacherController@edit');
+    Route::get('/teacher/edit/{tcr_id}', 'TeacherController@edit');
+    Route::post('/teacher/edit/{tcr_id}', 'TeacherController@store');
     Route::get('/teachers/delete/1', 'TeacherController@destroy');
     Route::get('/teacher-registration', 'TeacherController@formRegistrasion');
     Route::post('/teacher-registration', 'TeacherController@storeFormRegistrasion');
 
+    Route::get('/students', function () {
+        return view('students.list-student');
+    });
+    Route::get('/student', 'DatatableController@getStudent');
 
-    Route::get('/students', 'StudentController@index');
-    Route::get('/students/prospective', 'StudentController@list_prospective');
+    Route::get('/students/prospective', function () {
+        return view('students.list-student-prospective');
+    });
+    Route::get('/student/prospective', 'DatatableController@getStudentProspective');
     Route::get('/students/rejected', 'StudentController@list_rejected');
-    Route::get('/students/create', 'StudentController@create');
-    Route::post('/students/create', 'StudentController@store');
-    Route::get('/student/1', 'StudentController@show');
+    Route::get('/student/create', 'StudentController@create');
+    Route::post('/student/create', 'StudentController@store');
+    Route::get('/student/{stu_id}', 'StudentController@show');
     Route::get('/students/prospective/1', 'StudentController@show_prospective');
     Route::get('/students/rejected/1', 'StudentController@show_rejected');
-    Route::get('/students/edit/1', 'StudentController@edit');
-    Route::get('/students/delete/1', 'StudentController@destroy');
+    Route::get('/student/edit/{std_id}', 'StudentController@edit');
+    Route::post('/student/edit/{std_id}', 'StudentController@store');
+    Route::post('/student/delete', 'StudentController@destroy');
+
     Route::get('/student-registration', 'StudentController@formRegistrasion');
     Route::post('/student-registration', 'StudentController@storeFormRegistrasion');
 
@@ -99,33 +112,39 @@ Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack']], funct
 });
 
 Route::group(['middleware' => ['auth', 'verified', 'DisablePreventBack', 'role:admin|staff']], function () {
-    Route::get('/school-years', 'YearController@index');
-    Route::get('/school-years/create', 'YearController@create');
-    Route::post('/school-years/create', 'YearController@store');
-    Route::get('/school-years/edit/1', 'YearController@edit');
-    Route::post('/school-years/edit/1', 'YearController@update');
-    Route::get('/school-years/delete', 'YearController@destroy');
+    Route::get('school-years', function () {
+        return view('years.index');
+    });
+    Route::get('/school-year', 'DatatableController@getSchoolYear');
+    Route::get('/school-year/create', 'YearController@create');
+    Route::post('/school-year/create', 'YearController@store');
+    Route::get('/school-year/edit/1', 'YearController@edit');
+    Route::post('/school-year/edit/1', 'YearController@update');
 
-    Route::get('/majors', 'MajorController@index');
-    Route::get('/majors/create', 'MajorController@create');
-    Route::post('/majors/create', 'MajorController@store');
-    Route::get('/majors/edit/1', 'MajorController@edit');
-    Route::post('/majors/edit/1', 'MajorController@update');
-    Route::get('/majors/delete', 'MajorController@destroy');
+    Route::get('/majors', function () {
+        return view('majors.index');
+    });
+    Route::get('/major', 'DatatableController@getMajor');
+    Route::get('/major/create', 'MajorController@create');
+    Route::post('/major/create', 'MajorController@store');
+    Route::get('/major/edit/1', 'MajorController@edit');
+    Route::post('/major/edit/1', 'MajorController@update');
 
-    Route::get('/subjects', 'SubjectController@index');
-    Route::get('/subjects/create', 'SubjectController@create');
-    Route::post('/subjects/create', 'SubjectController@store');
-    Route::get('/subjects/edit/1', 'SubjectController@edit');
-    Route::post('/subjects/edit/1', 'SubjectController@update');
-    Route::get('/subjects/delete', 'SubjectController@destroy');
+    Route::get('/subjects', function () {
+        return view('subjects.index');
+    });
+    Route::get('subject', 'DatatableController@getSubject');
+    Route::get('/subject/create', 'SubjectController@create');
+    Route::post('/subject/create', 'SubjectController@store');
+    Route::get('/subject/edit/1', 'SubjectController@edit');
+    Route::post('/subject/edit/1', 'SubjectController@update');
 
-    Route::get('/position-types', 'PositionTypeController@index');
-    Route::get('/position-types/create', 'PositionTypeController@create');
-    Route::post('/position-types/create', 'PositionTypeController@store');
-    Route::get('/position-types/edit/1', 'PositionTypeController@edit');
-    Route::post('/position-types/edit/1', 'PositionTypeController@update');
-    Route::get('/position-types/delete', 'PositionTypeController@destroy');
-
-    
+    Route::get('/position-types', function () {
+        return view('position-types.index');
+    });
+    Route::get('/position-type', 'DatatableController@getPositionType');
+    Route::get('/position-type/create', 'PositionTypeController@create');
+    Route::post('/position-type/create', 'PositionTypeController@store');
+    Route::get('/position-type/edit/1', 'PositionTypeController@edit');
+    Route::post('/position-type/edit/1', 'PositionTypeController@update');
 });

@@ -17,6 +17,7 @@ class CreatePositionTypesTable extends Migration
             $table->bigIncrements('pst_id');
             $table->string('pst_name');
             $table->string('pst_honorarium')->nullable();
+            $table->tinyInteger('pst_is_active')->nullable();
 
             $table->bigInteger('pst_created_by')->unsigned()->nullable();
             $table->bigInteger('pst_updated_by')->unsigned()->nullable();
