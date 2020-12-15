@@ -175,35 +175,37 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
+                        <i class="fa fa-address-book-o"></i>
                         INFORMASI KONTAK
                     </h4>
 
                     <div class="form-group row">
+                        
                         <div class="col-sm-4">
-                            <label>Provinsi</label>
-                            <select class="form-control" id="basic-select" name="provinces">
+                            <label>Provinsi <span style="color:red;">*</span></label>
+                            <select class="form-control" name="provinces" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Jawa Barat</option>
-                                <option>Jawa Timur</option>
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="Jawa Timur">Jawa Timur</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
-                            <label>Kabupaten</label>
-                            <select class="form-control" id="basic-select" name="usr_district">
+                            <label>Kota/Kabupaten<span style="color:red;">*</span></label>
+                            <select class="form-control" name="city" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
                             </select>
                         </div>
 
                         <div class="col-sm-4">
-                            <label>Kecamatan</label>
-                            <select class="form-control" id="basic-select" name="usr_district">
+                            <label>Kecamatan <span style="color:red;">*</span></label>
+                            <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option>Katapang</option>
-                                <option>Arjasari</option>
+                                <option value="Katapang">Katapang</option>
+                                <option value="Arjasari">Arjasari</option>
                             </select>
                         </div>
 
@@ -211,25 +213,33 @@
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_address" placeholder="Masukan Alamat">
+                            <label>Kode Pos <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" name="usr_postal_code" id="input-10" placeholder="Masukan Kode Pos">
                         </div>
 
-                        <div class="col-sm-4">
-                            <label>Kode Pos</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_postal_code" placeholder="Masukan Kode Pos">
-                        </div>
+                     <div class="col-sm-4">
+                            <label>Alamat <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" name="usr_address" id="input-10" placeholder="Masukan Alamat">
+                        </div>  
 
                         <div class="col-sm-2">
-                            <label>RT</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_rt" placeholder="Masukan Nomor RT">
+                            <label>RT <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" name="usr_rt" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
-                         <div class="col-sm-2">
-                            <label>RW</label>
+                        
+                        <div class="col-sm-2">
+                            <label>RW <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_rw" placeholder="Masukan Nomor RW">
                         </div>
+
                     </div>
 
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Kelurahan/Desa<span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" name="usr_village" id="input-10" placeholder="Masukan Desa/Dusun">
+                        </div>
+                        </div>
 
                     <h4 class="form-header text-uppercase">
                          DATA SUAMI/Istri

@@ -58,19 +58,30 @@
                             <td>:</td>
                             <td>Ujang</td>
 
-                            <th>Email</th>
-                            <td>:</td>
-                            <td>ujang@gmail.com</td>
-                        </tr>
-
-                        <tr>
-                            <th>Nomor Telepon</th>
-                            <td>:</td>
-                            <td>089613272481</td>
-
                             <th>NIK</th>
                             <td>:</td>
                             <td>3204370204900002</td>
+                        </tr>
+                        <tr>
+                            <th>Kewarganegaraan</th>
+                            <td>:</td>
+                            <td>WNI</td>
+
+                            <th>Nama Negara</th>
+                            <td>:</td>
+                            <td>Indonesia</td>
+                        </tr>
+
+                        
+                        <tr>
+
+                            <th>Tempat Lahir</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+
+                            <th>Tanggal lahir</th>
+                            <td>:</td>
+                            <td>03/03/1991</td>
                         </tr>
 
                         <tr>
@@ -78,29 +89,47 @@
                             <td>:</td>
                             <td>Laki Laki</td>
 
-                            <th>Tempat Lahir</th>
+                            <th>Agama</th>
                             <td>:</td>
-                            <td>Bandung</td>
+                            <td>Islam</td>
                         </tr>
 
                         <tr>
-                            <th>Tanggal lahir</th>
+                            <th>Status Perkawinan</th>
                             <td>:</td>
-                            <td>02 April</td>
+                            <td>Sudah</td> 
 
-                            <th>Alamat</th>
+                            <th>NUPTK</th>
                             <td>:</td>
-                            <td>Kp. Citereup</td>
+                            <td>423908429938490</td>
                         </tr>
 
                         <tr>
-                            <th>RT</th>
-                            <td>:</td>
-                            <td>02</td>
+                            <th></th>
+                            <td></td>
+                            <td></td>
 
-                            <th>RW</th>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="text-primary">INFORMASI KONTAK</h4>
+            <div class="table-responsive">
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            
+                            <th>Provinsi</th>
                             <td>:</td>
-                            <td>07</td>
+                            <td>Jawa Barat</td>  
+
+                            <th>Kota/Kabupaten</th>
+                            <td>:</td>
+                            <td>Bandung</td>                         
                         </tr>
 
                         <tr>
@@ -111,26 +140,39 @@
                             <th>Kode Pos</th>
                             <td>:</td>
                             <td>40971</td>
+
                         </tr>
 
                         <tr>
-                            <th>Desa</th>
+                            <th>RT</th>
+                            <td>:</td>
+                            <td>02</td>
+
+                            <th>RW</th>
+                            <td>:</td>
+                            <td>07</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp. Citereup</td>
+
+                            <th>Kelurahan/Desa</th>
                             <td>:</td>
                             <td>Sukamukti</td>
 
-                            <th>Agama</th>
-                            <td>:</td>
-                            <td>Islam</td>
                         </tr>
-
                         <tr>
-                            <th>GTK</th>
+                            <th>Email</th>
                             <td>:</td>
-                            <td>16.17.006</td>
-
-                            <th>NUPTK</th>
+                            <td>odney04@gmail.com</td>
+                            
+                            <th>Nomor Telepon</th>
                             <td>:</td>
-                            <td>423908429938490</td>
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>

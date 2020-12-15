@@ -132,13 +132,14 @@
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
+                            
                             <th>Provinsi</th>
                             <td>:</td>
-                            <td>Jawa Barat</td>
+                            <td>Jawa Barat</td>  
 
-                            <th>Kabupaten</th>
+                            <th>Kota/Kabupaten</th>
                             <td>:</td>
-                            <td>Bandung</td>
+                            <td>Bandung</td>                         
                         </tr>
 
                         <tr>
@@ -146,39 +147,42 @@
                             <td>:</td>
                             <td>Katapang</td>
 
-                            <th>Alamat</th>
+                            <th>Kode Pos</th>
                             <td>:</td>
-                            <td>Kp. Cibolerang</td>
+                            <td>40971</td>
+
                         </tr>
 
                         <tr>
-                            <th>Kode Pos</th>
-                            <td>:</td>
-                            <td>40921</td>
-
                             <th>RT</th>
                             <td>:</td>
                             <td>02</td>
+
+                            <th>RW</th>
+                            <td>:</td>
+                            <td>07</td>
+
                         </tr>
 
                         <tr>
-                            <th>RW</th>
-                            <td>:</td>
-                            <td>22</td>
 
-                            <th>Nomor Telepon</th>
+                            <th>Alamat</th>
                             <td>:</td>
-                            <td>085713278789</td>
+                            <td>Kp. Citereup</td>
+
+                            <th>Kelurahan/Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+
                         </tr>
-
                         <tr>
                             <th>Email</th>
                             <td>:</td>
-                            <td>rizki@gmail.com</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <td>odney04@gmail.com</td>
+                            
+                            <th>Nomor Telepon</th>
+                            <td>:</td>
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>
@@ -230,41 +234,6 @@
                     </tbody>
                 </table>
             </div>
-<!-- //di komentarin dulu, masa calon ada status kepegawaian?
-            <h4 class="text-primary">STATUS KEPEGAWAIAN</h4>
-            <div class="table-responsive">
-                <table class="table table-stripped">
-                    <tbody>
-                        <tr>
-                            <th>No SK</th>
-                            <td>:</td>
-                            <td>-/td>
-
-                            <th>Tahun Masuk</th>
-                            <td>:</td>
-                            <td>Juni 2016</td>
-                        </tr>
-
-                        <tr>
-                            <th>Kontrak Kerja</th>
-                            <td>:</td>
-                            <td>1 Tahun</td>
-
-                            <th>Status Staf</th>
-                            <td>:</td>
-                            <td>Staf Tidak Tetap</td>
-
-                        </tr>
-                        <tr>
-                            <th>Jabatan</th>
-                            <td>:</td>
-                            <td>Kepala Staf</td>
-                        </tr>
-
-                    </tbody>
-                </table><br>
-            -->
-
             <h4 class="text-primary">RIWAYAT PENDIDIKAN</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">

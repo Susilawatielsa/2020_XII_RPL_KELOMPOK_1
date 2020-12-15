@@ -140,74 +140,76 @@
                     </div>
 
                     <h4 class="form-header text-uppercase">
-                        
+                        <i class="fa fa-address-book-o"></i>
                         INFORMASI KONTAK
                     </h4>
 
                     <div class="form-group row">
+                     
                         <div class="col-sm-4">
                             <label>Provinsi</label>
-                            <select class="form-control" id="basic-select">
+                            <select class="form-control" id="basic-select" name="provinces">
                                 <option disabled="" selected="">Jawa Barat</option>
-                                <option>Jawa Barat</option>
-                                <option>Jawa Timur</option>
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="Jawa Timur">Jawa Timur</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
-                            <label>Kabupaten</label>
-                            <select class="form-control" id="basic-select">
+                            <label>Kota/Kabupaten</label>
+                            <select class="form-control" name="city" id="basic-select">
                                 <option disabled="" selected="">Bandung</option>
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
                             </select>
                         </div>
-
-                        <div class="col-sm-4">
-                            <label>Kecamatan</label>
-                            <select class="form-control" id="basic-select">
-                                <option disabled="" selected="">Katapang</option>
-                                <option>Katapang</option>
-                                <option>Arjasari</option>
-                            </select>
-                        </div>
-
                     </div>
 
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" id="input-10" value="Kp Pasantren">
+                    
+                    <div class="col-sm-4">
+                            <label>Kecamatan</label>
+                            <select class="form-control" name="usr_district" id="basic-select">
+                                <option disabled="" selected="">Katapang</option>
+                                <option value="Katapang">Katapang</option>
+                                <option value="Arjasari">Arjasari</option>
+                            </select>
                         </div>
-
                         <div class="col-sm-4">
                             <label>Kode Pos</label>
-                            <input type="text" class="form-control" id="input-10" value="40921">
+                            <input type="text" name="usr_postal_code" class="form-control" id="input-10" value="40921">
                         </div>
-
+                        <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>RT</label>
-                            <input type="text" class="form-control" id="input-10" value="02">
-                        </div>
+                            <label>Alamat</label>
+                            <input type="text" name="usr_address" class="form-control" id="input-10" value="Kp. Citereup">
+                        </div>                      
 
                     </div>
 
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
+                            <label>RT</label>
+                            <input type="text" class="form-control" name="usr_rt" id="input-10" value="02">
+                        </div>
+                        <div class="col-sm-2">
                             <label>RW</label>
-                            <input type="text" class="form-control" id="input-10" value="06">
+                            <input type="text" class="form-control" id="input-10" name="usr_rw" value="07">
                         </div>
 
                         <div class="col-sm-4">
                             <label>No Telepon</label>
-                            <input type="text" class="form-control" id="input-10" value="089527103940">
+                            <input type="text" class="form-control" name="usr_phone_number" id="input-10" value="089613272481">
                         </div>
                         <div class="col-sm-4">
                             <label>Email</label>
-                            <input type="text" class="form-control" id="input-10" value="sitirobiah1970@gmail.com">
+                            <input type="text" class="form-control" id="input-10" name="usr_email" value="odney04@gmail.com">
                         </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                            <label>Kelurahan/Desa</label>
+                            <input type="text" name="usr_village" class="form-control" id="input-10" value="Sukamukti">
+                            </div>                      
+
                     </div>
 
                     <h4 class="form-header text-uppercase">

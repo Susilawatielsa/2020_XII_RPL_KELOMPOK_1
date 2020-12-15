@@ -1,108 +1,99 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SMK MAHAPUTRA</title>
+    <!--favicon-->
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link href="{{ asset('assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- animate CSS-->
+    <link href="{{ asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
+    <!--Bootstrap Datepicker-->
+    <link href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
+    <!-- Icons CSS-->
+    <link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet" type="text/css">
+    <!-- Sidebar CSS-->
+    <link href="{{ asset('assets/css/sidebar-menu.css')}}" rel="stylesheet">
+    <!-- Custom Style-->
+    <link href="{{ asset('assets/css/app-style.css')}}" rel="stylesheet">
 
-@push('title')
-- Tambah Staf
-@endpush
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="{{ asset('assets/images/mahaputra.jfif') }}" style="width: 50px;" height="50px;"> {{ config('app.name', 'Laravel') }}
+                </a>
 
-@push('styles')
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Rocker - Bootstrap4 Admin Dashboard Template</title>
-<!--favicon-->
-<link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
-<!-- simplebar CSS-->
-<link href="{{ asset('assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet">
-<!-- Bootstrap core CSS-->
-<link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-<!-- animate CSS-->
-<link href="{{ asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
-<!--Bootstrap Datepicker-->
-<link href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
-<!-- Icons CSS-->
-<link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet" type="text/css">
-<!-- Sidebar CSS-->
-<link href="{{ asset('assets/css/sidebar-menu.css')}}" rel="stylesheet">
-<!-- Custom Style-->
-<link href="{{ asset('assets/css/app-style.css')}}" rel="stylesheet">
-@endpush
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
 
-@section('content')
+                        <!-- Authentication Links -->
+                        @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
 
-<div class="row pt-2 pb-2">
-    <div class="col-sm-9">
-        <h4 class="page-title">Tambah Staf</h4>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url('dashboard')}}">SMK Mahaputra</a></li>
-            <li class="breadcrumb-item"><a href="javaScript:void();">Kelola Staf</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tambah Staf</li>
-        </ol>
-    </div>
-</div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ __('Register') }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ url('register-student') }}">Siswa</a>
+                                <a class="dropdown-item" href="{{ url('register-teacher') }}">Guru</a>
+                                <a class="dropdown-item" href="{{ url('register-staff') }}">Staff TU</a>
+                            </div>
+                        </li>
+                        @endif
+                        @else
 
+
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->usr_name }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </header><br>
+
+<div class="container-fluid">
 <div class="row">
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form id="signupForm" autocomplete="off" method="POST" action="{{ url('staff/create') }}" novalidate="novalidate">
+                <form id="signupForm" enctype="multipart/form-data" autocomplete="off" method="POST" action="{{ url('staffs/create') }}" novalidate="novalidate">
                     @csrf
-
-                    <h4 class="form-header text-uppercase">
-                        <i class="  "></i>
-                        Data Akun
-                    </h4>
-
-                    <div class="form-group row">
-
-                        <div class="col-sm-4">
-                            <label>Nama Lengkap<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control @error('usr_name') is-invalid @enderror" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap" value="{{ old('usr_name') }}">
-                            @error('usr_name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label>Email<span style="color:red"> *</span></label>
-                            <input type="email" class="form-control @error('usr_email') is-invalid @enderror" id="input-10" name="usr_email" placeholder="Masukan Email" value="{{ old('usr_email') }}">
-                            @error('usr_email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label>Nomor Telepon<span style="color:red"> *</span></label>
-                            <input type="text" class="form-control @error('usr_phone_number') is-invalid @enderror" id="input-10" name="usr_phone_number" placeholder="Masukan Nomor Telepon" value="{{ old('usr_phone_number') }}">
-                            @error('usr_phone_number')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="form-group row">
-
-                        <div class="col-sm-6">
-                            <label>Kata Sandi<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control @error('usr_password') is-invalid @enderror" id="input-10" name="usr_password" placeholder="Masukan Kata Sandi" value="{{ old('usr_password') }}">
-                            @error('usr_password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Ulangi Kata Sandi<span style="color:red"> *</span></label>
-                            <input type="password" class="form-control" id="input-10" name="usr_retype_password" placeholder="Masukan Kata Sandi">
-                        </div>
-                    </div>
 
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
@@ -110,14 +101,41 @@
                     </h4>
                     <div class="form-group row">
 
+                        <div class="col-sm-4">
+                        <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px"/> 
+                        <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
+                 
+                        <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group row">
 
                         <div class="col-sm-4">
+                            <label>Nama Lengkap <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_name" placeholder="Masukan Nama Lengkap">
+                        </div>
+                        <div class="col-sm-4">
                             <label>NIK <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_nik_or_kitas" placeholder="Masukan NIK">
+                            <input type="text" class="form-control" id="input-10" name="usr_nik" placeholder="Masukan NIK">
                         </div>
                         <div class="col-sm-4">
                             <label>NUPTK</label>
                             <input type="text" class="form-control" id="input-10" name="stf_nuptk" placeholder="Masukan NUPTK">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Tempat Lahir <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_place_of_birth" placeholder="Masukan Tempat Lahir">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>Tanggal Lahir <span style="color:red;">*</span></label>
+                            <input type="text" id="autoclose-datepicker" class="form-control" name="usr_date_of_birth" placeholder="Tanggal/Bulan/Tahun">
                         </div>
 
                         <div class="col-sm-4">
@@ -132,89 +150,66 @@
                                 <option value="Khonghucu">Khonghucu</option>
                             </select>
                         </div>
-
+                        
                     </div>
-
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>NO GTK <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="stf_gtk" placeholder="Masukan Nomor GTK">
-                        </div>
-
-                        <div class="col-sm-4">
                             <label>Kewarganegaraan <span style="color:red;">*</span></label>
-                            <select class="form-control" name="usr_citizenship" id="basic-select">
+                            <select class="form-control" name="" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option value="WNI">WNI</option>
-                                <option value="WNA">WNA</option>
+                                <option>WNI</option>
+                                <option>WNA</option>
                             </select>
                         </div>
                         <div class="col-sm-4">
                             <label>Nama Negara <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_country_name" placeholder="Masukan Nama Negara">
+                            <input type="text" class="form-control" id="input-10" name="country_name" placeholder="Masukan Nama Negara">
                         </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Tempat Lahir <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" id="input-10" name="usr_place_of_birth" placeholder="Masukan Tempat Lahir">
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label>Tanggal Lahir <span style="color:red;">*</span></label>
-                            <input type="text" id="autoclose-datepicker" class="form-control" name="usr_date_of_birth" placeholder="Tanggal/Bulan/Tahun">
-                        </div>
-
                         <div class="col-sm-4">
                             <label>Jenis Kelamin <span style="color:red;">*</span></label>
                             <select class="form-control" name="usr_gender" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option value="Laki-Laki">Laki Laki</option>
-                                <option value="Perempuan">Perempuan</option>
+                                <option>Laki Laki</option>
+                                <option>Perempuan</option>
                             </select>
+
                         </div>
-                    </div>
-
-                    <div class="form-group row">
-
+                        
                         <div class="col-sm-3">
-                            <label>Status Perkawinan <span style="color:red;">*</span></label> <br>
+                            <label>Status Nikah <span style="color:red;">*</span></label> <br>
 
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio" id="info1" name="stf_marital_status" value="Sudah">
+                                <input type="radio" id="info1" name="info">
                                 <label for="info1">Sudah</label>
                             </div>
                             <div class="radio icheck-info icheck-inline">
-                                <input type="radio" checked="" id="info2" name="stf_marital_status" value="belum">
+                                <input type="radio" checked="" id="info2" name="info">
                                 <label for="info2">Belum</label>
                             </div>
                         </div>
                     </div>
-
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
                         INFORMASI KONTAK
                     </h4>
 
                     <div class="form-group row">
-                        
                         <div class="col-sm-4">
                             <label>Provinsi <span style="color:red;">*</span></label>
                             <select class="form-control" name="provinces" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option value="Jawa Barat">Jawa Barat</option>
-                                <option value="Jawa Timur">Jawa Timur</option>
+                                <option>Jawa Barat</option>
+                                <option>Jawa Timur</option>
                             </select>
                         </div>
 
 
                         <div class="col-sm-4">
-                            <label>Kota/Kabupaten<span style="color:red;">*</span></label>
-                            <select class="form-control" name="city" id="basic-select">
+                            <label>Kabupaten <span style="color:red;">*</span></label>
+                            <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option value="Bandung">Bandung</option>
-                                <option value="Jakarta">Jakarta</option>
+                                <option>Bandung</option>
+                                <option>Jakarta</option>
                             </select>
                         </div>
 
@@ -222,8 +217,8 @@
                             <label>Kecamatan <span style="color:red;">*</span></label>
                             <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
-                                <option value="Katapang">Katapang</option>
-                                <option value="Arjasari">Arjasari</option>
+                                <option>Katapang</option>
+                                <option>Arjasari</option>
                             </select>
                         </div>
 
@@ -231,34 +226,66 @@
 
                     <div class="form-group row">
                         <div class="col-sm-4">
+                            <label>Alamat <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" name="usr_address" id="input-10" placeholder="Masukan Alamat">
+                        </div>
+
+                        <div class="col-sm-4">
                             <label>Kode Pos <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" name="usr_postal_code" id="input-10" placeholder="Masukan Kode Pos">
                         </div>
 
-                     <div class="col-sm-4">
-                            <label>Alamat <span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" name="usr_address" id="input-10" placeholder="Masukan Alamat">
-                        </div>  
-
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <label>RT <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" name="usr_rt" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
-                        
-                        <div class="col-sm-2">
+
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-4">
                             <label>RW <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" id="input-10" name="usr_rw" placeholder="Masukan Nomor RW">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>No Telepon <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_phone" placeholder="Masukan Nomor Telepon">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Email <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="usr_email" placeholder="Masukan Email">
+                        </div>
+                    </div>
+
+                    <h4 class="form-header text-uppercase">
+                        <i class="fa fa-address-book-o"></i>
+                        DATA SUAMI/ISTERI
+                    </h4>
+
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Nama Suami/Isteri <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[name]" placeholder="Masukan Nama Suami/Isteri">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>NIK <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[nik]" placeholder="Masukan NIK">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>NIP</label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[nip]" placeholder="Masukan NIP">
                         </div>
 
                     </div>
 
                     <div class="form-group row">
                         <div class="col-sm-4">
-                            <label>Kelurahan/Desa<span style="color:red;">*</span></label>
-                            <input type="text" class="form-control" name="usr_village" id="input-10" placeholder="Masukan Desa/Dusun">
+                            <label>Pekerjaan <span style="color:red;">*</span></label>
+                            <input type="text" class="form-control" id="input-10" name="husband_wife[profession]" placeholder="Masukan Nama Pekerjaan">
                         </div>
-                        </div>
-
+                    </div>
                     <h4 class="form-header text-uppercase">
                         <i class="fa fa-address-book-o"></i>
                         RIWAYAT PENDIDIKAN
@@ -372,38 +399,30 @@
                         </div>
                     </div>
 
-                    <h4 class="form-header text-uppercase">
-                        <i class="fa fa-image-o"></i>
-                        LAINYA
-                    </h4>
-
-                    <div class="form-group row">
-
-                        <div class="col-sm-4">
-                            <img src="#" class="img-thumbnail" id="tampil_picture" style="object-fit: cover; height: 200px; width: 200px" />
-                            <input type="file" name="usr_profile_picture" id="preview_gambar" class="img-thumbnail" accept="image/x-png,image/gif,image/jpeg" style="display:none" onchange="document.getElementById('usr_profile_picture').value=this.value" /><br>
-
-                            <button type="button" id="usr_profile_picture" class="btn btn-outline-primary btn-sm waves-effect waves-light m-2" onclick="document.getElementById('preview_gambar').click()">Pilih Gambar</button>
-
-                        </div>
-                    </div>
-
 
                     <div class="form-footer">
-                        <a href="/staffs" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</a>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</button>
+                        <a href="" class="btn btn-danger"><i class="fa fa-times"></i> CANCEL</a>
+                        <a href="" type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> SAVE</a>
                     </div>
+                    <footer class="footer">
+                    <div class="container">
+                        <div class="text-center">
+                        Copyright © 2018 Rocker Admin
+                        </div>
+                    </div>
+                    </footer>
+
                 </form>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!--Start Back To Top Button-->
 <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
 <!--End Back To Top Button-->
 
-@push('scripts')
 <!-- Bootstrap core JavaScript-->
 <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
 <script src="{{ asset('assets/js/popper.min.js')}}"></script>
@@ -481,22 +500,29 @@
         });
 
     });
+$(document).ready(function() {
+            $("#submitForm").submit(function(e) {
+                $(this).find("button[type='submit']").prop('disabled', true);
+                $("#btnSubmit").attr("disabled", true);
+                return true;
+            });
+        });
 
+function bacaGambar(input) {
+   if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
-    function bacaGambar(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+      reader.onload = function (e) {
+          $('#gambar_nodin').attr('src', e.target.result);
+      }
 
-            reader.onload = function(e) {
-                $('#tampil_picture').attr('src', e.target.result);
-            }
+      reader.readAsDataURL(input.files[0]);
+   }
+}
+$("#preview_gambar").change(function(){
+   bacaGambar(this);
+});
 
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    $("#preview_gambar").change(function() {
-        bacaGambar(this);
-    });
 </script>
 
 <!--Bootstrap Datepicker Js-->
@@ -516,5 +542,7 @@
 
     $('#dateragne-picker .input-daterange').datepicker({});
 </script>
-@endpush
-@endsection
+
+
+</body>
+</html>

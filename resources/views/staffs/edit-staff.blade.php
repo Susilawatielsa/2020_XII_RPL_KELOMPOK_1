@@ -174,17 +174,16 @@
                             </select>
                         </div>
 
-
                         <div class="col-sm-4">
-                            <label>Kabupaten</label>
+                            <label>Kabupaten/Kota</label>
                             <select class="form-control" name="city" id="basic-select">
                                 <option disabled="" selected="">Bandung</option>
                                 <option value="Bandung">Bandung</option>
                                 <option value="Jakarta">Jakarta</option>
                             </select>
                         </div>
-
-                        <div class="col-sm-4">
+                    
+                    <div class="col-sm-4">
                             <label>Kecamatan</label>
                             <select class="form-control" name="usr_district" id="basic-select">
                                 <option disabled="" selected="">Katapang</option>
@@ -192,33 +191,36 @@
                                 <option value="Arjasari">Arjasari</option>
                             </select>
                         </div>
-
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Alamat</label>
-                            <input type="text" name="usr_address" class="form-control" id="input-10" value="Kp. Citereup">
                         </div>
-
+                       
+                    <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Kode Pos</label>
                             <input type="text" name="usr_postal_code" class="form-control" id="input-10" value="40921">
                         </div>
 
                         <div class="col-sm-4">
+                            <label>Alamat</label>
+                            <input type="text" name="usr_address" class="form-control" id="input-10" value="Kp. Citereup">
+                        </div>   
+
+                        <div class="col-sm-2">
                             <label>RT</label>
                             <input type="text" class="form-control" name="usr_rt" id="input-10" value="02">
                         </div>
+                        <div class="col-sm-2">
+                            <label>RW</label>
+                            <input type="text" class="form-control" id="input-10" name="usr_rw" value="07">
+                        </div>                   
 
                     </div>
 
-
                     <div class="form-group row">
+
                         <div class="col-sm-4">
-                            <label>RW</label>
-                            <input type="text" class="form-control" id="input-10" name="usr_rw" value="07">
-                        </div>
+                            <label>Kelurahan/Desa</label>
+                            <input type="text" name="usr_village" class="form-control" id="input-10" value="Sukamukti">
+                        </div> 
 
                         <div class="col-sm-4">
                             <label>No Telepon</label>

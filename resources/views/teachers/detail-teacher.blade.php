@@ -158,68 +158,62 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="text-primary">DATA PRIBADI</h4>
+            <h4 class="text-primary">INFORMASI KONTAK</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
-                            <th>Nama</th>
+                            
+                            <th>Provinsi</th>
                             <td>:</td>
-                            <td>Siti Robiah Adawiyah S.Pd</td>
+                            <td>Jawa Barat</td>  
 
-                            <th>NIK</th>
+                            <th>Kota/Kabupaten</th>
                             <td>:</td>
-                            <td>3204115208700009</td>
-                        </tr>
-                        
-                        <tr>
-                            <th>GTK</th>
-                            <td>:</td>
-                            <td>16.17.004</td>
-
-                            <th>NUPTK</th>
-                            <td>:</td>
-                            <td>1144748649300010</td>
+                            <td>Bandung</td>                         
                         </tr>
 
                         <tr>
-                            <th>Kewarganegaraan</th>
+                            <th>Kecamatan</th>
                             <td>:</td>
-                            <td>WNI</td>
+                            <td>Katapang</td>
 
-                            <th>Nama Negara</th>
+                            <th>Kode Pos</th>
                             <td>:</td>
-                            <td>Indonesia</td>
+                            <td>40971</td>
+
                         </tr>
 
                         <tr>
-                            <th>Tempat Lahir</th>
+                            <th>RT</th>
                             <td>:</td>
-                            <td>Bandung</td>
+                            <td>02</td>
 
-                            <th>Tanggal lahir</th>
+                            <th>RW</th>
                             <td>:</td>
-                            <td>12/10/1970</td>
+                            <td>07</td>
+
                         </tr>
 
                         <tr>
-                            <th>Jenis Kelamin</th>
-                            <td>:</td>
-                            <td>Perempuan</td>
 
-                            <th>Agama</th>
+                            <th>Alamat</th>
                             <td>:</td>
-                            <td>Islam</td>
+                            <td>Kp. Citereup</td>
+
+                            <th>Kelurahan/Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+
                         </tr>
-
                         <tr>
-                            <th>Status Perkawinan</th>
+                            <th>Email</th>
                             <td>:</td>
-                            <td>Sudah</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>    
+                            <td>odney04@gmail.com</td>
+                            
+                            <th>Nomor Telepon</th>
+                            <td>:</td>
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>
@@ -240,13 +234,14 @@
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
+                            
                             <th>Provinsi</th>
                             <td>:</td>
-                            <td>Jawa Barat</td>
+                            <td>Jawa Barat</td>  
 
-                            <th>Kabupaten</th>
+                            <th>Kota/Kabupaten</th>
                             <td>:</td>
-                            <td>Bandung</td>
+                            <td>Bandung</td>                         
                         </tr>
 
                         <tr>
@@ -254,39 +249,42 @@
                             <td>:</td>
                             <td>Katapang</td>
 
-                            <th>Alamat</th>
+                            <th>Kode Pos</th>
                             <td>:</td>
-                            <td>Kp Pasantren</td>
+                            <td>40971</td>
+
                         </tr>
 
                         <tr>
-                            <th>Kode Pos</th>
-                            <td>:</td>
-                            <td>40921</td>
-
                             <th>RT</th>
                             <td>:</td>
                             <td>02</td>
+
+                            <th>RW</th>
+                            <td>:</td>
+                            <td>07</td>
+
                         </tr>
 
                         <tr>
-                            <th>RW</th>
-                            <td>:</td>
-                            <td>06</td>
 
-                            <th>No Telepon</th>
+                            <th>Alamat</th>
                             <td>:</td>
-                            <td>089527103940</td>
+                            <td>Kp. Citereup</td>
+
+                            <th>Kelurahan/Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+
                         </tr>
-
                         <tr>
                             <th>Email</th>
                             <td>:</td>
-                            <td>sitirobiah1970@gmail.com</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <td>odney04@gmail.com</td>
+                            
+                            <th>Nomor Telepon</th>
+                            <td>:</td>
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>
@@ -301,7 +299,6 @@
                     </tbody>
                 </table>
             </div>
-
             <h4 class="text-primary">DATA SUAMI/ISTERI</h4>
             <div class="table-responsive">
                 <table class="table table-stripped">

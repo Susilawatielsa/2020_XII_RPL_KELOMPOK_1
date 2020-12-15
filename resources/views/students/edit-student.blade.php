@@ -138,7 +138,7 @@
                             </select>
                         </div>
                         <div class="col-sm-4">
-                            <label>Kabupaten</label>
+                            <label>Kabupaten/Kota</label>
                             <select class="form-control" id="basic-select">
                                 <option disabled="" selected="">Bndung</option>
                                 <option>Bandung</option>
@@ -157,17 +157,15 @@
                     </div>
 
                     <div class="form-group row">
-
-                        <div class="col-sm-6">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" id="input-10" value="Kp.Cicangkudu">
-                        </div>
-
-                        <div class="col-sm-2">
+                    <div class="col-sm-4">
                             <label>Kode Pos</label>
                             <input type="text" class="form-control" id="input-10" value="40921">
                         </div>
 
+                        <div class="col-sm-4">
+                            <label>Alamat</label>
+                            <input type="text" class="form-control" id="input-10" value="Kp.Cicangkudu">
+                        </div>
                         <div class="col-sm-2">
                             <label>RT</label>
                             <input type="text" class="form-control" id="input-10" value="01">
@@ -176,7 +174,25 @@
                             <label>RW</label>
                             <input type="text" class="form-control" id="input-10" value="12">
                         </div>
+                        
+
                     </div>
+                    <div class="form-group row">
+                    
+                        <div class="col-sm-4">
+                            <label>kelurahan/Desa<span style="color:red"> *</span></label>
+                            <input type="text" class="form-control" id="input-10" value="Sukamukti">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Telepon Rumah</label>
+                            <input type="text" class="form-control" id="input-10" value="0123456789">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>Email Rumah</label>
+                            <input type="text" class="form-control" id="input-10" value="rumah@gmail.com">
+                        </div>
+                        </div>
 
 
                     <h4 class="form-header text-uppercase">

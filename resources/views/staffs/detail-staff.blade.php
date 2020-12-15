@@ -131,13 +131,14 @@
                 <table class="table table-stripped">
                     <tbody>
                         <tr>
+                            
                             <th>Provinsi</th>
                             <td>:</td>
-                            <td>Jawa Barat</td>
+                            <td>Jawa Barat</td>  
 
-                            <th>Kabupaten</th>
+                            <th>Kota/Kabupaten</th>
                             <td>:</td>
-                            <td>Bandung</td>
+                            <td>Bandung</td>                         
                         </tr>
 
                         <tr>
@@ -145,39 +146,42 @@
                             <td>:</td>
                             <td>Katapang</td>
 
-                            <th>Alamat</th>
+                            <th>Kode Pos</th>
                             <td>:</td>
-                            <td>Kp. Citereup</td>
+                            <td>40971</td>
+
                         </tr>
 
                         <tr>
-                            <th>Kode Pos</th>
-                            <td>:</td>
-                            <td>40921</td>
-
                             <th>RT</th>
                             <td>:</td>
                             <td>02</td>
-                        </tr>
 
-                        <tr>
                             <th>RW</th>
                             <td>:</td>
                             <td>07</td>
 
-                            <th>Nomor Telepon</th>
-                            <td>:</td>
-                            <td>089613272481</td>
                         </tr>
 
+                        <tr>
+
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Kp. Citereup</td>
+
+                            <th>Kelurahan/Desa</th>
+                            <td>:</td>
+                            <td>Sukamukti</td>
+
+                        </tr>
                         <tr>
                             <th>Email</th>
                             <td>:</td>
                             <td>odney04@gmail.com</td>
-
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            
+                            <th>Nomor Telepon</th>
+                            <td>:</td>
+                            <td>089613272481</td>
                         </tr>
 
                         <tr>

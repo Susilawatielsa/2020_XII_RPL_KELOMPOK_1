@@ -173,6 +173,17 @@
                         </tr>
 
                         <tr>
+                            <th>Provinsi</th>
+                            <td>:</td>
+                            <td>Jawa barat</td>
+                            
+                            <th>Kabupaten/Kota</th>
+                            <td>:</td>
+                            <td>Bandung</td>
+
+                        </tr>
+                        
+                        <tr>
                             <th>Kecamatan</th>
                             <td>:</td>
                             <td>Katapang</td>
@@ -183,7 +194,7 @@
                         </tr>
 
                         <tr>
-                            <th>Desa</th>
+                            <th>Kelurahan/Desa</th>
                             <td>:</td>
                             <td>Sangkanhurip</td>
 

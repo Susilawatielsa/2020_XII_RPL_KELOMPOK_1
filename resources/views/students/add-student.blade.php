@@ -436,7 +436,7 @@
                             </select>
                         </div>
                         <div class="col-sm-4">
-                            <label>Kota<span style="color:red"> *</span></label>
+                            <label>Kota/Kabupaten<span style="color:red"> *</span></label>
                             <select class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>Bandung</option>
@@ -444,7 +444,7 @@
                             </select>
                         </div>
                         <div class="col-sm-4">
-                            <label>Kabupaten<span style="color:red"> *</span></label>
+                            <label>Kecamatan<span style="color:red"> *</span></label>
                             <select name="usr_district_id" class="form-control" id="basic-select">
                                 <option disabled="" selected="">Pilih</option>
                                 <option>Katapang</option>
@@ -455,35 +455,41 @@
                     </div>
 
                     <div class="form-group row">
-
-                        <div class="col-sm-6">
-                            <label>Alamat<span style="color:red"> *</span></label>
-                            <input type="text" name="usr_address" class="form-control" id="input-10" placeholder="Masukan Alamat">
-                        </div>
-
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <label>Kode Pos<span style="color:red"> *</span></label>
                             <input type="text" name="usr_postal_code" class="form-control" id="input-10" placeholder="Masukan Kode Pos">
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <label>Alamat<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_address" class="form-control" id="input-10" placeholder="Masukan Alamat">
                         </div>
 
                         <div class="col-sm-2">
                             <label>RT<span style="color:red"> *</span></label>
                             <input type="text" name="usr_rt" class="form-control" id="input-10" placeholder="Masukan Nomor RT">
                         </div>
+
                         <div class="col-sm-2">
                             <label>RW<span style="color:red"> *</span></label>
                             <input type="text" name="usr_rw" class="form-control" id="input-10" placeholder="Masukan Nomor RW">
                         </div>
+
+                        
                     </div>
                     
                     <div class="form-group row">
-
-                        <div class="col-sm-6">
+                        
+                        <div class="col-sm-4">
+                            <label>kelurahan/Desa<span style="color:red"> *</span></label>
+                            <input type="text" name="usr_postal_code" class="form-control" id="input-10" placeholder="Masukan Kode Pos">
+                        </div>
+                        <div class="col-sm-4">
                             <label>Telepon Rumah</label>
                             <input type="text" name="contact[landline_number]" class="form-control" id="input-10" placeholder="Masukan Nomor Telepon Rumah">
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <label>Email Rumah</label>
                             <input type="text" name="contact[email]" class="form-control" id="input-10" placeholder="Masukan Alamat Email Rumah">
                         </div>
