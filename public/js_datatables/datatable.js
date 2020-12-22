@@ -1,7 +1,6 @@
 function student() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'student',
       lengthChange: false,
@@ -43,14 +42,25 @@ function student() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Siswa tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar Siswa",
+            "infoFiltered": "(pencarian dari _MAX_ daftar Siswa)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
 function studentProsvective() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'student/prospective',
       lengthChange: false,
@@ -99,7 +109,6 @@ function studentProsvective() {
 function staff() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'staff',
       lengthChange: false,
@@ -141,14 +150,25 @@ function staff() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Staf tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar staf",
+            "infoFiltered": "(pencarian dari _MAX_ daftar staf)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
 function teacher() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'teacher',
       lengthChange: false,
@@ -190,7 +210,19 @@ function teacher() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Guru tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar guru",
+            "infoFiltered": "(pencarian dari _MAX_ daftar guru)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
@@ -239,14 +271,25 @@ function position_type() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Jabatan tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar jabatan",
+            "infoFiltered": "(pencarian dari _MAX_ daftar jabatan)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
 function subject() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'subject',
       lengthChange: false,
@@ -282,14 +325,25 @@ function subject() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Mata Pelajaran tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar mata pelajaran",
+            "infoFiltered": "(pencarian dari _MAX_ daftar mata pelajaran)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
 function school_year() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'school-year',
       lengthChange: false,
@@ -325,14 +379,25 @@ function school_year() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Tahun Ajaran tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar tahun ajaran",
+            "infoFiltered": "(pencarian dari _MAX_ daftar tahun ajaran)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
 function major() {
     $('#example').DataTable({
       processing: true,
-      search: false,
       serverSide: true,
       ajax: 'major',
       lengthChange: false,
@@ -368,7 +433,19 @@ function major() {
                 orderable: false, 
                 searchable: false
             },
-        ]
+        ],
+        "language": {
+            "search": "Cari:",
+            "processing": "Mohon tunggu",
+            "zeroRecords": "Daftar Jurusan tidak tersedia",
+            "info": "Halaman _PAGE_ dari _PAGES_ Lainya",
+            "infoEmpty": "Tidak ada daftar jurusan",
+            "infoFiltered": "(pencarian dari _MAX_ daftar jurusan)",
+            "paginate": {
+                "previous": "sebelumnya",
+                "next": "selanjutnya"
+            }
+        }
     });
 }
 
