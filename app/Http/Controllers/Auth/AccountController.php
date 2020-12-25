@@ -56,6 +56,9 @@ class AccountController extends Controller
     {
         $request->validate([
             'usr_email' => 'required|email'
+        ],
+        [
+            'usr_email.required' => 'Alamat Email Tidak Boleh Kosong'
         ]);
 
         $users = User::whereUsrEmail($request->usr_email)->first();
