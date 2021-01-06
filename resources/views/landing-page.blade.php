@@ -535,22 +535,19 @@ footer{
                                  <iframe class="rounded" src="https://www.youtube.com/embed/8MgZKPN5GDQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                  <br><br>
                                 
-                            <h3 class="text-center">Visi</h3>
+                             <h3 class="text-center">Visi</h3>
                                 <p align="justify">
-                                    Menjadi penyelenggara pendidikan kejuruan yang melahirkan tenaga ahli, terampil, kreatif, inovatif, dan berpengetahuan yang ramah lingkungan di tahun 2025.    
+                                    Menjadi penyelenggara pendidikan kejuruan berkarakter religius, yang melahirkan tenaga ahli, terampil, kreatif, inovatif, dan berpengetahuan yang ramah lingkungan di tahun 2025.    
                                 </p>    
                             <br>    
                             <h3 class="text-center">Misi</h3>
                                 
                                 <ol>
-                                    <li> Menyelenggarakan pendidikan kejuruan </li>  
-                                     <li>  Melahirkan tenaga ahli tingkat menengah </li>
-                                     <li>   Mewujudkan tenaga terampil, kreatif, inovatif, dan berpengalaman. </li>
-                                     <li>   Menyediakan sarana prasarana pendukung kegiatan pembelajaran yang berwawasan lingkungan. </li>
-                                     <li>   Mewujudkan lingkungan sekolah yang bersih, hijau, indah, dan sehat. </li>
-                                     <li>   Menerapkan kesadaran warga sekolah berprilaku hidup yang berbudaya lingkungan. </li>
-                                     <li>   Menjalin kemitraan dan kerjasama yang harmonis dengan masyarakat dan instansi instansi terkait. </li>
-                                     <li>  Mencetak Sumber Daya Manusia (SDM) yang unggul di era 4.0. </li>
+                                    <li>Menyelenggarakan pendidikan kejuruan berkarakter religius. </li>  
+                                     <li>Melahirkan tenaga ahli tingkat menengah yang berakhlakul karimah.</li>
+                                     <li>Mewujudkan tenaga terampil, kreatif, inovatif, dan berpengetahuan. </li>
+                                     <li>Membangun perilaku yang peduli terhdap lingkungan. </li>
+                                     <li>Menjalin kerjasama kerjasama dengan lembaga akademik dan non akademik ditingkat lokal, nasional, dan internasioanal
                                  </ol> 
 
 
