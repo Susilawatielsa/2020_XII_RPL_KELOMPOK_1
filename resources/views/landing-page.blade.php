@@ -392,7 +392,7 @@ footer{
 }    
     </style>
 
-    <title>Landing Page</title>
+    <title>SMK Mahaputra</title>
   </head>
   <body>
     <!-- navbar -->
